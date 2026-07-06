@@ -85,23 +85,30 @@ export async function llmTag(items, { client, model = MODEL, cachePath, batchSiz
     else toTag.push({ item: it, hash: h });
   }
 
-  let failures = 0;
-  for (let i = 0; i < toTag.length; i += batchSize) {
-    const slice = toTag.slice(i, i + batchSize);
-    try {
-      const tags = await classifyBatch(client, model, slice.map((s) => s.item));
-      const byId = new Map(tags.map((t) => [t.id, t]));
-      for (const { item, hash } of slice) {
-        const t = byId.get(item.id);
-        if (!t) continue;
-        const clean = { track: t.track, difficulty: t.difficulty, area: t.area, skills: t.skills };
-        results.set(item.id, clean);
-        cache[item.id] = { hash, tags: clean };
+  const classify = async (list) => {
+    for (let i = 0; i < list.length; i += batchSize) {
+      const slice = list.slice(i, i + batchSize);
+      try {
+        const tags = await classifyBatch(client, model, slice.map((s) => s.item));
+        const byId = new Map(tags.map((t) => [t.id, t]));
+        for (const { item, hash } of slice) {
+          const t = byId.get(item.id);
+          if (!t) continue; // model dropped this id from the batch — retried below
+          const clean = { track: t.track, difficulty: t.difficulty, area: t.area, skills: t.skills };
+          results.set(item.id, clean);
+          cache[item.id] = { hash, tags: clean };
+        }
+      } catch {
+        // whole batch errored — its items are retried below, then fall back to keyword tags
       }
-    } catch {
-      failures += slice.length; // leave these items on their keyword tags
     }
-  }
+  };
+
+  await classify(toTag);
+  // One retry for stragglers — items the model dropped from a batch, or whose batch errored.
+  const stragglers = toTag.filter((s) => !results.has(s.item.id));
+  if (stragglers.length) await classify(stragglers);
+  const failures = toTag.filter((s) => !results.has(s.item.id)).length;
 
   if (cachePath) {
     await mkdir(dirname(cachePath), { recursive: true });

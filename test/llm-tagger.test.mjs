@@ -33,6 +33,26 @@ test("overlays LLM tags onto keyword-tagged items", async () => {
   assert.equal(out.find((i) => i.id === "DE-2").difficulty, "large");
 });
 
+test("retries items the model drops from a batch", async () => {
+  let call = 0;
+  const client = {
+    messages: {
+      create: async () => {
+        call += 1;
+        // First batch drops DE-2; the retry (batch of just DE-2) returns it.
+        const tags = call === 1
+          ? [{ id: "DE-1", track: "junior-code", difficulty: "small", area: ["api"], skills: ["python"] }]
+          : [{ id: "DE-2", track: "legal-domain", difficulty: "large", area: ["legal"], skills: ["legal-research"] }];
+        return { content: [{ type: "text", text: JSON.stringify({ tags }) }] };
+      },
+    },
+  };
+  const { items: out, classified, failures } = await llmTag(base(), { client });
+  assert.equal(classified, 2);
+  assert.equal(failures, 0);
+  assert.equal(out.find((i) => i.id === "DE-2").track, "legal-domain");
+});
+
 test("falls back to keyword tags when the API errors", async () => {
   const client = { messages: { create: async () => { throw new Error("boom"); } } };
   const { items: out, failures } = await llmTag(base(), { client });
