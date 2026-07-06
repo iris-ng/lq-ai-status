@@ -49,6 +49,18 @@ test("searchCorpus ranks title matches before body-only matches", () => {
   assert.equal(searchCorpus(entries, "").length, 0);
 });
 
+test("itemCardHtml surfaces semantic related neighbours", () => {
+  const it = {
+    id: "DE-9", title: "t", description: "d", theme: "T", track: "junior-code",
+    area: [], skills: [], difficulty: "small", status: "available", owner: null, links: {},
+    related: [{ kind: "de", ref: "DE-201", score: 0.7 }, { kind: "pr", ref: 265, score: 0.6 }],
+  };
+  const html = itemCardHtml(it, "o/r");
+  assert.match(html, /Related:/);
+  assert.match(html, /href="#DE-201"/);
+  assert.match(html, /github\.com\/o\/r\/issues\/265/);
+});
+
 test("esc escapes HTML-significant characters (used by app.js on live GitHub titles)", () => {
   assert.equal(esc('<img src=x onerror="a">& b'), "&lt;img src=x onerror=&quot;a&quot;&gt;&amp; b");
 });

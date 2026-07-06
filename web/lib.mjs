@@ -69,10 +69,21 @@ export function itemCardHtml(item, repo) {
   const links = [...(item.links?.issues || []), ...(item.links?.prs || [])]
     .map((r) => `<a href="${esc(r.url)}">#${r.number}</a>`)
     .join(" ");
-  return `<article class="card" data-id="${esc(item.id)}">
+  // Semantic neighbours (requirement C): DE-ids scroll on the page; issues/PRs link out.
+  const related = (item.related || []).length
+    ? `<div class="related">Related: ${item.related
+        .map((r) =>
+          r.kind === "de"
+            ? `<a class="chip" href="#${esc(r.ref)}">${esc(r.ref)}</a>`
+            : `<a class="chip" href="https://github.com/${repo}/issues/${encodeURIComponent(r.ref)}">#${esc(r.ref)}</a>`
+        )
+        .join(" ")}</div>`
+    : "";
+  return `<article class="card" id="${esc(item.id)}" data-id="${esc(item.id)}">
     <h3>${esc(item.id)}: ${esc(item.title)} ${owner}</h3>
     <p>${esc(item.description)}</p>
     <div class="chips">${chips}</div>
+    ${related}
     <div class="card-links">${prdLink} ${links} ${claim}</div>
   </article>`;
 }
