@@ -1,0 +1,9 @@
+{
+  "issues": [
+    { "kind": "issue", "number": 222, "title": "DE-296 wizard", "body": "", "url": "u/222", "state": "open", "merged": false, "author": "thepranky", "assignee": "thepranky", "labels": ["enhancement"] },
+    { "kind": "issue", "number": 900, "title": "Improve onboarding copy", "body": "no id here", "url": "u/900", "state": "open", "merged": false, "author": "kev", "assignee": null, "labels": [] }
+  ],
+  "prs": [
+    { "kind": "pr", "number": 265, "title": "feat (DE-035) bedrock", "body": "", "url": "u/265", "state": "open", "merged": false, "author": "dropthejase", "assignee": null, "labels": [] }
+  ]
+}
