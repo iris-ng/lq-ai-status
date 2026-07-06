@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T06:32:58.542Z",
+  "generatedAt": "2026-07-06T06:50:41.217Z",
   "entries": [
     {
       "kind": "de",
@@ -8,7 +8,7 @@
       "text": "Additional starter skills beyond the M1 set Additional starter skills beyond the M1 set Priority: P1 · Effort: M (one skill at a time) Context: M1 ships with 10 starter skills. Many other recurring in-house legal workflows would benefit from purpose-built skills. Specific candidates identified during skill authoring: Board Minutes Generator — produced as the example skill in `skill-creator/examples/example_session.md`; could be shipped as a",
       "status": "available",
       "theme": "Skill ecosystem expansions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-001-additional-starter-skills-beyond-the-m1-set"
     },
     {
@@ -38,7 +38,7 @@
       "text": "NDA Review redlined-document output mode NDA Review redlined-document output mode Priority: P2 · Effort: M Context: NDA Review v1.0.x produces suggested redline language inside its markdown report. A redlined-document output mode (producing actual tracked-changes DOCX or structured diff) was deliberately scoped out and assigned to the Word add-in workflow (M3). Open question for resolution: Does the redline-document output belong in the",
       "status": "available",
       "theme": "Skill ecosystem expansions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-004-nda-review-redlined-document-output-mode"
     },
     {
@@ -48,7 +48,7 @@
       "text": "Defined-Terms Consistency Check (skill) Defined-Terms Consistency Check (skill) Priority: P2 · Effort: S Context: Across the in-house contract review category (Ivo, Spellbook, Robin AI, Luminance), checking that defined terms are used consistently — defined in one place, used as defined, no shadow definitions, no orphan capitalizations — is a recurring feature. Well-shaped as a skill rather than a capability; it ships once, anyone can f",
       "status": "available",
       "theme": "Skill ecosystem expansions",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-005-defined-terms-consistency-check-skill"
     },
     {
@@ -78,7 +78,7 @@
       "text": "Self-serve business-user contract generation (skill family) Self-serve business-user contract generation (skill family) Priority: P3 · Effort: M Context: Robin AI and others let business users (sales, procurement) self-serve standard agreements (NDAs, sales-side order forms) from templates with bounded customization. For an in-house team, this offloads routine work without legal having to draft each one. Specific scope: A pattern (not a single skill) where",
       "status": "available",
       "theme": "Skill ecosystem expansions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-008-self-serve-business-user-contract-generation-skill-family"
     },
     {
@@ -88,7 +88,7 @@
       "text": "Wave G community-skill installer + first port batch Wave G community-skill installer + first port batch Priority: P1 · Effort: L Context: Per `docs/research/2026-05-12-claude-for-legal-review.md` §9 (Q6 decision), LQ.AI will adopt a `legal-builder-hub`-style community-skill installation surface in a v1.1+ Wave G. The pattern: allowlist via `gateway.yaml`, raw-Markdown display in `web/`, license-gate UI, `skills-qa`-style frontmatter + trigger-examp",
       "status": "available",
       "theme": "Skill ecosystem expansions",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-219-wave-g-community-skill-installer-first-port-batch"
     },
     {
@@ -98,7 +98,7 @@
       "text": "Skill input form rendering for any skill Skill input form rendering for any skill Priority: P1 · Effort: M Context: PRD §3.4 defines the skill-input-form pattern: when a skill is attached and required inputs are missing, the application surfaces them as form elements rather than letting the model ask conversationally. Enhance Prompt's third example demonstrates the pattern. The pattern is not yet implemented for skills generally — only s",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-010-skill-input-form-rendering-for-any-skill"
     },
     {
@@ -108,7 +108,7 @@
       "text": "Reasoning visibility configuration for Enhance Prompt Reasoning visibility configuration for Enhance Prompt Priority: P2 · Effort: S Context: PRD §3.2 specifies three reasoning-visibility modes (`always_show`, `disclosure`, `on_request`). Implementation deferred to OpenWebUI fork integration. Specific scope: Account-level setting; UI surface in OpenWebUI settings panel; cookie/preference persistence; reasoning-section rendering responsive to the sett",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-011-reasoning-visibility-configuration-for-enhance-prompt"
     },
     {
@@ -118,7 +118,7 @@
       "text": "Skill inspector side panel Skill inspector side panel Priority: P1 · Effort: M Context: PRD §3.4 specifies skill inspectability as a cross-cutting transparency principle. The side-panel UI is specified but not implemented in v1 backend scope. Specific scope: Side panel triggered by \"view this skill\" button on any active skill or Enhance Prompt review screen. Renders SKILL.md (with frontmatter formatted readably) and support",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-012-skill-inspector-side-panel"
     },
     {
@@ -128,7 +128,7 @@
       "text": "Saved Prompts Library Saved Prompts Library Priority: P3 · Effort: S Context: Skills are heavyweight (folder, frontmatter, supporting files, semver). For quick personal reuse — \"the way I always ask for an executive summary\" — a lighter-weight saved-prompt list complements skills the way browser bookmarks complement OpenWebUI's Knowledge Bases. GC.AI ships both; the gap is real. Specific scope: Per-user saved prompts (",
       "status": "done",
       "theme": "Application UI enhancements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-013-saved-prompts-library"
     },
     {
@@ -138,7 +138,7 @@
       "text": "Tone / Audience Settings on Skills Tone / Audience Settings on Skills Priority: P3 · Effort: S Context: Audience-calibrated outputs (peer attorney vs CRO vs board) is a recurring competitor feature. The Comms Improver starter skill addresses one direction post-hoc; making `audience` a standard optional input on skills (per DE-020) propagates the pattern across the skill library. Specific scope: Standardize an `audience: peer_attorn",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-014-tone-audience-settings-on-skills"
     },
     {
@@ -148,7 +148,7 @@
       "text": "Voice / Dictation Input Voice / Dictation Input Priority: P3 · Effort: S Context: GC.AI offers built-in dictation. Modern browsers expose Web Speech API; this is mostly a UI addition. Specific scope: Dictation toggle on the chat input, visible per-prompt waveform, accuracy disclaimer. No server-side STT in v1; rely on browser API. Acceptance criteria: Dictation works in Chrome and Safari; clearly disclaimed as browser-si",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-015-voice-dictation-input"
     },
     {
@@ -168,7 +168,7 @@
       "text": "Admin AliasForm Admin AliasForm: model dropdown autocomplete population Priority: P2 · Effort: S Context: The admin \"Edit alias\" form (`web/src/lib/lq-ai/components/AliasForm.svelte`, used in `/lq-ai/admin/models`) ships with one known UX gap at M1: the Model dropdown shows only the currently-configured model, not the full list of models the selected provider supports. The form already supports per-provider model",
       "status": "available",
       "theme": "Application UI enhancements",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-272-admin-aliasform-model-dropdown-autocomplete-population"
     },
     {
@@ -178,7 +178,7 @@
       "text": "Standardize the optional-input pattern across skills Standardize the optional-input pattern across skills Priority: P1 · Effort: S Context: During skill authoring (NDA Review v1.0.0 → v1.0.1, DPA Checklist Review v1.0.0), a pattern emerged: optional inputs that change *analytical depth* not just *report format* are particularly valuable. NDA Review uses `deal_type` and `prior_agreements`; DPA Checklist Review uses `party_role`, `data_categories`, `i",
       "status": "available",
       "theme": "PRD-process and capability refinements",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-020-standardize-the-optional-input-pattern-across-skills"
     },
     {
@@ -188,7 +188,7 @@
       "text": "Skill versioning and publishing flow Skill versioning and publishing flow Priority: P1 · Effort: M Context: Skills carry version numbers in frontmatter (semver). The mechanics of skill versioning across community use (forks, upstream updates, conflict resolution when a community version diverges from the maintained version) are not specified. Specific questions: What happens when a community-curated skill (e.g., a jurisdiction-specif",
       "status": "available",
       "theme": "PRD-process and capability refinements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-021-skill-versioning-and-publishing-flow"
     },
     {
@@ -198,7 +198,7 @@
       "text": "Skill performance and quality measurement Skill performance and quality measurement Priority: P2 · Effort: L Context: Skills are the unit of value in LQ.AI. There is no current mechanism for measuring how well a skill performs against its intended use, comparing skill versions, or evaluating community contributions. Specific scope: Eval harness that runs a skill against a held-out set of representative inputs and grades outputs against ex",
       "status": "available",
       "theme": "PRD-process and capability refinements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-022-skill-performance-and-quality-measurement"
     },
     {
@@ -208,7 +208,7 @@
       "text": "External-Counsel Collaboration Boundary External-Counsel Collaboration Boundary Priority: P3 · Effort: L Context: Many legal teams' real workflow includes a law firm partner. Legora's Portal addresses this. The PRD's positioning is \"open-source AI for legal teams\" — covering in-house, firm, and solo practitioners — but the firm/in-house collaboration boundary is a real workflow. Specific recommendation: Treat as an open question for the",
       "status": "available",
       "theme": "PRD-process and capability refinements",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-023-external-counsel-collaboration-boundary"
     },
     {
@@ -268,7 +268,7 @@
       "text": "Azure OpenAI provider adapter Azure OpenAI provider adapter — ✓ Closed in M2-E1 (2026-05-17) Status: ✓ Closed in M2-E1 (2026-05-17). Shipped as `gateway/app/providers/azure_openai.py` (subclass of `OpenAIAdapter`) wired into the lifespan dispatch in `gateway/app/main.py`, with example configuration in `gateway.yaml.example` under the `azure-openai` provider entry. Unit-test parity with the OpenAI adapter lives at `gateway/test",
       "status": "done",
       "theme": "Deployment and infrastructure",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-267-azure-openai-provider-adapter-closed-in-m2-e1-2026-05-17"
     },
     {
@@ -278,7 +278,7 @@
       "text": "Google Vertex AI provider adapter (Anthropic on Vertex) Google Vertex AI provider adapter (Anthropic on Vertex) Priority: P1 · Effort: M Context: PRD §4 calls for Vertex AI support as one of the v1 providers (per the supported-provider list and `gateway.yaml.example`'s `vertex-anthropic` entry). M1 ships the Anthropic, OpenAI, and Ollama adapters; the Vertex adapter is the Tier-3 path for operators who want Anthropic-quality models routed through their",
       "status": "available",
       "theme": "Deployment and infrastructure",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-034-google-vertex-ai-provider-adapter-anthropic-on-vertex"
     },
     {
@@ -288,7 +288,7 @@
       "text": "AWS Bedrock provider adapter (Anthropic on Bedrock) AWS Bedrock provider adapter (Anthropic on Bedrock) Priority: P1 · Effort: M Context: PRD §4 calls for Bedrock support as one of the v1 providers. M1 ships the Anthropic, OpenAI, and Ollama adapters; the Bedrock adapter is the Tier-3 path for operators who want Anthropic-quality models routed through their own AWS account under their existing AWS DPA, with no third-party processor introduced. The",
       "status": "in-pr",
       "theme": "Deployment and infrastructure",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-035-aws-bedrock-provider-adapter-anthropic-on-bedrock"
     },
     {
@@ -298,7 +298,7 @@
       "text": "Multi-document Q&A for Contract QA Multi-document Q&A for Contract QA Priority: P2 · Effort: L Context: Contract QA v1.0.0 operates against a single document. Multi-document Q&A — questions across a knowledge base of contracts (\"which of our SaaS agreements have unlimited liability carve-outs?\", \"compare this MSA against our standard form\") — was identified as genuinely useful but deliberately scoped out of v1 because it raises dis",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-060-multi-document-q-a-for-contract-qa"
     },
     {
@@ -308,7 +308,7 @@
       "text": "Contract QA acceptance testing Contract QA acceptance testing Priority: P1 · Effort: S Context: Contract QA v1.0.0 includes worked examples but has not been stress-tested against real-world contracts and the full range of question shapes in the wild. Acceptance testing should validate behavior across the six question types and a representative document corpus. Specific scope: Test corpus of 5–10 anonymized real contracts (mix o",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-061-contract-qa-acceptance-testing"
     },
     {
@@ -318,7 +318,7 @@
       "text": "Dedicated Order Form / SOW Review skill Dedicated Order Form / SOW Review skill Priority: P2 · Effort: M Context: MSA Review — SaaS v1.0.0 accepts an Order Form as optional input and surfaces MSA-vs-Order-Form conflicts (Pass 6 of the workflow). A dedicated Order Form Review skill — focused entirely on Order Form review and its relationship to a referenced MSA — was scoped out of v1. Specific scope: Order Form Review skill that reviews",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-070-dedicated-order-form-sow-review-skill"
     },
     {
@@ -328,7 +328,7 @@
       "text": "Additional MSA review variants Additional MSA review variants Priority: P2 · Effort: L (multiple skills, one at a time) Context: MSA Review — SaaS covers software-as-a-service master agreements specifically. Other MSA categories share structural similarities but have distinct substantive considerations. Specific candidates: MSA Review — Professional Services: for consulting, implementation, integration, and managed-services agr",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-071-additional-msa-review-variants"
     },
     {
@@ -338,7 +338,7 @@
       "text": "MSA Review acceptance testing against real document corpus MSA Review acceptance testing against real document corpus Priority: P1 · Effort: M Context: MSA Review — SaaS is the largest contract-review skill in the M1 set. Acceptance testing against a corpus of real-world MSAs (vendor-favorable, customer-favorable, balanced; SMB and enterprise; various industries) is essential before relying on the skill's output for actual deals. Specific scope: anonymize",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-072-msa-review-acceptance-testing-against-real-document-corpus"
     },
     {
@@ -348,7 +348,7 @@
       "text": "Shared infrastructure for contract-review skill family Shared infrastructure for contract-review skill family Priority: P2 · Effort: M Context: During authoring of NDA Review, DPA Checklist Review, MSA Review — SaaS, and MSA Review — Commercial Purchase, a recurring pattern emerged: the *infrastructure* of contract review (severity rubric, perspective-lens approach, report structure, recommended-language conventions) is consistent across skills, while",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-080-shared-infrastructure-for-contract-review-skill-family"
     },
     {
@@ -358,7 +358,7 @@
       "text": "Obligation Tracking / Renewal Calendar Obligation Tracking / Renewal Calendar Priority: P3 · Effort: L Context: Robin AI and CLM-with-AI products (Ironclad, Evisort) provide obligation tracking — auto-renewal dates, deadline alerts, milestone notifications. The PRD does not address the post-signature life of contracts, which is correct for a v1 focus on the analytical work, but worth flagging for a future direction. Specific recommenda",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-081-obligation-tracking-renewal-calendar"
     },
     {
@@ -368,7 +368,7 @@
       "text": "Regulatory Monitoring with Proactive Alerts Regulatory Monitoring with Proactive Alerts Priority: P3 · Effort: L Context: Legalfly's \"Legal Radar\" continuously monitors regulatory feeds across 60+ jurisdictions and flags items relevant to the user's industry/business. This is a watch-on-the-Research-feed analog of the autonomous-layer KB watches (§3.10). Specific scope: An autonomous-layer pattern where the user subscribes a Project to rele",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-082-regulatory-monitoring-with-proactive-alerts"
     },
     {
@@ -378,7 +378,7 @@
       "text": "Google Docs Add-On (M3 sister to the Word Add-In) Google Docs Add-On (M3 sister to the Word Add-In) Priority: P3 · Effort: L Context: PRD §3.9 specifies a Word add-in via Office.js. Many startups, smaller in-house teams, and increasingly some larger ones draft in Google Docs. Several competitors (Ivo, Spellbook for Docs) cover both surfaces. Specific recommendation: Defer to M5 or community. A Google Workspace add-on using the same backend OpenAP",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-083-google-docs-add-on-m3-sister-to-the-word-add-in"
     },
     {
@@ -388,7 +388,7 @@
       "text": "Email-as-Intake Bridge Email-as-Intake Bridge Priority: P3 · Effort: M Context: Forwarding `legal@company.com` emails into a system that creates structured chats is the front-door pattern most in-house teams actually adopt. Streamline AI builds this; an OSS LQ.AI without it leaves a real gap. Sister to the Slack/Teams Light Intake Bridge (§3.15). Specific scope: A configured incoming email address (per deployment) that",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-084-email-as-intake-bridge"
     },
     {
@@ -398,7 +398,7 @@
       "text": "Operational Analytics for Legal Ops Operational Analytics for Legal Ops Priority: P3 · Effort: M Context: Streamline AI, Checkbox, and others surface metrics on legal-team throughput, SLA hit rate, request volume by team, and time-at-stage. The PRD has cost tracking (§5.5) but not legal-work analytics. Specific scope: A dashboard surface (admin role) showing chat volume by user/team, time-to-first-token, time-to-final-answer, skills",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-085-operational-analytics-for-legal-ops"
     },
     {
@@ -408,7 +408,7 @@
       "text": "Procurement-Readiness Pack Procurement-Readiness Pack Priority: P2 · Effort: S Context: Operators deploying LQ.AI inside an enterprise will face an internal procurement / security review. Commercial competitors ship pre-filled SIG, CAIQ, and security-questionnaire responses to short-cut this. For an open-source self-hosted product, the operator owns the answers, but a starter pack would dramatically lower the friction. The",
       "status": "done",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-086-procurement-readiness-pack"
     },
     {
@@ -418,7 +418,7 @@
       "text": "Direct CLM integration Direct CLM integration Priority: P3 · Effort: L Context: PRD §1.6 lists \"direct integrations with CLM systems (Ironclad, Concord, etc.)\" as out of scope for v1. Specific scope: API integrations or MCP tool adapters for the major CLMs, allowing LQ.AI to read contracts from CLMs, post review reports back, and trigger workflow updates. Acceptance criteria: At least one CLM integration shipped with do",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-040-direct-clm-integration"
     },
     {
@@ -428,7 +428,7 @@
       "text": "E-discovery capabilities E-discovery capabilities Priority: P3 · Effort: L Context: PRD §1.6 lists e-discovery as out of scope. Some users will request it; structurally distinct from in-house work. Recommendation: Probably should remain a separate project rather than merging into LQ.AI. Track community demand and revisit if a fork or sister project is warranted.",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-041-e-discovery-capabilities"
     },
     {
@@ -438,7 +438,7 @@
       "text": "Mobile applications Mobile applications Priority: P3 · Effort: L Context: PRD §1.6 lists mobile native apps as out of scope; web UI is responsive. Recommendation: Wait for community demand. If demand materializes, consider PWA before native.",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-042-mobile-applications"
     },
     {
@@ -448,7 +448,7 @@
       "text": "Organization Profile singleton skill (per-firm playbook) Organization Profile singleton skill (per-firm playbook) Priority: P1 · Effort: M Context: Per `docs/research/2026-05-12-claude-for-legal-review.md` §9 (Q5 decision), Anthropic's `claude-for-legal` skills heavily reference a team-specific `CLAUDE.md` playbook (GREEN/YELLOW/RED thresholds, escalation rules, house style). LQ.AI's nearest analog is the Organization Profile — a singleton skill that sh",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-220-organization-profile-singleton-skill-per-firm-playbook"
     },
     {
@@ -458,7 +458,7 @@
       "text": "Managed-Agents-equivalent (scheduled-agent runtime) Managed-Agents-equivalent (scheduled-agent runtime) Priority: P2 · Effort: L Context: Per `docs/research/2026-05-12-claude-for-legal-review.md` §9 (Q3 decision), several `claude-for-legal` plugins presuppose a scheduled-agent runtime that LQ.AI does not have: `renewal-watcher`, `docket-watcher`, `reg-feed-watcher`, `dataroom-watcher`, `launch-watcher`. The reference design exists in Anthropic's `m",
       "status": "available",
       "theme": "Capability extensions",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-221-managed-agents-equivalent-scheduled-agent-runtime"
     },
     {
@@ -468,7 +468,7 @@
       "text": "Skill quality bar / review process for community contributions Skill quality bar / review process for community contributions Priority: P1 · Effort: S Context: The repository will accept community-contributed skills. The quality bar — what makes a skill mergeable, who reviews, how legal-substance accuracy is verified — is not yet documented. Specific scope: Skill contribution guide. Required elements (SKILL.md, at least one worked example, frontmatter complet",
       "status": "available",
       "theme": "Process and project management",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-050-skill-quality-bar-review-process-for-community-contributions"
     },
     {
@@ -478,7 +478,7 @@
       "text": "Acceptance testing for the M1 skill set against real documents Acceptance testing for the M1 skill set against real documents Priority: P1 · Effort: M Context: The 10 starter skills shipping in M1 have been authored but not extensively tested against real-world documents. Pre-launch acceptance testing should validate behavior on a corpus of real contracts. Specific scope: Curated test corpus (anonymized real NDAs, MSAs, DPAs, etc.) with expected behavior docu",
       "status": "claimed",
       "theme": "Process and project management",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-051-acceptance-testing-for-the-m1-skill-set-against-real-documents"
     },
     {
@@ -488,7 +488,7 @@
       "text": "Tamper-evident audit log Tamper-evident audit log Priority: P2 · Effort: M Context: PRD §5.3 specifies a comprehensive audit log. For high-assurance deployments and litigation-readiness, the audit log should be tamper-evident: each entry is hash-chained to the prior entry (Merkle structure or signed-chain), and the chain root is published or anchored periodically. Specific scope: Per-entry SHA-256 chain; periodic chain-ro",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-100-tamper-evident-audit-log"
     },
     {
@@ -498,7 +498,7 @@
       "text": "Cryptographic timestamping of work product Cryptographic timestamping of work product Priority: P2 · Effort: M Context: Legal work product has temporal significance: when did the analysis exist? When was the redline drafted? Cryptographic timestamping creates evidence that is admissible in litigation. Builds on the WorkProductAttribution metadata already captured in v1 (per §3.3). Specific scope: Each model-generated artifact (chat respons",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-101-cryptographic-timestamping-of-work-product"
     },
     {
@@ -508,7 +508,7 @@
       "text": "Hardware Security Module (HSM) and Vault integration Hardware Security Module (HSM) and Vault integration Priority: P2 · Effort: M Context: PRD §5.6 specifies pgcrypto column-level encryption for sensitive fields including API keys. High-assurance deployments will require keys stored in an HSM or external secrets manager (HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, Google Secret Manager). Specific scope: Pluggable secrets backend in the I",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-102-hardware-security-module-hsm-and-vault-integration"
     },
     {
@@ -518,7 +518,7 @@
       "text": "IP allowlisting and geo-restriction IP allowlisting and geo-restriction Priority: P2 · Effort: S Context: Many enterprise deployments require IP-based access controls and geographic restrictions on user access. Specific scope: Configurable IP allowlist applied at the web app and Word add-in entry points; configurable geo-IP-based restrictions with an integrated geo database (MaxMind or alternative). Operator chooses backend. Accepta",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-103-ip-allowlisting-and-geo-restriction"
     },
     {
@@ -528,7 +528,7 @@
       "text": "Just-in-time admin elevation Just-in-time admin elevation Priority: P3 · Effort: M Context: Modern privileged-access management practice requires admin elevation be explicit, time-bounded, and audited rather than persistent. Specific scope: Admin role with short-lived elevation tokens; users with admin permissions must request elevation; elevations are logged with reason; auto-expiry after configurable period (default 60 minu",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-104-just-in-time-admin-elevation"
     },
     {
@@ -538,7 +538,7 @@
       "text": "Outbound proxy support Outbound proxy support Priority: P2 · Effort: S Context: Many enterprise networks require outbound traffic to traverse a corporate inspection proxy. Specific scope: Inference Gateway supports `HTTPS_PROXY` / `NO_PROXY` configuration; documented integration with common corporate proxies (Zscaler, Palo Alto Networks, etc.); TLS interception trust handled gracefully. Acceptance criteria: Documented c",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-105-outbound-proxy-support"
     },
     {
@@ -548,7 +548,7 @@
       "text": "Configurable retention policies Configurable retention policies Priority: P1 · Effort: M Context: Operator should configure auto-purge schedules per resource type to satisfy data-minimization principles and storage management. Specific scope: Configuration UI for retention by resource type (chats, files, audit log, autonomous-layer memory) and scope (personal, group, org). Background job applies policies. Litigation-hold flag su",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-106-configurable-retention-policies"
     },
     {
@@ -568,7 +568,7 @@
       "text": "Backup encryption with rotation Backup encryption with rotation Priority: P1 · Effort: M Context: PRD §6.5 specifies pg_dump + MinIO snapshot backups. Production-grade backup requires encryption at rest with separate keys from the live deployment, key rotation, and restore-with-key-rotation testing. Specific scope: Backup CLI tool encrypts bundles with operator-provided KMS key; restore tool handles key-rotation scenarios; docum",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-108-backup-encryption-with-rotation"
     },
     {
@@ -578,7 +578,7 @@
       "text": "Litigation hold support Litigation hold support Priority: P2 · Effort: S Context: When a matter is on litigation hold, auto-purge and certain user-deletion actions must be suspended to preserve evidence. Specific scope: Admin-set litigation-hold flag at the resource or matter level; suspends auto-purge; warns users attempting to delete held resources; logged and audited. Acceptance criteria: Held resources cannot be auto",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-109-litigation-hold-support"
     },
     {
@@ -588,7 +588,7 @@
       "text": "Prompt-injection pattern library Prompt-injection pattern library Priority: P2 · Effort: M Context: Documents from counterparties or external sources may contain prompt-injection attacks intended to manipulate the model. A community-maintained library of known patterns, scanned by the Inference Gateway, raises the bar. Specific scope: Pattern library shipped as an inspectable skill; Inference Gateway middleware scans incoming con",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-110-prompt-injection-pattern-library"
     },
     {
@@ -608,7 +608,7 @@
       "text": "Model checksum verification for local models Model checksum verification for local models Priority: P2 · Effort: S Context: When Ollama pulls a model, supply-chain integrity for the model itself matters. Verify checksums against a known-good registry. Specific scope: Configurable model-checksum allowlist; the deployment refuses to use models whose checksum is not on the list; documented procedure for adding new models to the allowlist with a",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-112-model-checksum-verification-for-local-models"
     },
     {
@@ -618,7 +618,7 @@
       "text": "FedRAMP-aligned deployment recipe FedRAMP-aligned deployment recipe Priority: P2 · Effort: L Context: Federal users (and federal contractors) require FedRAMP authorization. While the project itself does not pursue authorization, an alignment document and reference deployment recipe support operators pursuing FedRAMP Moderate (or aspirationally High) for their environment. Specific scope: `docs/compliance/fedramp-alignment.md`; ref",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-113-fedramp-aligned-deployment-recipe"
     },
     {
@@ -628,7 +628,7 @@
       "text": "Reproducible builds Reproducible builds Priority: P2 · Effort: M Context: Verifying that a deployed image matches the source requires reproducible builds: any party rebuilding from the release tag produces a bit-identical image. Builds on the SLSA-3 build provenance committed in v1 (§7.8); reproducibility is the next layer. Specific scope: Container build configuration deterministic (pinned base images, deterministic",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-114-reproducible-builds"
     },
     {
@@ -638,7 +638,7 @@
       "text": "Formal Vulnerability Disclosure Program (VDP) Formal Vulnerability Disclosure Program (VDP) Priority: P3 · Effort: S Context: PRD §7.6 specifies coordinated disclosure via SECURITY.md. A formal bug bounty or VDP with published scope, safe-harbor language, and (optionally) monetary rewards encourages security research. Specific scope: Published VDP under a recognized framework (HackerOne, Intigriti, or self-hosted); safe-harbor language; publi",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-115-formal-vulnerability-disclosure-program-vdp"
     },
     {
@@ -648,7 +648,7 @@
       "text": "Tier-floor warning surface for privileged matters Tier-floor warning surface for privileged matters Priority: P2 · Effort: M Context: `Project.privileged=true` forces a minimum inference tier (default Tier 2; configurable to Tier 1 — see §3.11). Tier 2 in PRD §1.5.2 means \"enterprise managed inference with ZDR / no-training commitments.\" But \"Tier 2\" is shorthand for whichever provider the operator has configured as their Tier-2 routing target —",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-266-tier-floor-warning-surface-for-privileged-matters"
     },
     {
@@ -658,7 +658,7 @@
       "text": "Skill-capture prompt-injection sanitization Skill-capture prompt-injection sanitization Priority: P1 · Effort: M Context: M1's skill-capture flow (per `web/cypress/e2e/wave-d2-skill-creator.cy.ts` Test 1) takes a user-selected chat message and persists it as a new user-scope skill. If the message originated from a counterparty document ingested into the chat (a PDF, DOCX, or pasted text), prompt-injection content embedded in that document c",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-268-skill-capture-prompt-injection-sanitization"
     },
     {
@@ -678,7 +678,7 @@
       "text": "Cryptography review Cryptography review: Fernet vs modern AEAD Priority: P3 · Effort: S Context: Provider-key encryption at rest uses Fernet (AES-128-CBC + HMAC-SHA256) per `gateway/app/secrets.py` and ADR 0011. Fernet is robust (RFC-style spec, widely deployed, no known break) but is from the `cryptography` library's 0.6 release (2014) and is not a modern AEAD — it uses encrypt-then-MAC rather than a single-pass aut",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-270-cryptography-review-fernet-vs-modern-aead"
     },
     {
@@ -688,7 +688,7 @@
       "text": "Dependency-criticality matrix + fallback plan Dependency-criticality matrix + fallback plan Priority: P2 · Effort: M Context: The SBOM (per §7.8) enumerates all dependencies but does not classify them by criticality to the application, nor document a fallback plan if a critical dependency changes terms or is abandoned. The procurement question \"if your dependency tree shifts under you, what's your plan?\" currently has no anchor — particularly",
       "status": "available",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-271-dependency-criticality-matrix-fallback-plan"
     },
     {
@@ -698,7 +698,7 @@
       "text": "Audit log API Audit log API: server-side actor enrichment Priority: P2 · Effort: S Context: The audit log API (`GET /api/v1/admin/audit-log`) returns rows with `user_id` (UUID) but no actor enrichment — no email, no display_name. Any UI rendering audit entries must issue a second `/users/{id}` lookup per row to display \"who did this\" labels, producing an N+1 query pattern. Operators reading the raw JSON cannot",
       "status": "done",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-273-audit-log-api-server-side-actor-enrichment"
     },
     {
@@ -708,7 +708,7 @@
       "text": "Anonymization pseudonym-collision in source documents Anonymization pseudonym-collision in source documents Priority: P3 · Effort: S Context: The Anonymization Layer (§4.7 / M2-B3) generates pseudonyms in the deterministic format `{ENTITY_TYPE}_{NNNN}` (e.g., `PERSON_0001`, `MATTER_NUMBER_0042`). On the response path, the rehydrator scans the model's output for these patterns and substitutes the originals back from the in-process mapper. Two distinct",
       "status": "done",
       "theme": "Security and compliance",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-274-anonymization-pseudonym-collision-in-source-documents"
     },
     {
@@ -748,7 +748,7 @@
       "text": "Azure OpenAI AD authentication (managed identity / service principal) Azure OpenAI AD authentication (managed identity / service principal) Priority: P2 · Effort: S Context: M2-E1 (DE-267) shipped the Azure OpenAI adapter with API-key authentication only, deferring the Azure AD path to keep the M2-E1 budget at ~4 hr. Many Azure-tenant enterprise deployments disable long-lived API keys entirely and require token-based auth through Azure AD: either a managed identity",
       "status": "done",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-278-azure-openai-ad-authentication-managed-identity-service-principal"
     },
     {
@@ -788,7 +788,7 @@
       "text": "Anonymization Layer empirical validation on legal-document corpus Anonymization Layer empirical validation on legal-document corpus Priority: P1 · Effort: M (10–14 hours of focused work; structured for incremental community contribution) Status: Open — community contribution welcomed. This DE captures the original [M2-F2 plan scope](M2-IMPLEMENTATION-PLAN.md#task-m2-f2--anonymization-acceptance-test-corpus) which the maintainers chose not to ship in v0.2 in favo",
       "status": "done",
       "theme": "Security and compliance",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-282-anonymization-layer-empirical-validation-on-legal-document-corpus"
     },
     {
@@ -798,7 +798,7 @@
       "text": "Fresh-install login UX Fresh-install login UX: surface the bootstrap-password path on first 401 Priority: P2 · Effort: S (~3–4 h as actually shipped) Status: SHIPPED at M3-0.1 (Phase 0, pre-M3 hardening). Implemented as a new unauthenticated `GET /api/v1/admin/bootstrap-status` endpoint the web login screen consults on the first 401 to decide whether to surface a bootstrap-password hint; the hint hides automatically onc",
       "status": "done",
       "theme": "Security and compliance",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-283-fresh-install-login-ux-surface-the-bootstrap-password-path-on-first-401"
     },
     {
@@ -808,7 +808,7 @@
       "text": "MCP-client subsystem in the LQ.AI backend MCP-client subsystem in the LQ.AI backend ✅ Delivered in the legal-research + connectors (MCP) milestone (#158–#193; migration head `0055`), re-seated on the gateway egress boundary (ADR 0014/0015) rather than as a backend-direct client: a gateway MCP tool-provider adapter (streamable_http, per-call OAuth), an api MCP registry + discovery-cache + `/api/v1/admin/mcp` surface, per-user OAuth with Fe",
       "status": "done",
       "theme": "Workflow intelligence",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-200-mcp-client-subsystem-in-the-lq-ai-backend"
     },
     {
@@ -818,7 +818,7 @@
       "text": "Signal Aggregation Service Signal Aggregation Service Priority: P1 · Effort: L Context: The persistent workspace-state layer that consumes signals from connected sources and exposes a unified query API. Foundation for the Today view, Prioritization Engine, and agent dispatch. Specific scope: New backend service; consumes events via MCP-client subsystem; normalizes to Workspace Event schema (event_type, source, subject, time",
       "status": "claimed",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-201-signal-aggregation-service"
     },
     {
@@ -828,7 +828,7 @@
       "text": "Email connector via MCP Email connector via MCP Priority: P1 · Effort: M Context: First and most important signal source. Ideally implemented as a community-contributed MCP server consumed by LQ.AI rather than baked in. Specific scope: Reference MCP server for Gmail and Microsoft 365 (Exchange Online); read-only by default; granular permission scoping (specific labels/folders only); rate-limit-aware. Acceptance criteria:",
       "status": "claimed",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-202-email-connector-via-mcp"
     },
     {
@@ -838,7 +838,7 @@
       "text": "Calendar connector via MCP Calendar connector via MCP Priority: P1 · Effort: M Context: Second signal source. Same pattern as DE-202. Specific scope: Reference MCP server for Google Calendar and Microsoft 365 calendar; read-only by default; per-calendar permission scoping. Acceptance criteria: As above for email.",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-203-calendar-connector-via-mcp"
     },
     {
@@ -848,7 +848,7 @@
       "text": "Task system connectors via MCP Task system connectors via MCP Priority: P1 · Effort: M each Context: Asana, Linear, Jira, GitHub Issues, Monday, ClickUp — each a separate MCP server. Many already exist in the Anthropic MCP ecosystem; the LQ.AI project can leverage rather than duplicate. Specific scope: Documented procedure for connecting community-maintained MCP servers to LQ.AI; reference deployment recipes for the most common",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-204-task-system-connectors-via-mcp"
     },
     {
@@ -858,7 +858,7 @@
       "text": "CRM connector via MCP CRM connector via MCP Priority: P2 · Effort: M Context: Salesforce above all; HubSpot, Microsoft Dynamics secondarily. CRM signal awareness is meaningful for in-house teams that handle deal-flow legal review. Specific scope: Reference MCP server (or documentation for connecting community-maintained servers); granular access scoping (specific opportunities or accounts only). Acceptance criteria: Op",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-205-crm-connector-via-mcp"
     },
     {
@@ -868,7 +868,7 @@
       "text": "Document store connectors via MCP Document store connectors via MCP Priority: P2 · Effort: M Context: SharePoint, Google Drive, OneDrive, Dropbox, Box. Several have existing MCP servers in the ecosystem. Specific scope: Documentation for connecting common document store MCP servers; pattern for auto-discovery of new documents in legal-team folders; auto-ingestion into Knowledge Bases. Acceptance criteria: Operator can configure at",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-206-document-store-connectors-via-mcp"
     },
     {
@@ -878,7 +878,7 @@
       "text": "Prioritization Engine Prioritization Engine Priority: P1 · Effort: L Context: The Workspace Concierge's core analytical capability. Open source, inspectable, forkable — true to the project's transparency philosophy (§1.3). Specific scope: LangGraph workflow that aggregates signals + Project context + Org Profile + autonomous-layer memory; applies rule + LLM + learned-preference scoring; outputs ranked priority list wit",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-207-prioritization-engine"
     },
     {
@@ -888,7 +888,7 @@
       "text": "Today View UI surface Today View UI surface Priority: P1 · Effort: M Context: The user-facing rendering of the prioritization output. Specific scope: Web app surface (single-page, focused, opinionated); Word add-in equivalent (compact panel); responsive design for mobile browsers; one-click actions on each priority; drill-in to underlying Project or chat. Acceptance criteria: Surface ships with M5; renders in <1s; mobi",
       "status": "claimed",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-208-today-view-ui-surface"
     },
     {
@@ -898,7 +898,7 @@
       "text": "Email Triage Skill Email Triage Skill Priority: P1 · Effort: S (once email connector exists) Context: First and most-used skill operating on workspace signals. Specific scope: Skill consumes incoming email signals; classifies (legal-relevant / not, contract / question / regulatory / internal / other); proposes routing or task creation; drafts responses for routine items. Acceptance criteria: Skill ships with M5; rev",
       "status": "claimed",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-209-email-triage-skill"
     },
     {
@@ -908,7 +908,7 @@
       "text": "Calendar Prep Skill Calendar Prep Skill Priority: P1 · Effort: S (once calendar connector exists) Context: Pre-meeting briefs based on calendar awareness and Project context. Specific scope: Skill runs each evening (or on-demand); identifies meetings in the next 24 hours; for each meeting, finds related Project / matter context; produces a structured brief. Acceptance criteria: Skill ships with M5; produces briefs of",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-210-calendar-prep-skill"
     },
     {
@@ -918,7 +918,7 @@
       "text": "Agent Execution Framework Agent Execution Framework Priority: P1 · Effort: L Context: Multi-step background agents with approval gates. Builds on M4 autonomous layer; the M4 design explicitly accommodates this extension (§3.10, §8 M4). Specific scope: Agent definition format (extension of skill format); agent runtime in OpenWebUI Pipelines; agent run history; intervention UI; approval workflow for external-side-effecting a",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-211-agent-execution-framework"
     },
     {
@@ -928,7 +928,7 @@
       "text": "Voice mode for the Today View Voice mode for the Today View Priority: P2 · Effort: M Context: Conversational interface to the prioritization output. Specific scope: Voice input via Web Speech API (or browser-side equivalent); audio playback of priorities and rationales; \"skip,\" \"drill in,\" \"defer to tomorrow\" voice commands. Acceptance criteria: Voice mode functional in Chrome and Safari; tested on common command patterns.",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-212-voice-mode-for-the-today-view"
     },
     {
@@ -938,7 +938,7 @@
       "text": "Cross-matter pattern recognition Cross-matter pattern recognition Priority: P2 · Effort: L Context: When the user has reviewed N similar contracts or matters, the system proactively suggests creating a Playbook, a saved skill, or a reusable position. Mentioned in PRD §3.10 user stories; this elevates it from autonomous-layer note to first-class capability. Specific scope: Background analysis over the user's chat history and Proje",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-213-cross-matter-pattern-recognition"
     },
     {
@@ -948,7 +948,7 @@
       "text": "Counterparty intelligence Counterparty intelligence Priority: P2 · Effort: L Context: Aggregate prior interactions with a specific counterparty across emails, contracts, calls (transcribed), and decisions. Surface as context when the counterparty appears in a new matter. Specific scope: Counterparty as a first-class entity (opposed to mentions in scattered places); per-counterparty knowledge graph; context surface in chats",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-214-counterparty-intelligence"
     },
     {
@@ -958,7 +958,7 @@
       "text": "Negotiation-state tracking Negotiation-state tracking Priority: P2 · Effort: L Context: A live contract negotiation has state: which side has the redline, what is open, what is converged. The system tracks the state and surfaces it. Specific scope: Negotiation as a first-class entity attached to a Project (§3.11); state machine (drafting → out-for-review → counter-received → in-progress → executed → terminated); per-clause",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-215-negotiation-state-tracking"
     },
     {
@@ -968,7 +968,7 @@
       "text": "Personal decision history Personal decision history Priority: P2 · Effort: L Context: Captures user decisions with provenance and surfaces them when similar questions arise. \"You decided X about counterparty Y in June; this looks like the same question.\" Specific scope: Decision capture (explicit or inferred from chat content); decision retrieval on similar questions; explicit decision-recording skill. Acceptance criteria:",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-216-personal-decision-history"
     },
     {
@@ -978,7 +978,7 @@
       "text": "Time-blocked work mode Time-blocked work mode Priority: P3 · Effort: M Context: \"You have 90 minutes open at 2 PM. Tackle these three items?\" Specific scope: Calendar-aware availability detection; estimated-time tagging on priorities; bundled \"work session\" view with the items the user can plausibly complete in the available window. Acceptance criteria: Estimation is calibrated against historical actuals; work session U",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-217-time-blocked-work-mode"
     },
     {
@@ -988,7 +988,7 @@
       "text": "Async team handoff briefs Async team handoff briefs Priority: P3 · Effort: M Context: When a user goes OOO, hands off to a deputy, or departs the team, the system can prepare a structured handoff brief covering active matters, pending decisions, and key context. Specific scope: Handoff brief generation skill that operates on a Project (or all the user's Projects); produces a structured document optimized for someone unfami",
       "status": "available",
       "theme": "Workflow intelligence",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-218-async-team-handoff-briefs"
     },
     {
@@ -1008,7 +1008,7 @@
       "text": "OpenSSF Best Practices Badge OpenSSF Best Practices Badge: Passing → Silver → Gold Priority: P1 · Effort: M (cumulative across milestones) Context: The OpenSSF Best Practices Badge has Passing, Silver, and Gold tiers, each with explicit criteria (Gold requires multi-factor authentication for committers, signed commits, two-person review of substantive changes, public reproducible build, etc.). Each tier transition is publicly",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-223-openssf-best-practices-badge-passing-silver-gold"
     },
     {
@@ -1018,7 +1018,7 @@
       "text": "OWASP LLM Top 10 mitigation mapping OWASP LLM Top 10 mitigation mapping Priority: P1 · Effort: S Context: The OWASP LLM Top 10 (LLM01 Prompt Injection through LLM10 Model Theft) is the de facto procurement framework for AI-product security review. Closed-source vendors typically do not publish this mapping because they cannot cite their architecture. The mini-PRD is at `docs/contribute/mini-prds/owasp-llm-top10-mapping.md`. Specific",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-224-owasp-llm-top-10-mitigation-mapping"
     },
     {
@@ -1038,7 +1038,7 @@
       "text": "MITRE ATLAS threat-model mapping MITRE ATLAS threat-model mapping Priority: P2 · Effort: M Context: MITRE ATLAS is the adversarial-ML analog of MITRE ATT&CK: a structured matrix of known adversarial-ML tactics, techniques, and case studies. Closed-source vendors typically do not publish an ATLAS mapping because they cannot cite their architecture. Specific scope: A new document `docs/security/atlas-mapping.md` identifying which A",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-226-mitre-atlas-threat-model-mapping"
     },
     {
@@ -1048,7 +1048,7 @@
       "text": "Annual third-party penetration test with public summary Annual third-party penetration test with public summary Priority: P1 · Effort: L (recurring) Context: Per §1.8 addition. A recurring application penetration test by a recognized firm closes the procurement objection \"what independent review has this had?\" with a verifiable yes rather than the closed-source standard answer of \"we have an internal security team.\" The first engagement is targeted wit",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-227-annual-third-party-penetration-test-with-public-summary"
     },
     {
@@ -1058,7 +1058,7 @@
       "text": "Annual adversarial-AI red-team engagement Annual adversarial-AI red-team engagement Priority: P1 · Effort: L (recurring) Context: Per §1.8 addition. The AI-product-specific analog of the application penetration test. Very few legal-tech competitors commission this; doing so is the structural signal that the project takes AI-specific failure modes seriously. Specific scope: Annual engagement with a recognized AI-security firm or a document",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-228-annual-adversarial-ai-red-team-engagement"
     },
     {
@@ -1148,7 +1148,7 @@
       "text": "Eval harness with held-out test sets and inter-rater agreement Eval harness with held-out test sets and inter-rater agreement Priority: P1 · Effort: L Context: Per §5.8 and `docs/HONEST-STATE.md` §6. The eval harness is itself an open-source artifact reviewers can run and challenge. Supersedes the partial coverage in DE-022 (skill performance and quality measurement) with a structured, multi-judge implementation. Specific scope: Build `tests/eval/` and `docs/",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-237-eval-harness-with-held-out-test-sets-and-inter-rater-agreement"
     },
     {
@@ -1158,7 +1158,7 @@
       "text": "Public skill-quality leaderboard Public skill-quality leaderboard Priority: P2 · Effort: M Context: Per §5.8. The leaderboard answers two questions operators care about and competitors cannot: which model should I run this skill with, and is the project's quality improving release over release. Depends on DE-237 (the eval harness). Specific scope: A per-release leaderboard at `docs/quality/leaderboard.md` of built-in skills × inf",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-238-public-skill-quality-leaderboard"
     },
     {
@@ -1178,7 +1178,7 @@
       "text": "PII leakage testing with measurable rates PII leakage testing with measurable rates Priority: P1 · Effort: M Context: Per §5.8. The measurable analog of the privacy claim. Depends on the Anonymization Layer being wired (§4.7 at M2). Specific scope: Test the Anonymization Layer against a documented PII corpus: each entity class × each NER backend × each inference tier × each adversarial-extraction technique. Publish a per-release \"PII leak",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-240-pii-leakage-testing-with-measurable-rates"
     },
     {
@@ -1188,7 +1188,7 @@
       "text": "Distroless / minimal container base images Distroless / minimal container base images Priority: P2 · Effort: S Context: Distroless images contain only the application runtime and direct dependencies — no shell, no package manager, no commonly-exploited utilities — which materially shrinks the CVE attack surface per image. Specific scope: Migrate the api, gateway, and ingest-worker containers to Google's distroless base images or Chainguard",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-241-distroless-minimal-container-base-images"
     },
     {
@@ -1208,7 +1208,7 @@
       "text": "Pod Security Standards (Restricted) profile for the Helm chart Pod Security Standards (Restricted) profile for the Helm chart Priority: P1 · Effort: S Context: The Kubernetes Pod Security Standard Restricted profile is the table-stakes deployment-security posture; shipping it from the first Helm chart release means operators do not have to harden the chart themselves. Specific scope: The Helm chart ships with manifests compliant with the Restricted profile: n",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-243-pod-security-standards-restricted-profile-for-the-helm-chart"
     },
     {
@@ -1218,7 +1218,7 @@
       "text": "Signed commits enforced on the main branch Signed commits enforced on the main branch Priority: P2 · Effort: S · Target milestone: M2 Context: Configure GitHub branch protection on `main` to require GPG- or Sigstore-signed commits, in addition to the existing DCO sign-off requirement (per §7.5). This is an OpenSSF Best Practices Badge Silver-tier requirement and a procurement signal of supply-chain seriousness. M1 trust model is intentiona",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-244-signed-commits-enforced-on-the-main-branch"
     },
     {
@@ -1228,7 +1228,7 @@
       "text": "Published Service Level Objectives and Indicators Published Service Level Objectives and Indicators Priority: P2 · Effort: M Context: Per §5.9. Operators of regulated production systems expect a documented SLO catalog and the corresponding SLI calculations. The reference SLOs are starting points; operators tune to their own risk appetite. Specific scope: A new document `docs/operations/slos.md` covering API availability (target 99.9% monthly), p9",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-245-published-service-level-objectives-and-indicators"
     },
     {
@@ -1238,7 +1238,7 @@
       "text": "Error budget policy Error budget policy Priority: P2 · Effort: S Context: Per §5.9. Documents how the project handles SLO breaches in releases. Operative for any future LegalQuants-managed-service offering and illustrative for operators who want to adopt the same discipline. Depends on DE-245 (SLO catalog). Specific scope: A documented error budget policy in `docs/operations/error-budget.md`: budget calculation per S",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-246-error-budget-policy"
     },
     {
@@ -1248,7 +1248,7 @@
       "text": "Public postmortems within 14 days Public postmortems within 14 days Priority: P2 · Effort: M Context: Per §5.9. The discipline mature OSS projects and mature SaaS vendors follow. Publishing postmortems is a credibility multiplier. For self-hosted operator deployments, incident response is the operator's responsibility — this commitment is for incidents in any LegalQuants-operated infrastructure. Specific scope: A documented templa",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-247-public-postmortems-within-14-days"
     },
     {
@@ -1258,7 +1258,7 @@
       "text": "Disaster recovery test cadence Disaster recovery test cadence Priority: P2 · Effort: M Context: Per §5.9. The DR procedure is operator-runnable for any self-hosted deployment; the quarterly cadence applies to LegalQuants-managed-service operations. Specific scope: A documented DR procedure (backup restore, secret rotation, key rotation, failover to a secondary region) at `docs/operations/disaster-recovery.md`. Quarterly test ca",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-248-disaster-recovery-test-cadence"
     },
     {
@@ -1268,7 +1268,7 @@
       "text": "Runbooks for operational tasks Runbooks for operational tasks Priority: P1 · Effort: M Context: Per §5.9. The operational-maturity signal that lets a procurement security team check the box on \"the vendor has documented operational procedures.\" For an OSS project, the runbooks are the evidence. Specific scope: A `docs/runbooks/` directory with runbooks for: deploying, upgrading, rotating credentials, responding to a security ad",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-249-runbooks-for-operational-tasks"
     },
     {
@@ -1288,7 +1288,7 @@
       "text": "Chaos and fault injection for the gateway and document pipeline Chaos and fault injection for the gateway and document pipeline Priority: P2 · Effort: M Context: Per §5.8. Structured fault testing of the gateway's provider-fault behavior and the document pipeline's malformed-document handling. Specific scope: Provider-fault injection harness for the Inference Gateway (provider returns 500, 429, hangs, returns malformed JSON, returns partial response); document",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-251-chaos-and-fault-injection-for-the-gateway-and-document-pipeline"
     },
     {
@@ -1298,7 +1298,7 @@
       "text": "Fuzz testing extended to document parsers and anonymization paths Fuzz testing extended to document parsers and anonymization paths Priority: P2 · Effort: M Context: Per §5.8. Extends the Cross-Milestone fuzzing commitment beyond the OpenAI-compatibility surface to the document-pipeline parsers and the Anonymization Layer's regex and NER paths. Specific scope: libFuzzer-style harnesses for Docling input, PyMuPDF input, and OCR API response handling. ReDoS and ad",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-252-fuzz-testing-extended-to-document-parsers-and-anonymization-paths"
     },
     {
@@ -1308,7 +1308,7 @@
       "text": "Consumer-driven contract testing between services Consumer-driven contract testing between services Priority: P2 · Effort: M Context: Per §5.8. Especially important given the OpenWebUI fork relationship: contract tests ensure that an upstream OpenWebUI change cannot silently break a backend assumption. Specific scope: Pact (or equivalent) contract tests for the boundaries between `web/`, `api/`, `gateway/`, and the Word add-in (M3). Versioned and",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-253-consumer-driven-contract-testing-between-services"
     },
     {
@@ -1318,7 +1318,7 @@
       "text": "Cypress shared helpers extracted to `support/` Cypress shared helpers extracted to `support/` Priority: P2 · Effort: S Context: Wave 8 cleanup. The Cypress LQ.AI specs (`wave-d1-power-features`, `wave-d2-skill-creator`, `wave-m1-final-surfaces`) currently duplicate setup helpers (login, KB create, skill fork, etc.) inline. As specs accumulate, the duplication accumulates with them; the next spec should be able to import helpers rather than rep",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-254-cypress-shared-helpers-extracted-to-support"
     },
     {
@@ -1328,7 +1328,7 @@
       "text": "Add `responseTimeout Add `responseTimeout: 90000` to `cypress.config.ts` Priority: P2 · Effort: S Context: Wave 8 cleanup. KB-attach interactions and document ingestion can exceed the Cypress default response timeout under realistic conditions; intermittent flakes have surfaced. The fix is a one-line config change with a documented rationale. Specific scope: Set `responseTimeout: 90000` in `web/cypress.config.ts` with",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-255-add-responsetimeout-90000-to-cypress-config-ts"
     },
     {
@@ -1338,7 +1338,7 @@
       "text": "KB attach interceptor added to `wave-m1-final-surfaces.cy.ts` Test 2 KB attach interceptor added to `wave-m1-final-surfaces.cy.ts` Test 2 Priority: P2 · Effort: S Context: Wave 8 cleanup. The current spec asserts post-condition state but not the intermediate KB-attach network call, which makes diagnosis of failures slower than it should be. Adding a `cy.intercept` for the attach endpoint surfaces the failure mode immediately. Specific scope: Add `cy.intercept('POST",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-256-kb-attach-interceptor-added-to-wave-m1-final-surfaces-cy-ts-test-2"
     },
     {
@@ -1348,7 +1348,7 @@
       "text": "`/api/v1/audit-health` endpoint for AmbientFooter signal `/api/v1/audit-health` endpoint for AmbientFooter signal Priority: P2 · Effort: S Context: Per the Wave 8 handoff §3. The AmbientFooter in `web/src/lib/lq-ai/components/AmbientFooter.svelte` polls a backend signal to render the \"audit log is healthy\" indicator; the endpoint currently does not exist and the component falls back to optimistic rendering. Specific scope: New endpoint `GET /api/v1/audi",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-257-api-v1-audit-health-endpoint-for-ambientfooter-signal"
     },
     {
@@ -1358,7 +1358,7 @@
       "text": "KB embedding-progress percentage aggregation KB embedding-progress percentage aggregation Priority: P2 · Effort: S Context: Per the Wave 8 handoff §3. The KB document table currently shows per-document status (`pending` / `ready` / `failed`) but does not aggregate to a KB-level progress percentage, which is the surface users want when an ingest batch is in flight. Specific scope: Extend the `GET /api/v1/knowledge-bases/{id}` response with an",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-258-kb-embedding-progress-percentage-aggregation"
     },
     {
@@ -1368,7 +1368,7 @@
       "text": "KB attached-matters reverse-lookup KB attached-matters reverse-lookup Priority: P2 · Effort: S Context: Per the Wave 8 handoff §3 and `docs/HONEST-STATE.md` §3. Operators ask \"which matters use this KB?\" — the forward lookup (matter → KBs) exists; the reverse lookup does not. Specific scope: New endpoint `GET /api/v1/knowledge-bases/{id}/attachments` returning the list of matters/projects that have the KB attached. Render in the KB",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-259-kb-attached-matters-reverse-lookup"
     },
     {
@@ -1378,7 +1378,7 @@
       "text": "Receipts assistant-side skill event deduplication Receipts assistant-side skill event deduplication Priority: P2 · Effort: S Context: Per the Wave 8 handoff §3. The assistant message carries skill events; the receipts drawer occasionally renders duplicate entries when the same skill is invoked twice on the same turn. The dedupe key is `(kind, skill_id, started_at)`. Specific scope: Fix in `web/src/lib/lq-ai/ReceiptsList.svelte` (or the upstream d",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-260-receipts-assistant-side-skill-event-deduplication"
     },
     {
@@ -1388,7 +1388,7 @@
       "text": "`api/client.ts` `errorFor` swallows string-shaped FastAPI detail bodies `api/client.ts` `errorFor` swallows string-shaped FastAPI detail bodies Priority: P1 · Effort: S Context: Prior handoff finding (carried forward as Wave 8 root cause). FastAPI error responses can come as `{ \"detail\": \"string\" }`, `{ \"detail\": { ... } }`, or `{ \"detail\": [ { ... } ] }`. The current `errorFor` helper handles the second and third forms but silently drops the first, producing the unhe",
       "status": "available",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-261-api-client-ts-errorfor-swallows-string-shaped-fastapi-detail-bodies"
     },
     {
@@ -1438,7 +1438,7 @@
       "text": "First-run sample-NDA knowledge base for the Easy Playbook wizard First-run sample-NDA knowledge base for the Easy Playbook wizard Priority: P2 · Effort: M Context: M3-A6 ships a 4-step Easy Playbook wizard that turns a corpus of prior contracts into a draft playbook. The wizard's quality scales with corpus size and within-corpus form consistency — meaning operators evaluating LQ.AI for the first time benefit enormously from a pre-built test corpus they can run",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-285-first-run-sample-nda-knowledge-base-for-the-easy-playbook-wizard"
     },
     {
@@ -1458,7 +1458,7 @@
       "text": "Word add-in feature surface (chat, skills, playbooks, tier badge) Word add-in feature surface (chat, skills, playbooks, tier badge) — deferred to M4 / community contribution Priority: P2 · Effort: M (chat + skills) + M (playbook execution) + S (tier badge) = ~26–34 hours of Word-side feature work, on top of the M3 Phase B plumbing Context: The M3 Implementation Plan originally scoped four feature-surface tasks inside the Word add-in: M3-B3 (chat against the open",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-287-word-add-in-feature-surface-chat-skills-playbooks-tier-badge-deferred-to-m4-community-contribution"
     },
     {
@@ -1468,7 +1468,7 @@
       "text": "Slack/Teams `/lq` slash command + quick-skill flow Slack/Teams `/lq` slash command + quick-skill flow — deferred to M4 / community contribution Priority: P2 · Effort: M (8–10 hours Slack + ~8 hours Teams parity) Context: The M3 Implementation Plan originally scoped four Slack/Teams tasks: M3-D1 (slack-bridge service + OAuth install flow), M3-D2 (`/lq` slash command + `/lq ask` quick-skill flow), M3-D3 (teams-bridge service + Teams OAuth + parity),",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-288-slack-teams-lq-slash-command-quick-skill-flow-deferred-to-m4-community-contribution"
     },
     {
@@ -1478,7 +1478,7 @@
       "text": "Lavern as design reference for the Autonomous Layer, full-path ensemble, and MCP catalog Lavern as design reference for the Autonomous Layer, full-path ensemble, and MCP catalog Priority: P2 · Effort: S (this entry — design study + ADRs) plus downstream impact on M3/M4/M5+ work already scoped Context: [AnttiHero/lavern](https://github.com/AnttiHero/lavern) is an Apache 2.0, TypeScript/React/Fastify/SQLite, open-source \"agentic law firm\" for document review. It ships 67 specialist agen",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-289-lavern-as-design-reference-for-the-autonomous-layer-full-path-ensemble-and-mcp-catalog"
     },
     {
@@ -1508,7 +1508,7 @@
       "text": "Playbook executor retrofit Playbook executor retrofit: declared tool grants + schema-validated step handoffs + per-execution cost cap Priority: P2 · Effort: M (retrofit work + tests; folds into post-M3-A6 work) Context: The Playbook executor (M3-A2, `api/app/playbooks/executor.py` + `nodes.py` + `state.py`) is LQ.AI's first multi-step workflow surface in production. It already uses Pydantic-typed state transitions between L",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-292-playbook-executor-retrofit-declared-tool-grants-schema-validated-step-handoffs-per-execution-cost-cap"
     },
     {
@@ -1518,7 +1518,7 @@
       "text": "Autonomous-layer restraints (R4 economic, R5 temporal, R6 contextual) Autonomous-layer restraints (R4 economic, R5 temporal, R6 contextual) Priority: P1 · Effort: L (folds into M4; tracked as a discrete unit so the implementation specification can mature before M4 design freezes) Context: The autonomous layer (§3.10, M4) is where Tier 2 of the boundary-register catalog (R4 + R5 + R6) first attaches in running code. Lavern (per DE-289) provides the most concrete publ",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-293-autonomous-layer-restraints-r4-economic-r5-temporal-r6-contextual"
     },
     {
@@ -1528,7 +1528,7 @@
       "text": "Cross-agent handoff validation for autonomous multi-agent flows Cross-agent handoff validation for autonomous multi-agent flows Priority: P1 if M4 ships multi-agent autonomous flows / P2 if M4 ships single-agent only · Effort: M Context: Greenwood's Register 3 (code-enforced cross-agent handoff validation) has two facets in the LQ.AI architecture. The in-Playbook-step-handoff facet (step output validated against typed schema before becoming step N+1 input) is",
       "status": "done",
       "theme": "Engineering discipline",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-294-cross-agent-handoff-validation-for-autonomous-multi-agent-flows"
     },
     {
@@ -1548,7 +1548,7 @@
       "text": "Tabular Review document-source surface Tabular Review document-source surface: Project-scoped + free-pick (deferred from M3-C3) Priority: P2 (discoverability / convenience; KB-scoped picker covers the v0.3.0 happy path) · Effort: M (Project picker reuses existing endpoints; free-pick requires a new backend list-files endpoint plus pagination/search frontend) Context: The M3 Phase C prep doc Decision C-7 specified three document sources",
       "status": "claimed",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-296-tabular-review-document-source-surface-project-scoped-free-pick-deferred-from-m3-c3"
     },
     {
@@ -1558,7 +1558,7 @@
       "text": "Table-mode skill authoring UI in `/skills/new` (column editor) (deferred from M3-C3) Table-mode skill authoring UI in `/skills/new` (column editor) (deferred from M3-C3) Priority: P2 (operators can fork built-in reference skills via filesystem; in-app authoring is convenience, not capability) · Effort: M (a structured column editor with per-column query / `ensemble_verification` / `minimum_inference_tier` fields, save-back-to-user-scope flow) Context: M3-C3 ships three built-in re",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-297-table-mode-skill-authoring-ui-in-skills-new-column-editor-deferred-from-m3-c3"
     },
     {
@@ -1568,7 +1568,7 @@
       "text": "Tabular Review built-ins browser polish on `/skills` page (deferred from M3-C3) Tabular Review built-ins browser polish on `/skills` page (deferred from M3-C3) Priority: P3 (convenience polish; the current Skills-page \"Reference table-mode skills\" section is enough for v0.3.0 discoverability) · Effort: S Context: M3-C3 surfaces built-in table-mode skills via a small \"Reference table-mode skills\" section above the user-skills table on `/skills`. The section is unfiltered, unso",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-298-tabular-review-built-ins-browser-polish-on-skills-page-deferred-from-m3-c3"
     },
     {
@@ -1588,7 +1588,7 @@
       "text": "Log-trace correlation via structured-logger trace_id / span_id injection (OTel Deepening D Log-trace correlation via structured-logger trace_id / span_id injection (OTel Deepening DE-B) Priority: P2 (operators today can correlate traces ↔ metrics via service / route labels, but trace ↔ log correlation requires manual reasoning; junior-friendly addition) · Effort: S (~0.5 day) Context: M3 Phase F lands rich trace data; structured logs already include service + request context. The pivot",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-300-log-trace-correlation-via-structured-logger-trace-id-span-id-injection-otel-deepening-de-b"
     },
     {
@@ -1598,7 +1598,7 @@
       "text": "OTel MeterProvider for metrics export (OTel Deepening DE-C) OTel MeterProvider for metrics export (OTel Deepening DE-C) Priority: P2 (operators who use Honeycomb-only or Datadog-APM-only deployments don't want to scrape Prometheus separately; mid-level effort) · Effort: M (~1 day) Context: M1 wired the OTel TracerProvider only; metrics export to Prometheus via the `/metrics` endpoint. M3 Phase F doesn't change that. Operators who want OTel-native metrics (",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-301-otel-meterprovider-for-metrics-export-otel-deepening-de-c"
     },
     {
@@ -1608,7 +1608,7 @@
       "text": "Reconcile OTel with the OpenWebUI fork's inherited telemetry (OTel Deepening DE-D) Reconcile OTel with the OpenWebUI fork's inherited telemetry (OTel Deepening DE-D) Priority: P3 (the parallel `service.name` namespace is awkward but not blocking; operators learn quickly that \"open-webui\" spans = web tier, \"lq-ai-api\" spans = backend) · Effort: S (~0.5d decision + ~1d execution) Context: Upstream OpenWebUI carries its own telemetry layer at `web/backend/open_webui/utils/telemetry",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-302-reconcile-otel-with-the-openwebui-fork-s-inherited-telemetry-otel-deepening-de-d"
     },
     {
@@ -1628,7 +1628,7 @@
       "text": "Tabular Review bulk operations Tabular Review bulk operations: redline-per-row + summarize-column (deferred from M3-C4) Priority: P2 (operators get most of M3-C4's value from export today; bulk operations is the \"second step\" beyond a static grid) · Effort: M (~3–4 hr code; ~1–2 hr design conversation upfront because the output pattern is architecturally novel) Context: The M3-C4 spec bundled two distinct deliverables — XLSX/CS",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-304-tabular-review-bulk-operations-redline-per-row-summarize-column-deferred-from-m3-c4"
     },
     {
@@ -1658,7 +1658,7 @@
       "text": "`File` API schema exposes `page_count`/`character_count` that never populate (M3-E1 findin `File` API schema exposes `page_count`/`character_count` that never populate (M3-E1 finding F4) Priority: P3 (misleading-but-harmless; fields read null) · Effort: S (~1–2 hr) Context: After ingestion completes (`ingestion_status='ready'`, `document_id` populated), the `File` API response still returns `page_count: null` and `character_count: null`. Those metrics are computed and stored on the `doc",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-307-file-api-schema-exposes-page-count-character-count-that-never-populate-m3-e1-finding-f4"
     },
     {
@@ -1688,7 +1688,7 @@
       "text": "Tabular per-cell `tier_used` + `cost_usd` propagation from the gateway (M3-E1 finding F6 t Tabular per-cell `tier_used` + `cost_usd` propagation from the gateway (M3-E1 finding F6 telemetry) Priority: P3 (telemetry completeness) · Effort: M (depends on gateway response surface) Context: Tabular cells persist `tier_used: null` and `cost_usd: \"0\"`, and the execution's `cost_actual_usd` sums to 0, even though extraction routed real inference. This is a known, code-documented v0.3.0 limitat",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-310-tabular-per-cell-tier-used-cost-usd-propagation-from-the-gateway-m3-e1-finding-f6-telemetry"
     },
     {
@@ -1698,7 +1698,7 @@
       "text": "Single source of truth for the application version (M3-E1 finding F3 follow-on) Single source of truth for the application version (M3-E1 finding F3 follow-on) Priority: P3 (release hygiene) · Effort: S (~1–2 hr) Context: M3-E1 found `api/app/__init__.py:__version__` stuck at `\"0.1.0\"` — never bumped through the v0.2.0 tag — which the M3-B8 Word add-in version handshake surfaced as a stale `deployment_version`. E1 bumped it to `0.3.0`, but the value lives in source and will d",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-311-single-source-of-truth-for-the-application-version-m3-e1-finding-f3-follow-on"
     },
     {
@@ -1708,7 +1708,7 @@
       "text": "Slack + Teams bridge OAuth end-to-end tunnel verification (M3-E1 finding) Slack + Teams bridge OAuth end-to-end tunnel verification (M3-E1 finding) Priority: P1 (blocks promoting the bridge surfaces from \"plumbing shipped\" to \"shipped end-to-end\") · Effort: M (~half-day, mostly setup) Context: M3 shipped the Slack (PR #76) and Teams (PR #77/#78) bridge plumbing, and M3-E1 verified the full plumbing path in isolation — service health, bridge-bearer auth (POST→201, wrong-",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-312-slack-teams-bridge-oauth-end-to-end-tunnel-verification-m3-e1-finding"
     },
     {
@@ -1728,7 +1728,7 @@
       "text": "Tabular executions have no skill linkage for the `tabular.skill_id` span attribute (OTel D Tabular executions have no skill linkage for the `tabular.skill_id` span attribute (OTel Deepening) Priority: P3 · Effort: S Context: The M3-F2 OTel-deepening plan proposed a `tabular.skill_id` attribute on the `tabular.execute` span, but `TabularExecution` (`api/app/models/tabular.py`) has no `skill_id`/`skill_ids` column — tabular columns each carry their own query, and the execution row is not",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-314-tabular-executions-have-no-skill-linkage-for-the-tabular-skill-id-span-attribute-otel-deepening"
     },
     {
@@ -1738,7 +1738,7 @@
       "text": "Streaming-rehydration per-chunk spans (OTel Deepening, anonymization) Streaming-rehydration per-chunk spans (OTel Deepening, anonymization) Priority: P3 · Effort: S Context: The `StreamingRehydrator.process()` / `flush()` path (`gateway/app/anonymization/middleware.py`) is not yet instrumented with OTel spans. The M3-F2 anonymization-span work (`anonymization.pre` / `anonymization.post`) deliberately excluded per-chunk spans: each SSE chunk is a high-frequency call",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-315-streaming-rehydration-per-chunk-spans-otel-deepening-anonymization"
     },
     {
@@ -1748,7 +1748,7 @@
       "text": "Promote skill `author` to the `Skill` / `SkillSummary` wire shape (OTel Deepening, skill s Promote skill `author` to the `Skill` / `SkillSummary` wire shape (OTel Deepening, skill spans) Status: ✅ RESOLVED (M3-close). `author: str | None` added to `SkillSummary` and mapped from `lq.author` in `derive_summary()` (`api/app/skills/schema.py`); OpenAPI sketch + `_emit_skill_spans` docstring updated; `derive_summary` author-promotion regression test added. `skill.author` now populates from f",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "docs-quality",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-316-promote-skill-author-to-the-skill-skillsummary-wire-shape-otel-deepening-skill-spans"
     },
     {
@@ -1758,7 +1758,7 @@
       "text": "`inference.dispatch` span on the streaming path (OTel Deepening) `inference.dispatch` span on the streaming path (OTel Deepening) Priority: P3 · Effort: S Context: M3-F2 added the `inference.dispatch` span (provider/model/tier/tokens/cost/outcome) on the non-streaming `chat_completions` path only. The streaming path (`gateway/app/api/inference.py::_stream_with_fallback`) emits no `inference.dispatch` span, so an operator monitoring streaming chat requests sees",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-317-inference-dispatch-span-on-the-streaming-path-otel-deepening"
     },
     {
@@ -1768,7 +1768,7 @@
       "text": "`playbook.position` child spans on the redline node (OTel Deepening) `playbook.position` child spans on the redline node (OTel Deepening) Priority: P3 · Effort: XS Context: M3-F2 added `playbook.position` child spans in `classify_node`'s position loop, but not in `redline_node` (`api/app/playbooks/nodes.py`). `redline_node` dispatches a second gateway call per deviating position; those redline sub-calls currently produce no `playbook.position` span, so an operator",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-318-playbook-position-child-spans-on-the-redline-node-otel-deepening"
     },
     {
@@ -1778,7 +1778,7 @@
       "text": "Migrate LangGraph 0.2 → 1.x (re-type the executors) Migrate LangGraph 0.2 → 1.x (re-type the executors) Priority: P3 · Effort: S Context: M4-0.1 evaluated Dependabot #68 (which widened the `langgraph` constraint to admit a 1.x release) and held the project at `langgraph>=0.2.76,<0.3` for M4. LangGraph 1.x re-typed `StateGraph` as `Generic[StateT, ...]` and changed the `add_node` overload set; our node factories are annotated to return `Awaitable[di",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-319-migrate-langgraph-0-2-1-x-re-type-the-executors"
     },
     {
@@ -1788,7 +1788,7 @@
       "text": "Scanned-PDF OCR for the ingestion pipeline Scanned-PDF OCR for the ingestion pipeline Priority: P2 · Effort: M Context: The ingestion pipeline (`api/app/pipeline/ingest.py`, `api/app/pipeline/parsers.py`) parses text-bearing PDFs via PyMuPDF (the canonical character stream) plus Docling (structure), and sets `was_ocrd=False` unconditionally — image-only / scanned PDFs yield no extractable text and so cannot be chunked or cited. A `paddleoc",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-320-scanned-pdf-ocr-for-the-ingestion-pipeline"
     },
     {
@@ -1798,7 +1798,7 @@
       "text": "Watch firing under a future KB-sharing model (M4-B4 finding) Watch firing under a future KB-sharing model (M4-B4 finding) Priority: P3 · Effort: S Context: M4-B4 added KB-arrival watches: attaching a file to a watched KB spawns an autonomous session owned by the watch's user (`watch.user_id`). Today the knowledge-base model is strictly single-owner — `_load_visible_kb` / `_load_visible_file_for_kb` / `_load_visible_project_for_kb` (`api/app/api/knowledge_ba",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-321-watch-firing-under-a-future-kb-sharing-model-m4-b4-finding"
     },
     {
@@ -1808,7 +1808,7 @@
       "text": "Validate playbook/project FK ownership on schedule + watch create (M4-B3/B4 finding) Validate playbook/project FK ownership on schedule + watch create (M4-B3/B4 finding) Priority: P3 · Effort: S Context: `create_schedule` (M4-B3) and `create_watch` (M4-B4) in `api/app/api/autonomous.py` validate ownership of the target knowledge base (watch) but do not validate that a supplied `playbook_id` / `project_id` (and the schedule's `target_kb_id`) is owned by the caller. A user could att",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-322-validate-playbook-project-fk-ownership-on-schedule-watch-create-m4-b3-b4-finding"
     },
     {
@@ -1818,7 +1818,7 @@
       "text": "Surface autonomous context proposals on the Matter detail page (M4-C2 finding) Surface autonomous context proposals on the Matter detail page (M4-C2 finding) Priority: P3 · Effort: S Context: M4-C2 built the precedent→Project promote loop entirely inside the Autonomous area: promoting a precedent creates a `project_context_proposals` row, which the user accepts/rejects on `/lq-ai/autonomous/proposals`. Accept appends the proposed text to the target Project's `context_md`. Th",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-323-surface-autonomous-context-proposals-on-the-matter-detail-page-m4-c2-finding"
     },
     {
@@ -1828,7 +1828,7 @@
       "text": "Global-chrome notification bell for autonomous notifications (M4-C2 finding) Global-chrome notification bell for autonomous notifications (M4-C2 finding) Priority: P3 · Effort: M Context: M4-C2 surfaces autonomous in-app notifications as a rail page (`/lq-ai/autonomous/notifications`) with an unread badge on the rail item. Email is already sent server-side (M4-C1). A bell + unread badge in the shared OpenWebUI top chrome would make notifications glanceable from anywhere, n",
       "status": "available",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-324-global-chrome-notification-bell-for-autonomous-notifications-m4-c2-finding"
     },
     {
@@ -1838,7 +1838,7 @@
       "text": "Harden `build_receipt` call sites against receipt-build failure (M4 finding) Harden `build_receipt` call sites against receipt-build failure (M4 finding) Status: ✅ RESOLVED (M4, commit `a012b6f`). Added `build_receipt_safe()` (`api/app/autonomous/receipt.py`) — a best-effort wrapper that calls `build_receipt()`, and on any exception logs (`autonomous_build_receipt_failed`, `exc_info`) and returns `None` instead of propagating. Both terminal call sites — `executor.py:174` a",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-325-harden-build-receipt-call-sites-against-receipt-build-failure-m4-finding"
     },
     {
@@ -1868,7 +1868,7 @@
       "text": "`skill_inputs` collected from the UI never reach the model for non-templated skills (M4-D2 `skill_inputs` collected from the UI never reach the model for non-templated skills (M4-D2 finding) Status: ✅ RESOLVED (post-v0.4.0, PR #115 / `396e19f`). Implemented Option A: `interpolate` now records which binding keys a `{{placeholder}}` consumes, and `_render_skill` appends each skill's unconsumed bound inputs as a `### Provided inputs for <skill>` block (across body + reference files), so no",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-328-skill-inputs-collected-from-the-ui-never-reach-the-model-for-non-templated-skills-m4-d2-finding"
     },
     {
@@ -1878,7 +1878,7 @@
       "text": "Self-service email editing on `PATCH /api/v1/users/me` (Donna profile-edit finding) Self-service email editing on `PATCH /api/v1/users/me` (Donna profile-edit finding) Priority: P3 · Effort: M Context: `PATCH /api/v1/users/me` (the editable-profile endpoint added for the Donna frontend) was deliberately scoped to `display_name` only. Self-service email editing was held back because it pulls in a cluster of auth-adjacent concerns the display-name change does not: a uniqueness coll",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-329-self-service-email-editing-on-patch-api-v1-users-me-donna-profile-edit-finding"
     },
     {
@@ -1898,7 +1898,7 @@
       "text": "Mid-run ensemble verification cost ceiling for Tabular Review Mid-run ensemble verification cost ceiling for Tabular Review Priority: P3 · Effort: M Context: Tabular ensemble verification (Donna #6) runs one Stage-4 ensemble `verify()` pass per cell when a column's effective `ensemble_verification` flag is true, fanning out N parallel judge calls per cell across the up-to-200×10 cell grid. Unlike the chat-send path — which runs a per-message cost pre-flight",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-331-mid-run-ensemble-verification-cost-ceiling-for-tabular-review"
     },
     {
@@ -1918,7 +1918,7 @@
       "text": "Dedupe correlated artifact storage-failure warn findings Dedupe correlated artifact storage-failure warn findings Priority: P3 · Effort: S Context: When an opted-in autonomous run emits N artifacts and object storage (MinIO) is down, the drafting node's dispatch loop produces one `storage_error` result — and therefore one `warn` finding — per artifact: N near-identical \"artifact could not be stored\" findings for a single underlying outage. A natural bou",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-333-dedupe-correlated-artifact-storage-failure-warn-findings"
     },
     {
@@ -1928,7 +1928,7 @@
       "text": "Pin the macOS launcher's image tag to the release version (no floating `latest`) Pin the macOS launcher's image tag to the release version (no floating `latest`) Priority: P2 · Effort: S Context: The macOS launcher (`desktop/`) ships with `LQ_AI_IMAGE_TAG` defaulting to `latest` (`desktop/src/main/index.ts`), so an installed `.dmg` pulls whatever `ghcr.io/legalquants/lq-ai-*:latest` points at *at launch time*. A subsequent image release silently changes what an already-install",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-334-pin-the-macos-launcher-s-image-tag-to-the-release-version-no-floating-latest"
     },
     {
@@ -1938,7 +1938,7 @@
       "text": "Harden the OpenWebUI first-run bootstrap in the launcher (WEBUI_AUTH / WAL-mode webui.db) Harden the OpenWebUI first-run bootstrap in the launcher (WEBUI_AUTH / WAL-mode webui.db) Priority: P2 · Effort: S Context: The `web` shell (OpenWebUI fork) keeps its OWN sqlite (`/app/backend/data/webui.db`) and honors `WEBUI_AUTH=false` auto-admin (`admin@localhost`) only on a *truly empty* db. If any non-default OpenWebUI user row exists, `POST /api/v1/auths/signin` returns 400 (\"can't turn off",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-335-harden-the-openwebui-first-run-bootstrap-in-the-launcher-webui-auth-wal-mode-webui-db"
     },
     {
@@ -1948,7 +1948,7 @@
       "text": "Document the `503` responses on the `/api/v1/research/*` OpenAPI entries Document the `503` responses on the `/api/v1/research/*` OpenAPI entries Priority: P3 · Effort: XS Context: Every `/api/v1/research/*` path in `docs/api/backend-openapi.yaml` documents `401` but omits the `503` cases, even though the surface fails with `503` in two distinct, client-meaningful ways: `gateway_unreachable` (transient outage) and `research_not_configured` (no CourtListener tool-provid",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "legal-domain",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-336-document-the-503-responses-on-the-api-v1-research-openapi-entries"
     },
     {
@@ -1958,7 +1958,7 @@
       "text": "Generate `backend-openapi.yaml` from `app.openapi()` so the published contract can't drift Generate `backend-openapi.yaml` from `app.openapi()` so the published contract can't drift from the typed models Priority: P2 · Effort: M Context: `docs/api/backend-openapi.yaml` is hand-maintained, while the FastAPI app derives its live schema from the typed Pydantic models. The two drift: #163 (`38dbbb0`) typed `VerifyCitationsResponse`/`OpinionTextField` in code but left the yaml's `verify-cita",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "legal-domain",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-337-generate-backend-openapi-yaml-from-app-openapi-so-the-published-contract-can-t-drift-from-the-typed-models"
     },
     {
@@ -1968,7 +1968,7 @@
       "text": "Bound MCP session teardown against a hung server Bound MCP session teardown against a hung server Priority: P3 · Effort: S Context: `MCPToolProviderAdapter`'s default session factory (`gateway/app/providers/tool/mcp.py`, PR4a) opens the streamable_http session inside an `AsyncExitStack` and bounds `session.initialize()` with `anyio.fail_after(10)`. But teardown (`AsyncExitStack.__aexit__`) runs inline with no timeout — a hung/half-dead MCP serve",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-338-bound-mcp-session-teardown-against-a-hung-server"
     },
     {
@@ -1978,7 +1978,7 @@
       "text": "Retire the OpenWebUI `web/backend/open_webui/utils/mcp/client.py` stub once the chat path Retire the OpenWebUI `web/backend/open_webui/utils/mcp/client.py` stub once the chat path is gateway-brokered Priority: P3 · Effort: M Context: PR4c's plan listed deleting the ported OpenWebUI MCP client stub (`web/backend/open_webui/utils/mcp/client.py`) on the assumption it was unwired. Verified against `main` during PR4c: it is still actively imported in two web-backend call sites — `web/backen",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-341-retire-the-openwebui-web-backend-open-webui-utils-mcp-client-py-stub-once-the-chat-path-is-gateway-brokered"
     },
     {
@@ -1988,7 +1988,7 @@
       "text": "Map the gateway `egress_refused` code to a clearer \"connector misconfigured\" error (not ge Map the gateway `egress_refused` code to a clearer \"connector misconfigured\" error (not generic 500) Priority: P3 · Effort: S Context: With the PR4c OAuth gateway passthrough (D-c6), the operator must allowlist each MCP server's OAuth authorization-server host in `mcp.yaml` (the AS host is discovered at runtime and may differ from the MCP server host). When they forget, the gateway correctly refus",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-342-map-the-gateway-egress-refused-code-to-a-clearer-connector-misconfigured-error-not-generic-500"
     },
     {
@@ -1998,7 +1998,7 @@
       "text": "Persist or re-discover the RFC 8707 `resource` for OAuth token refresh Persist or re-discover the RFC 8707 `resource` for OAuth token refresh Priority: P3 · Effort: S Context: PR4c's `app/mcp/oauth.py` `get_valid_token` refresh path omits the RFC 8707 `resource` parameter from the refresh-token form, because `mcp_oauth_tokens` has no `resource` column to recover it from (it is captured in `mcp_oauth_state` at authorize-time but that row is single-use and deleted at c",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-343-persist-or-re-discover-the-rfc-8707-resource-for-oauth-token-refresh"
     },
     {
@@ -2008,7 +2008,7 @@
       "text": "Per-provider external-tool cost model for `retrieve_caselaw` / `call_mcp_tool` Per-provider external-tool cost model for `retrieve_caselaw` / `call_mcp_tool` Priority: P3 · Effort: M Context: PR5a wired the two external-tool intents (`retrieve_caselaw`, `call_mcp_tool`) into the autonomous governance path, but their cost estimator (`api/app/autonomous/cost.py`) returns `Decimal(\"0\")` in v1 — they burn no provider-inference tokens (CourtListener is free-tier; MCP tool cost is",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "legal-domain",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-344-per-provider-external-tool-cost-model-for-retrieve-caselaw-call-mcp-tool"
     },
     {
@@ -2018,7 +2018,7 @@
       "text": "Extract a shared `_stream_loop_outcome` renderer for the chat tool-loop Extract a shared `_stream_loop_outcome` renderer for the chat tool-loop Priority: P3 · Effort: S Context: PR5b renders a tool-loop `LoopOutcome` (`LoopFinal` / `LoopConfirmation` / `LoopMcpAuth`) to SSE frames + DB persistence in two places — the initial-send streaming generator (`_stream_response`) and the resume route (`resume_tool_call`) in `api/app/api/chats.py`. The plan preferred a single sh",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-345-extract-a-shared-stream-loop-outcome-renderer-for-the-chat-tool-loop"
     },
     {
@@ -2028,7 +2028,7 @@
       "text": "Unify the `find_in_case` tool-result shape across chat-loop and autonomous dispatch Unify the `find_in_case` tool-result shape across chat-loop and autonomous dispatch Priority: P3 · Effort: S Context: The chat tool-loop's research dispatch (`api/app/chat/tool_loop.py`) feeds the raw `find_in_case` service output (a list of match dicts) into the conversation, while the autonomous guard's dispatch wraps it as `{\"matches\": [...]}`. The same logical tool returns a different JSON sha",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-346-unify-the-find-in-case-tool-result-shape-across-chat-loop-and-autonomous-dispatch"
     },
     {
@@ -2038,7 +2038,7 @@
       "text": "Chat tool-path OpenTelemetry span (`chat.tool_call`) Chat tool-path OpenTelemetry span (`chat.tool_call`) Priority: P3 · Effort: S Context: PR5b's chat tool-loop calls `governed_tool_invocation` with `span=None` — the helper is span-agnostic (it annotates a caller-supplied span per ADR 0015 D5 / D-a1) but the chat loop does not yet open a `chat.tool_call` domain span the way the autonomous path opens `autonomous.tool_call`. This is the chat-side sli",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-347-chat-tool-path-opentelemetry-span-chat-tool-call"
     },
     {
@@ -2048,7 +2048,7 @@
       "text": "Resolve an expired confirmation-gate `tool_call_log` row to an `expired` state Resolve an expired confirmation-gate `tool_call_log` row to an `expired` state Priority: P3 · Effort: S Context: When a chat destructive-tool confirmation expires (the `chat_pending_tool_call` row passes its TTL and a resume POST returns 409), the corresponding `tool_call_log` gate row (written at gate time with `confirmation_state=\"pending_confirmation\"`, `outcome=\"pending\"`) is left unchanged —",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-348-resolve-an-expired-confirmation-gate-tool-call-log-row-to-an-expired-state"
     },
     {
@@ -2058,7 +2058,7 @@
       "text": "Merge consecutive `tool_result` messages into one Anthropic user message Merge consecutive `tool_result` messages into one Anthropic user message Priority: P3 · Effort: S Context: The gateway's `_to_anthropic_request` (`gateway/app/providers/anthropic.py`) translates each incoming `role=\"tool\"` message into its own Anthropic `user` message carrying one `tool_result` block. The PR5b chat tool-loop, when the model proposes multiple read-only tools in a single round, appe",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-349-merge-consecutive-tool-result-messages-into-one-anthropic-user-message"
     },
     {
@@ -2068,7 +2068,7 @@
       "text": "Generic-MCP-result provenance (`source_kind='mcp'` on `message_tool_sources`) Generic-MCP-result provenance (`source_kind='mcp'` on `message_tool_sources`) Priority: P3 · Effort: M · Status: SHIPPED (2026-06-24) Context: PR6c shipped retrieval-provenance for case-law tool results only (`source_kind='caselaw'`, from `search_case_law`/`get_cluster`). Extend `message_tool_sources` capture to generic MCP connector results (`source_kind='mcp'`) so a tool call to any operator-wir",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-350-generic-mcp-result-provenance-source-kind-mcp-on-message-tool-sources"
     },
     {
@@ -2078,7 +2078,7 @@
       "text": "First-run document ingestion times out on the docling model download, and the file is left First-run document ingestion times out on the docling model download, and the file is left stuck in `processing` Priority: P2 · Effort: M Context: Found during the v0.5.0 release-readiness fresh-clone verification. On a fresh deployment the first PDF upload fails: docling downloads ~696 MB of HuggingFace layout/OCR models on first use, which exceeds the single ingestion-job budget (`LQ_AI_DOCLING_",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-351-first-run-document-ingestion-times-out-on-the-docling-model-download-and-the-file-is-left-stuck-in-processing"
     },
     {
@@ -2088,7 +2088,7 @@
       "text": "Pre-upload format guard for unsupported document types (TXT/DOCX accepted then failed late Pre-upload format guard for unsupported document types (TXT/DOCX accepted then failed late) Priority: P3 · Effort: S Context: Found during the v0.5.0 release-readiness verification. Ingestion is PDF-only today (DOCX/RTF/TXT are M2), but the upload endpoint accepts a TXT/DOCX file (HTTP 2xx) and only marks it `failed` with `unsupported_type` after the worker picks it up — so a user learns the forma",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-352-pre-upload-format-guard-for-unsupported-document-types-txt-docx-accepted-then-failed-late"
     },
     {
@@ -2098,7 +2098,7 @@
       "text": "`web` (OpenWebUI) container blocked first-boot on an unnecessary HuggingFace model fetch `web` (OpenWebUI) container blocked first-boot on an unnecessary HuggingFace model fetch — RESOLVED Priority: P2 · Effort: S · Status: RESOLVED in the v0.5.0 launcher-readiness pass. Context: Found during the v0.5.0 release-readiness verification (isolated boot of the published images + the macOS launcher first-run). At import, `web/backend/open_webui/main.py` calls `get_ef(RAG_EMBEDDING_ENGINE, …",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-353-web-openwebui-container-blocked-first-boot-on-an-unnecessary-huggingface-model-fetch-resolved"
     },
     {
@@ -2108,7 +2108,7 @@
       "text": "macOS launcher regenerated secrets on a retried first-run without `down -v` → stale-volume macOS launcher regenerated secrets on a retried first-run without `down -v` → stale-volume auth crash-loop — RESOLVED Priority: P1 · Effort: S · Status: RESOLVED in the v0.5.0 launcher-readiness pass. Context: Found during the v0.5.0 launcher first-run test. `wizard:complete` (`desktop/src/main/index.ts`) calls `generateSecrets()` every run and only `saveConfig()`s on success, and `down -v` was wi",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-354-macos-launcher-regenerated-secrets-on-a-retried-first-run-without-down-v-stale-volume-auth-crash-loop-resolved"
     },
     {
@@ -2118,7 +2118,7 @@
       "text": "Document ingestion requires an OpenAI key specifically (the `embedding` alias is OpenAI-on Document ingestion requires an OpenAI key specifically (the `embedding` alias is OpenAI-only) Priority: P2 · Effort: M · Status: OPEN Context: Surfaced during the v0.5.0 launcher provider-key work. The default `smart` chat alias works with *either* an Anthropic or an OpenAI key (Anthropic primary, OpenAI fallback), so first-use chat is provider-agnostic. But the `embedding` alias in `gateway.yaml.",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-355-document-ingestion-requires-an-openai-key-specifically-the-embedding-alias-is-openai-only"
     },
     {
@@ -2128,7 +2128,7 @@
       "text": "First-run launcher shows no progress during the image-pull + model-download phases First-run launcher shows no progress during the image-pull + model-download phases Priority: P2 · Effort: M · Status: OPEN Context: Surfaced during the v0.5.2 fresh-install verification. A first run downloads ~17 GB of images (`api` ~9.5 GB, `web` ~6 GB, `gateway` ~1.6 GB, `proxy`) and then document-processing models — 10–30 min depending on bandwidth — but the wizard sits on a static \"Starting LQ",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-356-first-run-launcher-shows-no-progress-during-the-image-pull-model-download-phases"
     },
     {
@@ -2138,7 +2138,7 @@
       "text": "Default chat tool-call cap (8) is low for multi-call-per-case research skills Default chat tool-call cap (8) is low for multi-call-per-case research skills Priority: P3 · Effort: S–M · Status: OPEN · Tracking: [#212](https://github.com/LegalQuants/lq-ai/issues/212) Context: Split from [#207](https://github.com/LegalQuants/lq-ai/issues/207) finding 1. `settings.chat_tool_call_cap` defaults to 8. Skills that issue several tool calls *per item* — `case-law-research` runs `sear",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-357-default-chat-tool-call-cap-8-is-low-for-multi-call-per-case-research-skills"
     },
     {
@@ -2148,7 +2148,7 @@
       "text": "Tool-use hardening backlog (harvested from parallel PRs #185/#186) Tool-use hardening backlog (harvested from parallel PRs #185/#186) Priority: P3 · Effort: S each · Status: OPEN Context: Contributor PRs [#185](https://github.com/LegalQuants/lq-ai/pull/185) (PR5b-i) and [#186](https://github.com/LegalQuants/lq-ai/pull/186) (PR5b-ii) rebuilt the PR5b governed chat tool-loop in parallel and were closed as duplicative of merged `main` (governed tool-calling per ADR",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-358-tool-use-hardening-backlog-harvested-from-parallel-prs-185-186"
     },
     {
@@ -2198,7 +2198,7 @@
       "text": "WS-G lazy-on-trace-open treatment fallback WS-G lazy-on-trace-open treatment fallback Priority: P2 · Effort: S · Status: SHIPPED (WS-G PR3, 2026-06-27) — the GET /ledger handler now best-effort re-enqueues `treatment_derivation_job` (coalesced by arq `_job_id`) for any caselaw turn whose treatment is null or stale, via the pure `message_ids_needing_treatment` helper; re-enqueue only (no synchronous egress), read shape unchanged. Context: [",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-363-ws-g-lazy-on-trace-open-treatment-fallback"
     },
     {
@@ -2208,7 +2208,7 @@
       "text": "Per-cluster SAVEPOINT isolation in treatment derivation (concurrency) Per-cluster SAVEPOINT isolation in treatment derivation (concurrency) Priority: P2 · Effort: S · Status: SHIPPED (WS-G PR3, 2026-06-27) — the parent-INSERT path is wrapped in a `begin_nested()` SAVEPOINT; on a `uq_citation_treatment_cluster_id` conflict it re-reads + reuses the concurrent winner's row (skipping this turn's judge pass). The Opus whole-branch review surfaced a sibling race on the re",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "legal-domain",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-364-per-cluster-savepoint-isolation-in-treatment-derivation-concurrency"
     },
     {
@@ -2218,7 +2218,7 @@
       "text": "Launch-documentation pass Launch-documentation pass: fiduciary-grade positioning + transparent-by-evidence comparison Priority: P2 · Effort: L · Status (2026-07-03): SHIPPED — all three sub-projects complete. Sub-1 (docs honesty audit, #260), sub-2 (five Learn-tab fiduciary-grade playgrounds), and sub-3 (evidence-linked comparison + vendor-neutral cleanup, this entry) have all landed. The comparison lives at [`docs/compari",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-365-launch-documentation-pass-fiduciary-grade-positioning-transparent-by-evidence-comparison"
     },
     {
@@ -2228,7 +2228,7 @@
       "text": "Treatment worker short-circuits the judge pass when no gateway is reachable Treatment worker short-circuits the judge pass when no gateway is reachable Priority: P3 · Effort: S Context: Surfaced by the WS-G PR2 Opus whole-branch review. `run_treatment_derivation` (`api/app/workers/treatment_worker.py`) resolves a `GatewayClient` via `get_gateway_client()` (which always returns a client — defaults present, `__init__` never raises) and then `get_citation_engine_judge_model(",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "legal-domain",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-366-treatment-worker-short-circuits-the-judge-pass-when-no-gateway-is-reachable"
     },
     {
@@ -2268,7 +2268,7 @@
       "text": "Attributed-authority FAIL tier (chat) Attributed-authority FAIL tier (chat) Priority: P2 · Effort: M · Status (2026-07-01): filed (WS-E PR1c). WS-E PR1c verifies chat quotes of fetched authority verbatim (PASS) and via a whole-body paraphrase judge (SUPPORTED), but drops a quote that matches no fetched body rather than FAILing it — because chat blockquotes are unattributed (a blockquote may quote an uploaded document or caselaw, not t",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-370-attributed-authority-fail-tier-chat"
     },
     {
@@ -2308,7 +2308,7 @@
       "text": "EUR-Lex full-text search via Cellar SPARQL EUR-Lex full-text search via Cellar SPARQL Priority: P2 · Effort: M · Status (2026-07-01): filed (WS-E PR2b). The deferred `search_authority` op for EUR-Lex: PR2b ships get-by-CELEX only, so a user must already know the CELEX id. DE-374 adds a structured metadata/full-text search surface over the Cellar SPARQL endpoint (or the EUR-Lex search API), returning candidate CELEX ids + titles that feed `",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-374-eur-lex-full-text-search-via-cellar-sparql"
     },
     {
@@ -2318,7 +2318,7 @@
       "text": "EUR-Lex treaty/corrigendum CELEX support EUR-Lex treaty/corrigendum CELEX support Priority: P3 · Effort: S–M · Status (2026-07-01): filed (WS-E PR2b). PR2b validates `external_ref` against `^[A-Za-z0-9._-]+$` (the `authority_text_cache` key charset) and rejects treaty/corrigendum CELEX ids containing `/` or `()` (e.g. `12016E/TXT`, `32016R0679R(01)`) with a 400 before egress. DE-375 adds a reversible `external_ref` encoding (or an altern",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-375-eur-lex-treaty-corrigendum-celex-support"
     },
     {
@@ -2328,7 +2328,7 @@
       "text": "EUR-Lex human-readable subtitle + partial-payload adapter test EUR-Lex human-readable subtitle + partial-payload adapter test Priority: P3 · Effort: S · Status (2026-07-01): filed (WS-E PR2b whole-branch review). Two cosmetic follow-ups surfaced by the PR2b Opus whole-branch review, deliberately deferred as non-blocking. (1) `EurLexAdapter.from_response` (`api/app/research/adapters.py`) maps the machine `content_kind` (e.g. `eu_regulation`) into `FetchedAutho",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-376-eur-lex-human-readable-subtitle-partial-payload-adapter-test"
     },
     {
@@ -2338,7 +2338,7 @@
       "text": "Genericize the one named third-party product reference in README Genericize the one named third-party product reference in README Priority: P3 · Effort: S · Status (2026-07-03): resolved (DE-365 sub-3). The README Slack/Teams paragraph's named-product reference (previously \"*Streamline AI's* category\") was genericized to a generic category phrase; the public-facing README now names no third-party product anywhere. The README Slack/Teams intake-bridge paragraph",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-377-genericize-the-one-named-third-party-product-reference-in-readme"
     },
     {
@@ -2348,7 +2348,7 @@
       "text": "Wire `MutatingUser` across mutating endpoints for true read-only `viewer`/`auditor` enforc Wire `MutatingUser` across mutating endpoints for true read-only `viewer`/`auditor` enforcement Priority: P2 · Effort: M · Status (2026-07-02): filed (cross-user auditor-role implementation). The `MutatingUser` dependency + `_MUTATING_ROLES` (`api/app/api/dependencies.py:191`) were introduced (Wave C) to give `viewer` (and now `auditor`) roles read-only logins, but `MutatingUser` is currently wire",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-378-wire-mutatinguser-across-mutating-endpoints-for-true-read-only-viewer-auditor-enforcement"
     },
     {
@@ -2368,7 +2368,7 @@
       "text": "Web client should derive the API base URL from config, not hardcode `localhost:8000` Web client should derive the API base URL from config, not hardcode `localhost:8000` Priority: P3 · Effort: S · Status (2026-07-03): filed (v0.6.0 release-readiness gate). The web frontend issues browser-side API calls to a hardcoded `http://localhost:8000` (observed at `auth/login`) rather than deriving the base URL from the operator-configured `API_HOST_PORT` / a public base-URL env var. Consequ",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-380-web-client-should-derive-the-api-base-url-from-config-not-hardcode-localhost-8000"
     },
     {
@@ -2378,7 +2378,7 @@
       "text": "Provider-key admin writes don't emit `audit_log` rows Provider-key admin writes don't emit `audit_log` rows Priority: P3 · Effort: S · Status (2026-07-03): filed (Donna #3 tool-provider admin API). The Donna #3 tool-provider admin proxy (`POST`/`PATCH`/`DELETE /api/v1/admin/tool-providers`) writes an `audit_log` row on every successful gateway call, on the reasoning that enabling/disabling a research authority source is an auditable governance action",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-381-provider-key-admin-writes-don-t-emit-audit-log-rows"
     },
     {
@@ -2388,7 +2388,7 @@
       "text": "Hot-enabled tool provider's rate limit isn't enforced until gateway restart Hot-enabled tool provider's rate limit isn't enforced until gateway restart Priority: P3 · Effort: M · Status (2026-07-03): filed (Donna #3 tool-provider admin API). The gateway `Router`'s `_tool_rate_limiter` (`gateway/app/router.py`) is a single `FixedWindowRateLimiter` computed once in `Router.__init__` from `max((tp.rate_limit.requests_per_minute for tp in config.tool_providers), default=60)`",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-382-hot-enabled-tool-provider-s-rate-limit-isn-t-enforced-until-gateway-restart"
     },
     {
@@ -2398,7 +2398,7 @@
       "text": "`resolve_available_sources` derives `enabled` from provider presence, not the provider's o `resolve_available_sources` derives `enabled` from provider presence, not the provider's own `enabled` flag Priority: P3 · Effort: S · Status (2026-07-03): filed (Donna #3 tool-provider admin API); pre-existing gap. `api/app/research/registry.py`'s `resolve_available_sources` reports a `SOURCE_REGISTRY` entry as `enabled=True` iff `gateway.list_tool_providers()` returns a configured provider of th",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-383-resolve-available-sources-derives-enabled-from-provider-presence-not-the-provider-s-own-enabled-flag"
     },
     {
@@ -2408,7 +2408,7 @@
       "text": "Runtime `DELETE` can remove a keyless *env-configured* tool provider the operator hand-wro Runtime `DELETE` can remove a keyless *env-configured* tool provider the operator hand-wrote Priority: P3 · Effort: S · Status (2026-07-03): filed (Donna #3 tool-provider admin API). `gateway/app/config_writer.py`'s `remove_tool_provider` enforces the \"the runtime API only removes entries it owns\" invariant by raising `409` when the matched `tool_providers` entry carries an `api_key_env` (an opera",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-384-runtime-delete-can-remove-a-keyless-env-configured-tool-provider-the-operator-hand-wrote"
     },
     {
@@ -2418,7 +2418,7 @@
       "text": "`desktop/package-lock.json` top-level version is stale (`0.5.2`), out of sync with `packag `desktop/package-lock.json` top-level version is stale (`0.5.2`), out of sync with `package.json` Priority: P3 · Effort: XS · Status (2026-07-04): filed (v0.6.1 release). `desktop/package.json` is bumped by hand each release (0.6.0 → 0.6.1 at v0.6.1), but `desktop/package-lock.json` still carries `\"version\": \"0.5.2\"` at its top level (and in `packages[\"\"].version`) — it was never regenerated when",
       "status": "done",
       "theme": "Uncategorised",
-      "track": "junior-code",
+      "track": "Uncategorised",
       "url": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-385-desktop-package-lock-json-top-level-version-is-stale-0-5-2-out-of-sync-with-package-json"
     },
     {

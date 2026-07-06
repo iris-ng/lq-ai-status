@@ -15,22 +15,28 @@ const SKILL_RULES = [
   ["writing", ["docs", "documentation", "guide", "readme"]],
 ];
 
+const UNCATEGORISED = "Uncategorised";
+
+// Whole-word (plural-tolerant) match so short keywords like "ci" don't match
+// inside unrelated words ("citation", "specific", "decision", …).
 function matched(text, rules) {
-  return rules.filter(([, words]) => words.some((w) => text.includes(w))).map(([name]) => name);
+  return rules
+    .filter(([, words]) => words.some((w) => new RegExp(`\\b${w}s?\\b`).test(text)))
+    .map(([name]) => name);
 }
 
-function inferTrack(text, area, skills) {
+function inferTrack(area, skills) {
   if (skills.includes("legal-research")) return "legal-domain";
   if (area.includes("infra") || area.includes("docs")) {
     return area.includes("docs") && !area.includes("infra") ? "docs-quality" : "self-hosting-docs";
   }
-  return "junior-code";
+  return UNCATEGORISED; // no positive track signal — don't pretend it's junior-code
 }
 
 function inferDifficulty(text) {
-  if (/(refactor|architecture|migration|multi-|pipeline|distributed|security|autonomous)/.test(text)) return "large";
-  if (/(integrate|support|workflow|endpoint|dashboard|adapter|semantic)/.test(text)) return "medium";
-  return "small";
+  if (/\b(refactor|architecture|migration|multi-|pipeline|distributed|security|autonomous)/.test(text)) return "large";
+  if (/\b(integrate|support|workflow|endpoint|dashboard|adapter|semantic)/.test(text)) return "medium";
+  return UNCATEGORISED; // no size keyword fired — unsized, not silently "small"
 }
 
 export function tagItem(item) {
@@ -42,7 +48,7 @@ export function tagItem(item) {
     ...item,
     area: area.length ? area : ["product"],
     skills,
-    track: inferTrack(text, area, skills),
+    track: inferTrack(area, skills),
     difficulty: inferDifficulty(text),
   };
 }

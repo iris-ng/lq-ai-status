@@ -33,7 +33,18 @@ test("docs-quality track for docs without infra", () => {
   assert.equal(t.track, "docs-quality");
 });
 
-test("junior-code is the default track", () => {
+test("track is Uncategorised when no positive signal matches", () => {
   const t = tagItem({ id: "DE-7", title: "Add an API endpoint", description: "fastapi handler", theme: "x" });
-  assert.equal(t.track, "junior-code");
+  assert.equal(t.track, "Uncategorised");
+});
+
+test("difficulty is Uncategorised when no size keyword fires", () => {
+  const t = tagItem({ id: "DE-8", title: "Rename a label", description: "tidy up wording", theme: "x" });
+  assert.equal(t.difficulty, "Uncategorised");
+});
+
+test("whole-word matching: 'citation' is not mis-tagged as infra via the 'ci' keyword", () => {
+  const t = tagItem({ id: "DE-9", title: "Case citation validation", description: "specific decision policies", theme: "x" });
+  assert.ok(!t.area.includes("infra"));
+  assert.equal(t.track, "legal-domain"); // 'citation' is a legal-research skill keyword
 });

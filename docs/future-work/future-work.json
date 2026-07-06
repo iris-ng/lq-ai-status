@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T06:32:58.542Z",
+    "generatedAt": "2026-07-06T06:50:41.217Z",
     "repo": "LegalQuants/lq-ai",
     "prdUrl": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md",
     "issuesUrl": "https://github.com/LegalQuants/lq-ai/issues",
@@ -36,13 +36,10 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-001-additional-starter-skills-beyond-the-m1-set",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -85,15 +82,13 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-002-additional-regimes-for-dpa-checklist-review",
       "area": [
-        "ai",
-        "infra"
+        "product"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "pabjugar",
       "links": {
@@ -127,10 +122,9 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-003-additional-worked-examples-for-dpa-checklist-review",
       "area": [
-        "infra"
+        "product"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -166,12 +160,10 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-004-nda-review-redlined-document-output-mode",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -204,13 +196,11 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-005-defined-terms-consistency-check-skill",
       "area": [
-        "api"
+        "product"
       ],
-      "skills": [
-        "python"
-      ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -252,10 +242,9 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-006-cross-document-comparison-skill",
       "area": [
-        "infra"
+        "product"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -301,15 +290,13 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-007-issue-list-generator-skill-output-mode",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -346,13 +333,11 @@
       "theme": "Skill ecosystem expansions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-008-self-serve-business-user-contract-generation-skill-family",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -396,16 +381,14 @@
       "area": [
         "web",
         "gateway",
-        "infra",
         "docs"
       ],
       "skills": [
         "python",
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -442,12 +425,11 @@
       "theme": "Application UI enhancements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-010-skill-input-form-rendering-for-any-skill",
       "area": [
-        "web",
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -490,14 +472,11 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-011-reasoning-visibility-configuration-for-enhance-prompt",
       "area": [
         "web",
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -514,13 +493,10 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-012-skill-inspector-side-panel",
       "area": [
         "web",
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -563,14 +539,10 @@
       "theme": "Application UI enhancements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-013-saved-prompts-library",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "sgbooth",
@@ -618,13 +590,11 @@
       "theme": "Application UI enhancements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-014-tone-audience-settings-on-skills",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -668,15 +638,13 @@
       "area": [
         "web",
         "api",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -699,11 +667,9 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-265-in-app-unverified-citation-badging-until-citation-engine-ships",
       "area": [
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "legal-research",
         "writing"
       ],
@@ -762,7 +728,7 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -782,8 +748,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -825,13 +791,11 @@
       "theme": "PRD-process and capability refinements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-021-skill-versioning-and-publishing-flow",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -873,13 +837,11 @@
       "theme": "PRD-process and capability refinements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-022-skill-performance-and-quality-measurement",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -921,12 +883,10 @@
       "theme": "PRD-process and capability refinements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-023-external-counsel-collaboration-boundary",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -949,14 +909,13 @@
       "theme": "PRD-process and capability refinements",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-024-iso-42001-ai-management-system-alignment-documentation",
       "area": [
-        "web",
         "docs"
       ],
       "skills": [
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1040,7 +999,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1067,7 +1026,6 @@
       "theme": "Deployment and infrastructure",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-032-air-gap-install-verification",
       "area": [
-        "web",
         "infra",
         "docs"
       ],
@@ -1131,7 +1089,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -1199,7 +1157,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -1231,7 +1189,7 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "in-pr",
       "owner": "dropthejase",
@@ -1266,10 +1224,10 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-060-multi-document-q-a-for-contract-qa",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -1312,13 +1270,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-061-contract-qa-acceptance-testing",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1360,12 +1316,10 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-070-dedicated-order-form-sow-review-skill",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -1408,13 +1362,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-071-additional-msa-review-variants",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1451,13 +1403,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-072-msa-review-acceptance-testing-against-real-document-corpus",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1499,13 +1449,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-080-shared-infrastructure-for-contract-review-skill-family",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1547,13 +1495,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-081-obligation-tracking-renewal-calendar",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1575,12 +1521,10 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-082-regulatory-monitoring-with-proactive-alerts",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -1597,15 +1541,13 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-083-google-docs-add-on-m3-sister-to-the-word-add-in",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1632,14 +1574,11 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-084-email-as-intake-bridge",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1666,13 +1605,10 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-085-operational-analytics-for-legal-ops",
       "area": [
-        "web",
-        "infra"
+        "web"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -1700,12 +1636,10 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-086-procurement-readiness-pack",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -1751,14 +1685,12 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-040-direct-clm-integration",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -1794,8 +1726,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1814,8 +1746,8 @@
         "web"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1837,15 +1769,13 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-220-organization-profile-singleton-skill-per-firm-playbook",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1887,17 +1817,14 @@
       "theme": "Capability extensions",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-221-managed-agents-equivalent-scheduled-agent-runtime",
       "area": [
-        "web",
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1924,16 +1851,13 @@
       "theme": "Process and project management",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-050-skill-quality-bar-review-process-for-community-contributions",
       "area": [
-        "web",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -1975,13 +1899,11 @@
       "theme": "Process and project management",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-051-acceptance-testing-for-the-m1-skill-set-against-real-documents",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "pscripps",
       "links": {
@@ -2036,13 +1958,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-100-tamper-evident-audit-log",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2074,15 +1994,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-101-cryptographic-timestamping-of-work-product",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2104,15 +2020,12 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-102-hardware-security-module-hsm-and-vault-integration",
       "area": [
-        "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -2135,13 +2048,10 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-103-ip-allowlisting-and-geo-restriction",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -2158,14 +2068,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-104-just-in-time-admin-elevation",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2187,15 +2094,12 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-105-outbound-proxy-support",
       "area": [
-        "web",
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -2218,14 +2122,10 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-106-configurable-retention-policies",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "web"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -2248,13 +2148,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-107-operator-side-data-subject-rights-tooling",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2276,14 +2176,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-108-backup-encryption-with-rotation",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2310,12 +2207,10 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-109-litigation-hold-support",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -2339,15 +2234,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-110-prompt-injection-pattern-library",
       "area": [
         "gateway",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2374,15 +2267,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-111-output-validation-guardrails-generalized",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2424,14 +2315,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-112-model-checksum-verification-for-local-models",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2453,15 +2341,12 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-113-fedramp-aligned-deployment-recipe",
       "area": [
-        "web",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -2484,14 +2369,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-114-reproducible-builds",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2513,13 +2395,10 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-115-formal-vulnerability-disclosure-program-vdp",
       "area": [
-        "ai",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -2545,8 +2424,8 @@
         "gateway"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2591,8 +2470,8 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2634,15 +2513,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-269-anonymization-option-a-pseudonymize-source-documents-too",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2703,15 +2580,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-270-cryptography-review-fernet-vs-modern-aead",
       "area": [
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2727,13 +2602,11 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-271-dependency-criticality-matrix-fallback-plan",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -2750,15 +2623,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-273-audit-log-api-server-side-actor-enrichment",
       "area": [
         "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2805,8 +2676,8 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2874,13 +2745,11 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-275-embed-m2-citations-in-chat-message-envelope",
       "area": [
         "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
         "react",
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -2949,7 +2818,7 @@
       ],
       "skills": [],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3007,15 +2876,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-277-citation-extractor-fallback-to-document-scan-on-chunk-boundary-miss",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3094,15 +2961,12 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-278-azure-openai-ad-authentication-managed-identity-service-principal",
       "area": [
-        "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -3149,16 +3013,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-279-case-citation-validation-bluebook-resolution-via-courtlistener",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "rlfordon",
       "links": {
@@ -3244,15 +3105,13 @@
       "theme": "Security and compliance",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-280-case-content-accuracy-statement-vs-judicial-opinion",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "rlfordon",
       "links": {
@@ -3347,15 +3206,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-281-citation-engine-operational-telemetry-calibration-tolerant-match-threshold-aggregation-rule",
       "area": [
         "gateway",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3413,8 +3270,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3482,14 +3339,12 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-283-fresh-install-login-ux-surface-the-bootstrap-password-path-on-first-401",
       "area": [
         "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -3537,7 +3392,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "rickbyr",
@@ -3613,15 +3468,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-201-signal-aggregation-service",
       "area": [
         "api",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3650,13 +3503,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-202-email-connector-via-mcp",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3705,13 +3556,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-203-calendar-connector-via-mcp",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -3738,14 +3587,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-204-task-system-connectors-via-mcp",
       "area": [
-        "ai",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -3787,15 +3633,13 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-205-crm-connector-via-mcp",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -3837,15 +3681,13 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-206-document-store-connectors-via-mcp",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -3878,14 +3720,12 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-207-prioritization-engine",
       "area": [
         "api",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -3928,14 +3768,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-208-today-view-ui-surface",
       "area": [
-        "web",
-        "infra"
+        "web"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3974,14 +3811,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-209-email-triage-skill",
       "area": [
-        "gateway",
-        "infra"
+        "gateway"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -4030,13 +3864,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-210-calendar-prep-skill",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4079,13 +3911,10 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-211-agent-execution-framework",
       "area": [
         "web",
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4118,16 +3947,13 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-212-voice-mode-for-the-today-view",
       "area": [
-        "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4159,12 +3985,10 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-213-cross-matter-pattern-recognition",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4207,13 +4031,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-214-counterparty-intelligence",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4250,13 +4072,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-215-negotiation-state-tracking",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4288,13 +4108,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-216-personal-decision-history",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4316,13 +4134,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-217-time-blocked-work-mode",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4354,13 +4170,11 @@
       "theme": "Workflow intelligence",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-218-async-team-handoff-briefs",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4442,13 +4256,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-223-openssf-best-practices-badge-passing-silver-gold",
       "area": [
-        "web",
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4477,14 +4288,12 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-224-owasp-llm-top-10-mitigation-mapping",
       "area": [
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4528,7 +4337,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4561,14 +4370,12 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-226-mitre-atlas-threat-model-mapping",
       "area": [
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4594,7 +4401,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4622,12 +4429,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-228-annual-adversarial-ai-red-team-engagement",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4650,8 +4455,6 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-229-mutation-testing-in-ci-with-per-release-scores-published",
       "area": [
-        "web",
-        "ai",
         "infra"
       ],
       "skills": [
@@ -4659,7 +4462,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4681,12 +4484,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-230-property-based-testing-for-citation-engine-and-anonymization-layer-invariants",
       "area": [
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -4732,7 +4533,6 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-231-golden-snapshot-testing-for-built-in-skills-with-model-version-regression",
       "area": [
-        "web",
         "ai",
         "docs"
       ],
@@ -4740,7 +4540,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4769,7 +4569,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4793,7 +4593,7 @@
         "writing"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4834,7 +4634,7 @@
         "writing"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4862,7 +4662,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -4895,7 +4695,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "pscripps",
       "links": {
@@ -4950,16 +4750,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-237-eval-harness-with-held-out-test-sets-and-inter-rater-agreement",
       "area": [
-        "web",
-        "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -4987,17 +4783,14 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-238-public-skill-quality-leaderboard",
       "area": [
-        "web",
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5039,16 +4832,13 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-239-prompt-injection-detection-rates-published-per-skill-and-per-release",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5075,14 +4865,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-240-pii-leakage-testing-with-measurable-rates",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5105,15 +4892,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-241-distroless-minimal-container-base-images",
       "area": [
         "api",
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5144,7 +4929,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5166,12 +4951,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-243-pod-security-standards-restricted-profile-for-the-helm-chart",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -5194,12 +4977,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-244-signed-commits-enforced-on-the-main-branch",
       "area": [
-        "web",
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5237,16 +5019,14 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-245-published-service-level-objectives-and-indicators",
       "area": [
         "api",
-        "infra",
         "docs"
       ],
       "skills": [
         "python",
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5268,15 +5048,13 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-246-error-budget-policy",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5298,13 +5076,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-247-public-postmortems-within-14-days",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5320,15 +5096,13 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-248-disaster-recovery-test-cadence",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5344,14 +5118,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-249-runbooks-for-operational-tasks",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -5405,14 +5177,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-251-chaos-and-fault-injection-for-the-gateway-and-document-pipeline",
       "area": [
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -5445,14 +5215,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-252-fuzz-testing-extended-to-document-parsers-and-anonymization-paths",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -5495,17 +5263,14 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-253-consumer-driven-contract-testing-between-services",
       "area": [
-        "web",
         "api",
-        "gateway",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5540,7 +5305,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -5568,13 +5333,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-255-add-responsetimeout-90000-to-cypress-config-ts",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5596,13 +5359,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-256-kb-attach-interceptor-added-to-wave-m1-final-surfaces-cy-ts-test-2",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -5625,14 +5385,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-257-api-v1-audit-health-endpoint-for-ambientfooter-signal",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -5656,15 +5414,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-258-kb-embedding-progress-percentage-aggregation",
       "area": [
         "api",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5692,15 +5448,13 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-259-kb-attached-matters-reverse-lookup",
       "area": [
         "api",
-        "infra",
         "docs"
       ],
       "skills": [
         "python",
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
+      "track": "docs-quality",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -5728,13 +5482,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-260-receipts-assistant-side-skill-event-deduplication",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5761,15 +5513,13 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-261-api-client-ts-errorfor-swallows-string-shaped-fastapi-detail-bodies",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5836,7 +5586,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -5884,7 +5634,7 @@
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "claimed",
       "owner": "pabjugar",
       "links": {
@@ -5934,7 +5684,6 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-284-tighten-api-tests-mypy-coverage",
       "area": [
         "api",
-        "ai",
         "infra"
       ],
       "skills": [
@@ -5997,11 +5746,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-285-first-run-sample-nda-knowledge-base-for-the-easy-playbook-wizard",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6050,14 +5799,13 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-286-cross-document-label-normalization-on-richer-contract-types-easy-playbook-clustering-tuning",
       "area": [
-        "web",
         "docs"
       ],
       "skills": [
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6115,8 +5863,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "yuch85",
       "links": {
@@ -6226,11 +5974,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-288-slack-teams-lq-slash-command-quick-skill-flow-deferred-to-m4-community-contribution",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6309,15 +6057,12 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-289-lavern-as-design-reference-for-the-autonomous-layer-full-path-ensemble-and-mcp-catalog",
       "area": [
-        "web",
-        "ai",
-        "infra"
+        "web"
       ],
       "skills": [
-        "react",
-        "devops"
+        "react"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -6364,7 +6109,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6419,14 +6164,11 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-291-r1-codification-rules-of-restraint-in-the-skill-authoring-guide-and-golden-tests-for-starter-skills",
       "area": [
-        "web",
         "api",
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "legal-research",
         "writing"
       ],
@@ -6485,7 +6227,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -6535,12 +6277,10 @@
       "theme": "Engineering discipline",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-293-autonomous-layer-restraints-r4-economic-r5-temporal-r6-contextual",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -6579,7 +6319,7 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -6615,7 +6355,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6685,14 +6425,12 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-296-tabular-review-document-source-surface-project-scoped-free-pick-deferred-from-m3-c3",
       "area": [
         "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "react",
-        "devops"
+        "react"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "claimed",
       "owner": "iris-ng",
@@ -6751,8 +6489,8 @@
         "web"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -6794,11 +6532,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-298-tabular-review-built-ins-browser-polish-on-skills-page-deferred-from-m3-c3",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -6849,7 +6587,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6898,11 +6636,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-300-log-trace-correlation-via-structured-logger-trace-id-span-id-injection-otel-deepening-de-b",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -6924,14 +6662,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-301-otel-meterprovider-for-metrics-export-otel-deepening-de-c",
       "area": [
-        "api",
-        "gateway",
-        "infra"
+        "api"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
+      "skills": [],
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "available",
       "owner": null,
@@ -6959,16 +6693,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-302-reconcile-otel-with-the-openwebui-fork-s-inherited-telemetry-otel-deepening-de-d",
       "area": [
-        "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7021,7 +6752,7 @@
       ],
       "skills": [],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7053,8 +6784,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -7086,14 +6817,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-305-bridge-env-vars-use-var-and-break-all-compose-commands-when-unset-m3-e1-finding-f1",
       "area": [
-        "web",
         "infra"
       ],
       "skills": [
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7160,7 +6890,6 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-306-fresh-install-host-port-collision-needs-prominent-quickstart-callout-m3-e1-finding-f2",
       "area": [
-        "web",
         "infra",
         "docs"
       ],
@@ -7169,7 +6898,7 @@
         "writing"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7229,8 +6958,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7274,14 +7003,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-308-easy-playbook-clustering-over-segments-and-can-miss-a-designed-axis-m3-e1-finding-f5",
       "area": [
-        "web",
         "docs"
       ],
       "skills": [
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7320,13 +7048,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-309-tabular-cells-real-citation-engine-backed-provenance-m3-e1-finding-f6-follow-on",
       "area": [
-        "web",
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -7427,8 +7152,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7489,15 +7214,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-311-single-source-of-truth-for-the-application-version-m3-e1-finding-f3-follow-on",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7561,8 +7284,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7629,7 +7352,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7684,8 +7407,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7739,8 +7462,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7789,15 +7512,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-316-promote-skill-author-to-the-skill-skillsummary-wire-shape-otel-deepening-skill-spans",
       "area": [
-        "api",
-        "docs"
+        "api"
       ],
       "skills": [
-        "python",
-        "writing"
+        "python"
       ],
-      "track": "docs-quality",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7859,8 +7580,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7915,8 +7636,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7950,8 +7671,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "available",
       "owner": null,
       "links": {
@@ -7973,14 +7694,12 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-320-scanned-pdf-ocr-for-the-ingestion-pipeline",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -8027,7 +7746,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -8065,7 +7784,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -8093,10 +7812,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-323-surface-autonomous-context-proposals-on-the-matter-detail-page-m4-c2-finding",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -8129,10 +7848,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-324-global-chrome-notification-bell-for-autonomous-notifications-m4-c2-finding",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "available",
       "owner": null,
@@ -8149,13 +7868,12 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-325-harden-build-receipt-call-sites-against-receipt-build-failure-m4-finding",
       "area": [
-        "web",
         "api"
       ],
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -8242,7 +7960,6 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-327-helm-k8s-worker-migration-parity-m4-finding",
       "area": [
-        "web",
         "api",
         "gateway",
         "infra"
@@ -8298,8 +8015,8 @@
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8361,7 +8078,7 @@
         "react",
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -8414,19 +8131,16 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-330-formalize-the-tabular-results-openapi-schema-typed-cell-citation-components",
       "area": [
-        "web",
         "api",
-        "infra",
         "docs"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research",
         "writing"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8484,8 +8198,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8519,12 +8233,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-332-text-markdown-ingest-parser-support",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -8569,10 +8281,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-333-dedupe-correlated-artifact-storage-failure-warn-findings",
       "area": [
-        "ai"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -8610,8 +8322,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8660,14 +8372,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-335-harden-the-openwebui-first-run-bootstrap-in-the-launcher-webui-auth-wal-mode-webui-db",
       "area": [
-        "web",
         "api"
       ],
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8697,16 +8408,14 @@
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-336-document-the-503-responses-on-the-api-v1-research-openapi-entries",
       "area": [
         "api",
-        "gateway",
         "docs"
       ],
       "skills": [
         "python",
-        "legal-research",
         "writing"
       ],
-      "track": "legal-domain",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8757,17 +8466,14 @@
       "area": [
         "api",
         "ai",
-        "infra",
         "docs"
       ],
       "skills": [
         "python",
-        "devops",
-        "legal-research",
         "writing"
       ],
-      "track": "legal-domain",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8821,8 +8527,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "medium",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8866,14 +8572,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-341-retire-the-openwebui-web-backend-open-webui-utils-mcp-client-py-stub-once-the-chat-path-is-gateway-brokered",
       "area": [
-        "web",
         "gateway"
       ],
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8945,8 +8650,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8998,8 +8703,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9035,15 +8740,12 @@
       "area": [
         "api",
         "gateway",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops",
-        "legal-research"
+        "python"
       ],
-      "track": "legal-domain",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -9141,8 +8843,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9202,7 +8904,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -9255,7 +8957,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -9308,8 +9010,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9364,8 +9066,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9417,8 +9119,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9497,14 +9199,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-351-first-run-document-ingestion-times-out-on-the-docling-model-download-and-the-file-is-left-stuck-in-processing",
       "area": [
-        "ai",
-        "infra"
+        "ai"
       ],
-      "skills": [
-        "devops"
-      ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9580,7 +9279,7 @@
         "api"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -9616,12 +9315,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-353-web-openwebui-container-blocked-first-boot-on-an-unnecessary-huggingface-model-fetch-resolved",
       "area": [
-        "web",
         "ai"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9674,8 +9372,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9719,17 +9417,14 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-355-document-ingestion-requires-an-openai-key-specifically-the-embedding-alias-is-openai-only",
       "area": [
-        "web",
         "gateway",
-        "ai",
-        "infra"
+        "ai"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9770,8 +9465,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9813,7 +9508,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "large",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -9876,11 +9571,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-358-tool-use-hardening-backlog-harvested-from-parallel-prs-185-186",
       "area": [
-        "web"
+        "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "SaifAlYounan",
       "links": {
@@ -9942,14 +9637,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-359-savepoint-isolate-the-chat-finalize-persistence-flushes",
       "area": [
-        "infra"
+        "product"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10004,7 +9698,6 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-360-gateway-native-quality-escalation-routing-cheap-capable-reasoning-logged-to-the-ledger",
       "area": [
-        "web",
         "gateway",
         "ai",
         "docs"
@@ -10014,7 +9707,7 @@
         "writing"
       ],
       "track": "docs-quality",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10093,13 +9786,10 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-361-route-llm-judge-and-future-verification-methods-into-the-fiduciary-grade-gate-s-status-sets",
       "area": [
-        "api",
-        "ai",
-        "infra"
+        "api"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
@@ -10152,15 +9842,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-362-caselaw-fail-severity-split-in-the-citation-ledger-trace-ui",
       "area": [
-        "web",
-        "infra"
+        "web"
       ],
       "skills": [
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10212,8 +9900,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10280,14 +9968,11 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-364-per-cluster-savepoint-isolation-in-treatment-derivation-concurrency",
       "area": [
-        "infra"
+        "product"
       ],
-      "skills": [
-        "devops",
-        "legal-research"
-      ],
-      "track": "legal-domain",
-      "difficulty": "small",
+      "skills": [],
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10354,15 +10039,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-365-launch-documentation-pass-fiduciary-grade-positioning-transparent-by-evidence-comparison",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10419,19 +10102,14 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-366-treatment-worker-short-circuits-the-judge-pass-when-no-gateway-is-reachable",
       "area": [
-        "web",
         "api",
-        "gateway",
-        "ai",
-        "infra"
+        "gateway"
       ],
       "skills": [
-        "python",
-        "devops",
-        "legal-research"
+        "python"
       ],
-      "track": "legal-domain",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10480,16 +10158,14 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-367-materialize-the-treatment-per-class-rollup-to-avoid-stored-vs-recomputed-divergence",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10538,7 +10214,6 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-368-test-suite-is-serial-only-against-one-shared-postgres-parallelization-needs-per-worker-dbs",
       "area": [
-        "web",
         "api",
         "ai",
         "infra"
@@ -10548,7 +10223,7 @@
         "devops"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10677,7 +10352,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -10813,16 +10488,14 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-372-http-level-finalize-integration-fixture-caselaw-authority",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
         "python",
-        "devops",
         "legal-research"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10881,7 +10554,7 @@
         "writing"
       ],
       "track": "self-hosting-docs",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10965,7 +10638,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -11021,7 +10694,7 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -11067,7 +10740,7 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -11102,16 +10775,13 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-377-genericize-the-one-named-third-party-product-reference-in-readme",
       "area": [
-        "ai",
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "writing"
       ],
-      "track": "self-hosting-docs",
-      "difficulty": "small",
+      "track": "docs-quality",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11140,14 +10810,12 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-378-wire-mutatinguser-across-mutating-endpoints-for-true-read-only-viewer-auditor-enforcement",
       "area": [
-        "api",
-        "infra"
+        "api"
       ],
       "skills": [
-        "python",
-        "devops"
+        "python"
       ],
-      "track": "self-hosting-docs",
+      "track": "Uncategorised",
       "difficulty": "medium",
       "status": "done",
       "owner": "Kevin-Tucuxi",
@@ -11187,16 +10855,14 @@
       "theme": "Uncategorised",
       "prdAnchor": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md#de-379-server-side-signed-hash-chained-attestation-export-of-the-provenance-record",
       "area": [
-        "infra",
         "docs"
       ],
       "skills": [
-        "devops",
         "legal-research",
         "writing"
       ],
       "track": "legal-domain",
-      "difficulty": "small",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11252,8 +10918,8 @@
         "react",
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11288,8 +10954,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11344,8 +11010,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11380,8 +11046,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11436,8 +11102,8 @@
       "skills": [
         "python"
       ],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11489,8 +11155,8 @@
         "product"
       ],
       "skills": [],
-      "track": "junior-code",
-      "difficulty": "small",
+      "track": "Uncategorised",
+      "difficulty": "Uncategorised",
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
