@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LQ AI Future Work Radar</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fb;
+        --panel: #ffffff;
+        --ink: #1e252f;
+        --muted: #627083;
+        --line: #d9e0ea;
+        --blue: #2764c5;
+        --green: #13795b;
+        --amber: #9a6700;
+        --red: #b42318;
+        --violet: #6741d9;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        background: #202b3a;
+        color: white;
+        padding: 24px 28px 18px;
+      }
+
+      h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        letter-spacing: 0;
+      }
+
+      header p {
+        margin: 0;
+        color: #d8e1ee;
+        max-width: 920px;
+      }
+
+      main {
+        display: grid;
+        gap: 18px;
+        padding: 18px;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        gap: 12px;
+      }
+
+      .metric,
+      .panel,
+      .item {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .metric {
+        padding: 14px;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 24px;
+      }
+
+      .metric span {
+        color: var(--muted);
+      }
+
+      .toolbar {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) repeat(3, minmax(150px, 190px));
+        gap: 10px;
+        align-items: end;
+      }
+
+      label {
+        display: grid;
+        gap: 5px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      input,
+      select {
+        width: 100%;
+        min-height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 8px 10px;
+        background: white;
+        color: var(--ink);
+        font: inherit;
+      }
+
+      .panel {
+        padding: 14px;
+      }
+
+      .clusters {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 14px;
+      }
+
+      .cluster-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        gap: 10px;
+      }
+
+      .cluster {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 12px;
+        background: #fbfcfe;
+      }
+
+      .cluster b {
+        display: block;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+      }
+
+      .bar {
+        height: 8px;
+        border-radius: 999px;
+        background: #dfe6ef;
+        overflow: hidden;
+      }
+
+      .bar i {
+        display: block;
+        height: 100%;
+        background: var(--blue);
+      }
+
+      .items {
+        display: grid;
+        gap: 10px;
+      }
+
+      .item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .item h2 {
+        margin: 0 0 6px;
+        font-size: 17px;
+      }
+
+      .item p {
+        margin: 0 0 10px;
+        color: var(--muted);
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 2px 8px;
+        background: #f8fafc;
+        color: #334155;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .status-available {
+        border-color: #b7dfce;
+        color: var(--green);
+        background: #effaf5;
+      }
+
+      .status-needs-review {
+        border-color: #f0d28a;
+        color: var(--amber);
+        background: #fff8e5;
+      }
+
+      .status-claimed,
+      .status-pr-open {
+        border-color: #c8d7fb;
+        color: var(--blue);
+        background: #f0f5ff;
+      }
+
+      .item aside {
+        min-width: 190px;
+        text-align: right;
+      }
+
+      .actions {
+        display: grid;
+        gap: 6px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 32px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 6px 10px;
+        background: white;
+        color: var(--ink);
+      }
+
+      .match {
+        margin-top: 10px;
+        border-left: 3px solid var(--amber);
+        padding: 8px 10px;
+        background: #fffaf0;
+        color: #5f4700;
+      }
+
+      .match strong {
+        color: var(--ink);
+      }
+
+      .note {
+        color: var(--muted);
+      }
+
+      .semantic-flow {
+        display: grid;
+        gap: 8px;
+        padding-left: 18px;
+      }
+
+      @media (max-width: 860px) {
+        .metrics,
+        .toolbar,
+        .clusters,
+        .item {
+          grid-template-columns: 1fr;
+        }
+
+        .item aside {
+          min-width: 0;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>LQ AI Future Work Radar</h1>
+      <p>Clickable roadmap prototype for deferred PRD enhancements, GitHub claim status, and fuzzy-match review.</p>
+    </header>
+    <main>
+      <section class="metrics" aria-label="Summary metrics">
+        <div class="metric"><strong id="totalItems">0</strong><span>future work items</span></div>
+        <div class="metric"><strong id="availableItems">0</strong><span>available to claim</span></div>
+        <div class="metric"><strong id="reviewItems">0</strong><span>semantic matches to review</span></div>
+        <div class="metric"><strong id="openPrs">0</strong><span>open GitHub PRs</span></div>
+      </section>
+
+      <section class="panel toolbar" aria-label="Filters">
+        <label>
+          Search
+          <input id="search" type="search" placeholder="Title, summary, tag, area">
+        </label>
+        <label>
+          Area
+          <select id="area"></select>
+        </label>
+        <label>
+          Difficulty
+          <select id="difficulty"></select>
+        </label>
+        <label>
+          Sort
+          <select id="sort">
+            <option value="impact">Impact first</option>
+            <option value="difficulty">Difficulty first</option>
+            <option value="area">Area</option>
+            <option value="status">Status</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="clusters">
+        <div class="panel">
+          <h2>Clusters</h2>
+          <div id="clusters" class="cluster-grid"></div>
+        </div>
+        <div class="panel">
+          <h2>Semantic Matching Rules</h2>
+          <ol class="semantic-flow">
+            <li>Exact IDs win: `future-003`, issue links, or `Closes #123` can mark an item claimed.</li>
+            <li>Semantic matches are candidates only when title/body similarity is high enough.</li>
+            <li>Low-confidence matches enter a review queue and do not change claim status.</li>
+            <li>Maintainer confirmation writes the stable ID back into the issue or PR.</li>
+          </ol>
+          <p class="note" id="sourceNote"></p>
+        </div>
+      </section>
+
+      <section>
+        <div id="items" class="items"></div>
+      </section>
+    </main>
+
+    <script src="./future-work-data.js"></script>
+    <script>
+      const impactRank = { high: 0, medium: 1, low: 2, unknown: 3 };
+      const difficultyRank = { small: 0, medium: 1, large: 2, unknown: 3 };
+
+      async function loadData() {
+        if (window.FUTURE_WORK_DATA) return window.FUTURE_WORK_DATA;
+        const response = await fetch("./future-work.json");
+        return response.json();
+      }
+
+      function unique(values) {
+        return ["all", ...Array.from(new Set(values)).sort()];
+      }
+
+      function fillSelect(select, values) {
+        select.innerHTML = unique(values)
+          .map((value) => `<option value="${value}">${value === "all" ? "All" : value}</option>`)
+          .join("");
+      }
+
+      function chip(value, extra = "") {
+        return `<span class="chip ${extra}">${value}</span>`;
+      }
+
+      function renderMetrics(data) {
+        document.getElementById("totalItems").textContent = data.items.length;
+        document.getElementById("availableItems").textContent = data.items.filter((item) => item.status === "available").length;
+        document.getElementById("reviewItems").textContent = data.items.filter((item) => item.status === "needs-review").length;
+        document.getElementById("openPrs").textContent = data.github.openPullRequestCount;
+        document.getElementById("sourceNote").textContent = data.source.note;
+      }
+
+      function renderClusters(items) {
+        const counts = items.reduce((acc, item) => {
+          acc[item.area] = (acc[item.area] || 0) + 1;
+          return acc;
+        }, {});
+        const max = Math.max(...Object.values(counts), 1);
+        document.getElementById("clusters").innerHTML = Object.entries(counts)
+          .sort(([a], [b]) => a.localeCompare(b))
+          .map(([area, count]) => `
+            <div class="cluster">
+              <b>${area}</b>
+              <div class="bar"><i style="width:${Math.round((count / max) * 100)}%"></i></div>
+              <p class="note">${count} item${count === 1 ? "" : "s"}</p>
+            </div>
+          `)
+          .join("");
+      }
+
+      function itemHtml(item) {
+        const matchHtml = (item.matches || []).map((match) => `
+          <div class="match">
+            <strong>Candidate ${match.type} #${match.number}</strong>
+            <div><a href="${match.url}">${match.title}</a></div>
+            <div>${Math.round(match.confidence * 100)}% confidence. ${match.reason}</div>
+          </div>
+        `).join("");
+
+        return `
+          <article class="item">
+            <div>
+              <h2>${item.id}: ${item.title}</h2>
+              <p>${item.summary}</p>
+              <div class="chips">
+                ${chip(item.status, `status-${item.status}`)}
+                ${chip(item.area)}
+                ${chip(item.difficulty)}
+                ${chip(`impact: ${item.impact}`)}
+                ${item.tags.map((tag) => chip(tag)).join("")}
+              </div>
+              ${matchHtml}
+            </div>
+            <aside>
+              <div class="actions">
+                <a class="button" href="https://github.com/LegalQuants/lq-ai/issues/new?title=[${encodeURIComponent(item.id)}]%20${encodeURIComponent(item.title)}">Open issue</a>
+                <a class="button" href="https://github.com/LegalQuants/lq-ai/pulls?q=is%3Apr+${encodeURIComponent(item.id)}">Search PRs</a>
+                <a class="button" href="${data.source.prdUrl}">PRD source</a>
+              </div>
+            </aside>
+          </article>
+        `;
+      }
+
+      function applyFilters(data) {
+        const query = document.getElementById("search").value.trim().toLowerCase();
+        const area = document.getElementById("area").value;
+        const difficulty = document.getElementById("difficulty").value;
+        const sort = document.getElementById("sort").value;
+
+        let items = data.items.filter((item) => {
+          const haystack = [item.id, item.title, item.summary, item.area, item.difficulty, item.impact, item.status, ...item.tags]
+            .join(" ")
+            .toLowerCase();
+          return (!query || haystack.includes(query)) &&
+            (area === "all" || item.area === area) &&
+            (difficulty === "all" || item.difficulty === difficulty);
+        });
+
+        items = items.sort((a, b) => {
+          if (sort === "difficulty") return difficultyRank[a.difficulty] - difficultyRank[b.difficulty] || a.title.localeCompare(b.title);
+          if (sort === "area") return a.area.localeCompare(b.area) || a.title.localeCompare(b.title);
+          if (sort === "status") return a.status.localeCompare(b.status) || a.title.localeCompare(b.title);
+          return impactRank[a.impact] - impactRank[b.impact] || difficultyRank[a.difficulty] - difficultyRank[b.difficulty];
+        });
+
+        renderClusters(items);
+        document.getElementById("items").innerHTML = items.map(itemHtml).join("") || `<div class="panel">No items match the current filters.</div>`;
+      }
+
+      let data;
+      loadData().then((loaded) => {
+        data = loaded;
+        fillSelect(document.getElementById("area"), data.items.map((item) => item.area));
+        fillSelect(document.getElementById("difficulty"), data.items.map((item) => item.difficulty));
+        renderMetrics(data);
+        applyFilters(data);
+        ["search", "area", "difficulty", "sort"].forEach((id) => {
+          document.getElementById(id).addEventListener("input", () => applyFilters(data));
+        });
+      });
+    </script>
+  </body>
+</html>
