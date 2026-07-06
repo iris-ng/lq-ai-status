@@ -32,6 +32,8 @@ main{max-width:1200px;margin:0 auto;padding:18px;display:grid;gap:16px}
 .status-in-pr{color:var(--blue);border-color:var(--blue)}
 .status-done{color:var(--muted)}
 .status-open{color:var(--muted);border-color:var(--line)}
+.chip.gfi{color:#fff;background:var(--green);border-color:var(--green);font-weight:600}
+.gfi-toggle{display:flex;align-items:center;gap:6px;color:var(--muted);white-space:nowrap}
 .owner{font-size:12px;color:var(--muted);font-weight:400}
 .button{display:inline-block;border:1px solid var(--blue);color:var(--blue);border-radius:6px;padding:4px 10px;background:none;font:inherit;cursor:pointer}
 .button.ghost{border-color:var(--line);color:var(--muted)}

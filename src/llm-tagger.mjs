@@ -6,7 +6,7 @@ import { dirname } from "node:path";
 const MODEL = "claude-haiku-4-5";
 const BATCH = 20;
 
-const TRACKS = ["self-hosting-docs", "junior-code", "docs-quality", "legal-domain"];
+const TRACKS = ["self-hosting-docs", "app-code", "docs-quality", "legal-domain"];
 const DIFFICULTIES = ["small", "medium", "large"];
 const AREAS = ["web", "api", "gateway", "ai", "infra", "docs", "legal", "product"];
 const SKILLS = ["react", "python", "devops", "legal-research", "writing", "docs"];
@@ -36,14 +36,17 @@ const SCHEMA = {
 };
 
 const PROMPT_HEADER = `You are triaging a software project's backlog. For each item, assign:
-- track: who should pick it up — legal-domain (needs legal/regulatory expertise), self-hosting-docs (deployment/infra/ops), docs-quality (documentation & writing), or junior-code (general app/code work).
+- track: which domain of work it is (independent of difficulty) — legal-domain (needs legal/regulatory expertise), self-hosting-docs (deployment/infra/ops), docs-quality (documentation & writing), or app-code (general application/backend/frontend code).
 - difficulty: small (hours), medium (a day or two), or large (multi-day / architectural / risky).
 - area: any of web, api, gateway, ai, infra, docs, legal, product (choose all that apply; use product if nothing else fits).
 - skills: any of react, python, devops, legal-research, writing, docs (choose all that apply; may be empty).
 Return one entry per item id. Items:\n\n`;
 
+// Bump SCHEMA_VERSION whenever the tag vocabulary changes so the content-hash cache
+// invalidates and items get re-classified (v2: junior-code -> app-code).
+const SCHEMA_VERSION = "v2";
 function hashItem(item) {
-  return createHash("sha256").update(`${item.title}\n${item.description}`).digest("hex").slice(0, 16);
+  return createHash("sha256").update(`${SCHEMA_VERSION}\n${item.title}\n${item.description}`).digest("hex").slice(0, 16);
 }
 
 export async function makeClient() {

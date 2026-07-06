@@ -9,6 +9,7 @@ export function filterItems(items, f = {}) {
     if (f.difficulty && f.difficulty !== "all" && it.difficulty !== f.difficulty) return false;
     if (f.status && f.status !== "all" && it.status !== f.status) return false;
     if (f.area && f.area !== "all" && !(it.area || []).includes(f.area)) return false;
+    if (f.gfi && !it.goodFirstIssue) return false;
     if (q) {
       const hay = [it.id, it.title, it.description, ...(it.skills || [])].join(" ").toLowerCase();
       if (!hay.includes(q)) return false;
@@ -75,6 +76,7 @@ export function itemCardHtml(item, repo) {
       : "";
   // Row 3: indicator bubbles.
   const chips = [
+    item.goodFirstIssue ? `<span class="chip gfi">good first issue</span>` : "",
     `<span class="chip">${esc(item.theme)}</span>`,
     `<span class="chip">${esc(item.track)}</span>`,
     `<span class="chip">${esc(item.difficulty)}</span>`,

@@ -1,7 +1,7 @@
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parsePrd } from "./prd-parser.mjs";
-import { tagItem } from "./tagger.mjs";
+import { tagItem, isGoodFirstIssue } from "./tagger.mjs";
 import { fetchActivity } from "./github-fetch.mjs";
 import { link } from "./linker.mjs";
 import { enrich } from "./semantic.mjs";
@@ -48,6 +48,9 @@ export async function build(opts = {}) {
     }
   }
 
+  // Derived "good first issue" flag from the final (possibly LLM-upgraded) tags.
+  items = items.map((it) => ({ ...it, goodFirstIssue: isGoodFirstIssue(it) }));
+
   let activity = { issues: [], prs: [], botCount: 0 };
   try { activity = await fetchActivity({ repo, token, fetchImpl }); }
   catch (e) { warnings.push(`Could not fetch activity (${e.message}); showing catalog only.`); }
@@ -65,6 +68,7 @@ export async function build(opts = {}) {
   for (const s of ["available", "claimed", "in-pr", "done"]) {
     counts[s] = items.filter((i) => i.status === s).length;
   }
+  counts.goodFirstIssues = items.filter((i) => i.goodFirstIssue).length;
 
   const data = {
     meta: {

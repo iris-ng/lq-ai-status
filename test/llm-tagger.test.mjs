@@ -41,7 +41,7 @@ test("retries items the model drops from a batch", async () => {
         call += 1;
         // First batch drops DE-2; the retry (batch of just DE-2) returns it.
         const tags = call === 1
-          ? [{ id: "DE-1", track: "junior-code", difficulty: "small", area: ["api"], skills: ["python"] }]
+          ? [{ id: "DE-1", track: "app-code", difficulty: "small", area: ["api"], skills: ["python"] }]
           : [{ id: "DE-2", track: "legal-domain", difficulty: "large", area: ["legal"], skills: ["legal-research"] }];
         return { content: [{ type: "text", text: JSON.stringify({ tags }) }] };
       },
@@ -65,7 +65,7 @@ test("content-hash cache skips re-classification of unchanged items", async () =
   const cachePath = join(tmpdir(), `llmtag-${process.pid}.json`);
   const counter = { calls: 0 };
   const client = fakeClient({
-    "DE-1": { track: "junior-code", difficulty: "small", area: ["api"], skills: ["python"] },
+    "DE-1": { track: "app-code", difficulty: "small", area: ["api"], skills: ["python"] },
     "DE-2": { track: "legal-domain", difficulty: "large", area: ["legal"], skills: ["legal-research"] },
   }, counter);
   await llmTag(base(), { client, cachePath });

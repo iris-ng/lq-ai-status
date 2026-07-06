@@ -3,13 +3,13 @@ import assert from "node:assert/strict";
 import { filterItems, groupByLane, searchCorpus, claimUrl, itemCardHtml, esc, LANES } from "../web/lib.mjs";
 
 const items = [
-  { id: "DE-296", title: "Tabular wizard", description: "extract", skills: ["python"], theme: "Workflow intelligence", track: "junior-code", area: ["web"], difficulty: "medium", status: "available" },
-  { id: "DE-035", title: "Bedrock adapter", description: "gateway", skills: ["python"], theme: "Security and compliance", track: "junior-code", area: ["gateway"], difficulty: "large", status: "in-pr" },
+  { id: "DE-296", title: "Tabular wizard", description: "extract", skills: ["python"], theme: "Workflow intelligence", track: "app-code", area: ["web"], difficulty: "medium", status: "available" },
+  { id: "DE-035", title: "Bedrock adapter", description: "gateway", skills: ["python"], theme: "Security and compliance", track: "app-code", area: ["gateway"], difficulty: "large", status: "in-pr" },
 ];
 
 test("filter by track and query", () => {
-  assert.equal(filterItems(items, { track: "junior-code", q: "wizard" }).length, 1);
-  assert.equal(filterItems(items, { track: "junior-code" }).length, 2);
+  assert.equal(filterItems(items, { track: "app-code", q: "wizard" }).length, 1);
+  assert.equal(filterItems(items, { track: "app-code" }).length, 2);
   assert.equal(filterItems(items, { status: "in-pr" })[0].id, "DE-035");
 });
 
@@ -55,7 +55,7 @@ test("searchCorpus ranks title matches before body-only matches", () => {
 
 test("itemCardHtml surfaces semantic related neighbours", () => {
   const it = {
-    id: "DE-9", title: "t", description: "d", theme: "T", track: "junior-code",
+    id: "DE-9", title: "t", description: "d", theme: "T", track: "app-code",
     area: [], skills: [], difficulty: "small", status: "available", owner: null, links: {},
     related: [{ kind: "de", ref: "DE-201", score: 0.7 }, { kind: "pr", ref: 265, score: 0.6 }],
   };
@@ -72,7 +72,7 @@ test("esc escapes HTML-significant characters (used by app.js on live GitHub tit
 test("itemCardHtml escapes injection and handles a null owner + empty links", () => {
   const evil = {
     id: "DE-9", title: "<img src=x onerror=alert(1)>", description: "a & b < c",
-    theme: "T", track: "junior-code", area: [], skills: [], difficulty: "small",
+    theme: "T", track: "app-code", area: [], skills: [], difficulty: "small",
     status: "available", owner: null, links: {},
   };
   const html = itemCardHtml(evil, "o/r");
@@ -81,4 +81,20 @@ test("itemCardHtml escapes injection and handles a null owner + empty links", ()
   assert.ok(html.includes("a &amp; b &lt; c"), "ampersand and lt escaped");
   assert.ok(html.includes("status-available"), "status chip class present");
   assert.ok(!/\bnull\b/.test(html), "null owner not rendered literally");
+});
+
+test("filterItems gfi flag narrows to good-first-issue items", () => {
+  const list = [
+    { id: "DE-1", track: "app-code", difficulty: "small", status: "available", area: [], skills: [], theme: "x", goodFirstIssue: true },
+    { id: "DE-2", track: "app-code", difficulty: "large", status: "available", area: [], skills: [], theme: "x", goodFirstIssue: false },
+  ];
+  assert.equal(filterItems(list, { gfi: true }).length, 1);
+  assert.equal(filterItems(list, { gfi: true })[0].id, "DE-1");
+  assert.equal(filterItems(list, {}).length, 2);
+});
+
+test("itemCardHtml shows a good-first-issue badge only when flagged", () => {
+  const it = { id: "DE-9", title: "t", description: "d", theme: "T", track: "app-code", area: [], skills: [], difficulty: "small", status: "available", owner: null, links: {}, goodFirstIssue: true };
+  assert.match(itemCardHtml(it, "o/r"), /chip gfi">good first issue</);
+  assert.ok(!itemCardHtml({ ...it, goodFirstIssue: false }, "o/r").includes("good first issue"));
 });

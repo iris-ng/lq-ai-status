@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T06:58:25.590Z",
+    "generatedAt": "2026-07-06T09:14:56.630Z",
     "repo": "LegalQuants/lq-ai",
     "prdUrl": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md",
     "issuesUrl": "https://github.com/LegalQuants/lq-ai/issues",
@@ -12,7 +12,8 @@
       "available": 126,
       "claimed": 9,
       "in-pr": 1,
-      "done": 106
+      "done": 106,
+      "goodFirstIssues": 0
     },
     "themes": [
       "Skill ecosystem expansions",
@@ -42,6 +43,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -90,6 +92,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "pabjugar",
       "links": {
@@ -130,6 +133,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -166,6 +170,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -202,6 +207,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -250,6 +256,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -298,6 +305,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -339,6 +347,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -390,6 +399,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -431,6 +441,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -478,6 +489,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -499,6 +511,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -545,6 +558,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "sgbooth",
       "links": {
@@ -596,6 +610,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -646,6 +661,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -676,6 +692,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -731,6 +748,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -751,6 +769,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -797,6 +816,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -843,6 +863,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -889,6 +910,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -917,6 +939,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -967,6 +990,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1001,6 +1025,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1036,6 +1061,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1064,6 +1090,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1092,6 +1119,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -1160,6 +1188,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1192,6 +1221,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "in-pr",
       "owner": "dropthejase",
       "links": {
@@ -1230,6 +1260,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1276,6 +1307,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1322,6 +1354,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1368,6 +1401,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1409,6 +1443,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1455,6 +1490,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1501,6 +1537,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1527,6 +1564,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1549,6 +1587,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1580,6 +1619,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1611,6 +1651,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1642,6 +1683,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -1693,6 +1735,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1729,6 +1772,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1749,6 +1793,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1777,6 +1822,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1826,6 +1872,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1859,6 +1906,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -1905,6 +1953,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "pscripps",
       "links": {
@@ -1964,6 +2013,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2000,6 +2050,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2028,6 +2079,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2054,6 +2106,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2074,6 +2127,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2102,6 +2156,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2128,6 +2183,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2156,6 +2212,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2182,6 +2239,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2213,6 +2271,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2242,6 +2301,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2275,6 +2335,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2321,6 +2382,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2349,6 +2411,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2375,6 +2438,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2401,6 +2465,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2427,6 +2492,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2473,6 +2539,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2521,6 +2588,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2588,6 +2656,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2608,6 +2677,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -2631,6 +2701,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2679,6 +2750,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2755,6 +2827,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2820,6 +2893,7 @@
       "skills": [],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2884,6 +2958,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -2969,6 +3044,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3021,6 +3097,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "rlfordon",
       "links": {
@@ -3113,6 +3190,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "rlfordon",
       "links": {
@@ -3214,6 +3292,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3273,6 +3352,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3347,6 +3427,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -3395,6 +3476,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "rickbyr",
       "links": {
@@ -3476,6 +3558,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3509,6 +3592,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3562,6 +3646,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3593,6 +3678,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3641,6 +3727,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3689,6 +3776,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3728,6 +3816,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3774,6 +3863,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3817,6 +3907,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "rickbyr",
       "links": {
@@ -3870,6 +3961,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3917,6 +4009,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3955,6 +4048,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -3991,6 +4085,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4037,6 +4132,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4078,6 +4174,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4114,6 +4211,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4140,6 +4238,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4176,6 +4275,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4226,6 +4326,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4262,6 +4363,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4296,6 +4398,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4339,6 +4442,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4378,6 +4482,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4404,6 +4509,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4435,6 +4541,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4464,6 +4571,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4493,6 +4601,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4542,6 +4651,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4571,6 +4681,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4595,6 +4706,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4636,6 +4748,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4664,6 +4777,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4697,6 +4811,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "pscripps",
       "links": {
@@ -4758,6 +4873,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4792,6 +4908,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4840,6 +4957,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4871,6 +4989,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4900,6 +5019,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4931,6 +5051,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4957,6 +5078,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -4983,6 +5105,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5028,6 +5151,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5056,6 +5180,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5082,6 +5207,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5104,6 +5230,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5126,6 +5253,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5157,6 +5285,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5185,6 +5314,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5223,6 +5353,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5272,6 +5403,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5308,6 +5440,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5339,6 +5472,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5365,6 +5499,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5393,6 +5528,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5422,6 +5558,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5457,6 +5594,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5488,6 +5626,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5521,6 +5660,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5545,6 +5685,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -5588,6 +5729,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -5636,6 +5778,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "pabjugar",
       "links": {
@@ -5693,6 +5836,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -5752,6 +5896,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -5807,6 +5952,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -5866,6 +6012,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "yuch85",
       "links": {
@@ -5980,6 +6127,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6065,6 +6213,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6111,6 +6260,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6175,6 +6325,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6230,6 +6381,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6283,6 +6435,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6322,6 +6475,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6357,6 +6511,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6433,6 +6588,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "claimed",
       "owner": "iris-ng",
       "links": {
@@ -6492,6 +6648,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -6538,6 +6695,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -6589,6 +6747,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6642,6 +6801,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -6668,6 +6828,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -6701,6 +6862,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6754,6 +6916,7 @@
       "skills": [],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6787,6 +6950,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -6825,6 +6989,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6900,6 +7065,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -6961,6 +7127,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7011,6 +7178,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7057,6 +7225,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7155,6 +7324,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7222,6 +7392,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7287,6 +7458,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7354,6 +7526,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7410,6 +7583,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7465,6 +7639,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7520,6 +7695,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7583,6 +7759,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7639,6 +7816,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7674,6 +7852,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -7702,6 +7881,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7749,6 +7929,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -7787,6 +7968,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -7818,6 +8000,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -7854,6 +8037,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -7876,6 +8060,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7913,6 +8098,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -7971,6 +8157,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "available",
       "owner": null,
       "links": {
@@ -8018,6 +8205,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8081,6 +8269,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8142,6 +8331,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8201,6 +8391,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8242,6 +8433,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "pscripps",
       "links": {
@@ -8287,6 +8479,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8325,6 +8518,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8380,6 +8574,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8417,6 +8612,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8475,6 +8671,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8530,6 +8727,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8580,6 +8778,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8653,6 +8852,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8706,6 +8906,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8748,6 +8949,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8846,6 +9048,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8907,6 +9110,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -8960,6 +9164,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9013,6 +9218,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9069,6 +9275,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9122,6 +9329,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9205,6 +9413,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9282,6 +9491,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9321,6 +9531,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9375,6 +9586,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9426,6 +9638,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9468,6 +9681,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9511,6 +9725,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9577,6 +9792,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "SaifAlYounan",
       "links": {
@@ -9645,6 +9861,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9709,6 +9926,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9795,6 +10013,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9850,6 +10069,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9903,6 +10123,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -9974,6 +10195,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10047,6 +10269,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10111,6 +10334,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10167,6 +10391,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10225,6 +10450,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10272,6 +10498,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10355,6 +10582,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10429,6 +10657,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "large",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10497,6 +10726,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10556,6 +10786,7 @@
       ],
       "track": "self-hosting-docs",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10641,6 +10872,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10697,6 +10929,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10743,6 +10976,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10783,6 +11017,7 @@
       ],
       "track": "docs-quality",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10818,6 +11053,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "medium",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10864,6 +11100,7 @@
       ],
       "track": "legal-domain",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10921,6 +11158,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -10957,6 +11195,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11013,6 +11252,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11049,6 +11289,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11105,6 +11346,7 @@
       ],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {
@@ -11158,6 +11400,7 @@
       "skills": [],
       "track": "Uncategorised",
       "difficulty": "Uncategorised",
+      "goodFirstIssue": false,
       "status": "done",
       "owner": "Kevin-Tucuxi",
       "links": {

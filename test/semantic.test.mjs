@@ -13,8 +13,8 @@ const pick = (text) => {
 const embed = async (t) => pick(t);
 
 const items = [
-  { id: "DE-296", title: "Tabular wizard", description: "", theme: "x", track: "junior-code", status: "available", links: {} },
-  { id: "DE-035", title: "Bedrock adapter", description: "", theme: "x", track: "junior-code", status: "in-pr", links: {} },
+  { id: "DE-296", title: "Tabular wizard", description: "", theme: "x", track: "app-code", status: "available", links: {} },
+  { id: "DE-035", title: "Bedrock adapter", description: "", theme: "x", track: "app-code", status: "in-pr", links: {} },
 ];
 const unlinked = [
   { kind: "issue", number: 900, title: "wizard onboarding", body: "", url: "u/900", state: "open" },
@@ -45,7 +45,7 @@ test("related is thresholded, sorted desc, and capped at 5", async () => {
     return [score[k] ?? 0, 0];
   };
   const many = Object.keys(score).map((k) => ({
-    id: `DE-${k}`, title: `<${k}>`, description: "", theme: "x", track: "junior-code", status: "available", links: {},
+    id: `DE-${k}`, title: `<${k}>`, description: "", theme: "x", track: "app-code", status: "available", links: {},
   }));
   const { items: out } = await enrich({
     items: many, unlinked: [], activity: { issues: [], prs: [] }, embed: scoreEmbed, threshold: 0.45,

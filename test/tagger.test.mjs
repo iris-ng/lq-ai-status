@@ -1,6 +1,24 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { tagItem } from "../src/tagger.mjs";
+import { tagItem, isGoodFirstIssue } from "../src/tagger.mjs";
+
+const gfi = (o) => isGoodFirstIssue({ difficulty: "small", track: "app-code", theme: "Application UI enhancements", area: [], title: "", description: "", ...o });
+
+test("isGoodFirstIssue: small, scoped, non-sensitive item qualifies", () => {
+  assert.equal(gfi({ title: "Add a saved-prompts toggle", description: "small UI addition" }), true);
+});
+
+test("isGoodFirstIssue: large or Uncategorised does not qualify", () => {
+  assert.equal(gfi({ difficulty: "large" }), false);
+  assert.equal(gfi({ difficulty: "Uncategorised" }), false);
+  assert.equal(gfi({ track: "Uncategorised" }), false);
+});
+
+test("isGoodFirstIssue: security-sensitive items are excluded", () => {
+  assert.equal(gfi({ theme: "Security and compliance" }), false);
+  assert.equal(gfi({ area: ["gateway"] }), false);
+  assert.equal(gfi({ title: "OAuth token refresh" }), false);
+});
 
 test("legal-domain track from legal keywords", () => {
   const t = tagItem({ id: "DE-1", title: "GDPR statutory graph", description: "trademark authority source", theme: "x" });

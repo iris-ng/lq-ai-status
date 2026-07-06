@@ -39,7 +39,7 @@ function refreshFacets() {
 
 function currentFilters() {
   return { theme: $("theme").value, track: $("track").value,
-    difficulty: $("difficulty").value, status: $("status").value };
+    difficulty: $("difficulty").value, status: $("status").value, gfi: $("gfi").checked };
 }
 
 // DE ids are assigned roughly in creation order, so the numeric id is our recency proxy.
@@ -115,6 +115,7 @@ async function liveOverlay() {
 function resetViews() {
   ["theme", "track", "difficulty", "status"].forEach((id) => { $(id).value = "all"; });
   $("sort").value = "latest";
+  $("gfi").checked = false;
   $("corpusSearch").value = "";
   renderSearch();
   renderBoard();
@@ -145,6 +146,7 @@ async function main() {
     `<a href="${DATA.meta.issuesUrl}">issues</a> · <a href="${DATA.meta.pullsUrl}">PRs</a> · ${DATA.meta.botPrCount} bot PRs hidden`;
 
   ["theme", "track", "difficulty", "status", "sort"].forEach((id) => $(id).addEventListener("input", renderBoard));
+  $("gfi").addEventListener("change", renderBoard);
   $("corpusSearch").addEventListener("input", renderSearch);
   $("reset").addEventListener("click", resetViews);
 

@@ -30,7 +30,7 @@ function inferTrack(area, skills) {
   if (area.includes("infra") || area.includes("docs")) {
     return area.includes("docs") && !area.includes("infra") ? "docs-quality" : "self-hosting-docs";
   }
-  return UNCATEGORISED; // no positive track signal — don't pretend it's junior-code
+  return UNCATEGORISED; // no positive track signal — don't pretend it's app-code
 }
 
 function inferDifficulty(text) {
@@ -51,4 +51,16 @@ export function tagItem(item) {
     track: inferTrack(area, skills),
     difficulty: inferDifficulty(text),
   };
+}
+
+// houfu's "good first issue" concept as a derived flag: small, scoped, and not
+// touching security-sensitive surfaces. Track and difficulty stay independent axes;
+// this is their intersection with a safety exclusion.
+const GFI_SENSITIVE = /(cryptograph|vulnerab|prompt.?injection|authenticat|oauth|\bhsm\b|\btls\b|\bmtls\b)/i;
+export function isGoodFirstIssue(item) {
+  if (item.difficulty !== "small") return false;          // must be genuinely small
+  if (!item.track || item.track === UNCATEGORISED) return false; // scope must be clear
+  if (item.theme === "Security and compliance") return false;    // PRD's own security section
+  if ((item.area || []).includes("gateway")) return false;       // provider-key/routing surface
+  return !GFI_SENSITIVE.test(`${item.title} ${item.description}`);
 }
