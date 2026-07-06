@@ -6,6 +6,9 @@ const HEADING_ID = /^DE-(\d{2,4})\b/;
 // Requires a separator (:—–-|) right after the id so a bolded inline cross-reference
 // like "- **DE-101** already covered" is treated as prose, not a new item.
 const BULLET_ID = /^\s*[-*|]\s*(?:\*\*)?\s*DE-(\d{2,4})\b(?:\*\*)?\s*[:—–|-]/;
+// Headings that are meta/instructional, not real DE categories — their items fall under Uncategorised.
+const NON_CATEGORY = /how to (add|use|contribute)|contributing|^changelog|^appendix|^template|^notes?$/i;
+const UNCATEGORISED = "Uncategorised";
 const DESC_CAP = 400;
 
 function slug(text) {
@@ -40,7 +43,7 @@ export function parsePrd(markdown, prdUrl) {
   const items = [];
   const themes = [];
   const byId = new Map();
-  let theme = "General";
+  let theme = UNCATEGORISED;
   let current = null;
 
   // Create an item once per id; a second sighting (e.g. a cross-reference) just re-focuses it.
@@ -73,7 +76,8 @@ export function parsePrd(markdown, prdUrl) {
         addItem(`DE-${hm[1]}`, stripLead(text), text);
       } else {
         current = null;
-        theme = text.replace(/^\d+(\.\d+)*\s*/, "").trim();
+        const label = text.replace(/^\d+(\.\d+)*\s*/, "").trim();
+        theme = NON_CATEGORY.test(label) ? UNCATEGORISED : label;
         if (!themes.includes(theme)) themes.push(theme);
       }
       continue;

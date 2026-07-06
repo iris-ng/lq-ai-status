@@ -53,6 +53,23 @@ test("parses heading-style DE items with categories as themes", () => {
   assert.match(de001.description, /broaden the M1 set/); // enriched from sub-bullets
 });
 
+test("meta headings and pre-category items fall under Uncategorised", () => {
+  const md = [
+    "## 9. Deferred Enhancements",
+    "",
+    "#### DE-500 — orphan before any category",
+    "",
+    "### How to add to this list",
+    "",
+    "#### DE-501 — appended item",
+  ].join("\n");
+  const { items: out, themes: th } = parsePrd(md, PRD_URL);
+  assert.equal(out.find((i) => i.id === "DE-500").theme, "Uncategorised");
+  assert.equal(out.find((i) => i.id === "DE-501").theme, "Uncategorised");
+  assert.ok(th.includes("Uncategorised"));
+  assert.ok(!th.includes("How to add to this list"));
+});
+
 test("does not duplicate items for mid-text cross-referenced DE-ids", () => {
   const md = [
     "## 9. Deferred Enhancements",
