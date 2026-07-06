@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { filterItems, groupByLane, searchCorpus, claimUrl, itemCardHtml, LANES } from "../web/lib.mjs";
+import { filterItems, groupByLane, searchCorpus, claimUrl, itemCardHtml, esc, LANES } from "../web/lib.mjs";
 
 const items = [
   { id: "DE-296", title: "Tabular wizard", description: "extract", skills: ["python"], theme: "Workflow intelligence", track: "junior-code", area: ["web"], difficulty: "medium", status: "available" },
@@ -47,6 +47,10 @@ test("searchCorpus ranks title matches before body-only matches", () => {
   const hits = searchCorpus(entries, "bedrock");
   assert.deepEqual(hits.map((h) => h.ref), ["DE-2", "DE-1"]); // title match first
   assert.equal(searchCorpus(entries, "").length, 0);
+});
+
+test("esc escapes HTML-significant characters (used by app.js on live GitHub titles)", () => {
+  assert.equal(esc('<img src=x onerror="a">& b'), "&lt;img src=x onerror=&quot;a&quot;&gt;&amp; b");
 });
 
 test("itemCardHtml escapes injection and handles a null owner + empty links", () => {
