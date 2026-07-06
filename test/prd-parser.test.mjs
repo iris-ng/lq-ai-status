@@ -27,6 +27,44 @@ test("sets a PRD anchor and lists themes in order", () => {
   assert.deepEqual(themes, ["Workflow intelligence", "Security and compliance"]);
 });
 
+test("parses heading-style DE items with categories as themes", () => {
+  const md = [
+    "## 9. Deferred Enhancements",
+    "",
+    "### Skill ecosystem expansions",
+    "",
+    "#### DE-001 — Additional starter skills",
+    "",
+    "- Context: broaden the M1 set",
+    "- Acceptance criteria: five new skills",
+    "",
+    "#### DE-002 — Another skill",
+    "",
+    "### Security and compliance",
+    "",
+    "#### DE-100 — Tamper-evident audit log",
+  ].join("\n");
+  const { items: out, themes: th } = parsePrd(md, PRD_URL);
+  assert.deepEqual(out.map((i) => i.id), ["DE-001", "DE-002", "DE-100"]);
+  assert.deepEqual(th, ["Skill ecosystem expansions", "Security and compliance"]);
+  const de001 = out.find((i) => i.id === "DE-001");
+  assert.equal(de001.theme, "Skill ecosystem expansions");
+  assert.equal(de001.title, "Additional starter skills");
+  assert.match(de001.description, /broaden the M1 set/); // enriched from sub-bullets
+});
+
+test("does not duplicate items for mid-text cross-referenced DE-ids", () => {
+  const md = [
+    "## 9. Deferred Enhancements",
+    "### Cat",
+    "#### DE-050 — First",
+    "- see also DE-051 and DE-999 for context",
+    "#### DE-051 — Second",
+  ].join("\n");
+  const { items: out } = parsePrd(md, PRD_URL);
+  assert.deepEqual(out.map((i) => i.id), ["DE-050", "DE-051"]);
+});
+
 test("parses a table-row DE item without pipe leakage", () => {
   const md = [
     "## 9. Deferred Enhancements",

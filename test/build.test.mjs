@@ -35,3 +35,30 @@ test("build degrades when fetch fails", async () => {
   assert.ok(data.items.length >= 3); // DE catalog still built
   await rm(outDir, { recursive: true, force: true });
 });
+
+test("build warns (and does not crash) when the PRD fetch returns non-ok", async () => {
+  const outDir = join(tmpdir(), `fwb-prd-${process.pid}`);
+  const notFound = async () => ({ ok: false, status: 404, text: async () => "", json: async () => [] });
+  const data = await build({
+    prdUrl: "https://x/PRD.md", repo: "o/r", token: "t",
+    embed, outDir, now: "2026-07-06T00:00:00.000Z", fetchImpl: notFound,
+  });
+  assert.ok(data.meta.warnings.some((w) => /PRD/i.test(w)));
+  assert.equal(data.items.length, 0);
+  await rm(outDir, { recursive: true, force: true });
+});
+
+test("build surfaces activity truncation as a warning (no silent caps)", async () => {
+  const outDir = join(tmpdir(), `fwb-trunc-${process.pid}`);
+  const full = Array.from({ length: 100 }, (_, i) => ({
+    number: i, title: "x", body: "", html_url: `u/${i}`, state: "open",
+    user: { login: "u", type: "User" }, assignee: null, labels: [],
+  }));
+  const fullFetch = async () => ({ ok: true, status: 200, json: async () => full });
+  const data = await build({
+    prdMarkdown: prdMd, prdUrl: "https://x/PRD.md", repo: "o/r", token: "t",
+    embed, outDir, now: "2026-07-06T00:00:00.000Z", fetchImpl: fullFetch,
+  });
+  assert.ok(data.meta.warnings.some((w) => /truncat/i.test(w)));
+  await rm(outDir, { recursive: true, force: true });
+});

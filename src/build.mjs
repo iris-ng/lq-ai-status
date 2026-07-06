@@ -19,8 +19,14 @@ export async function build(opts = {}) {
 
   let markdown = prdMarkdown;
   if (!markdown) {
-    try { markdown = await (await fetchImpl(PRD_URL)).text(); }
-    catch { warnings.push("Could not fetch PRD; used empty catalog."); markdown = ""; }
+    try {
+      const res = await fetchImpl(PRD_URL);
+      if (!res.ok) throw new Error(`PRD fetch ${res.status}`);
+      markdown = await res.text();
+    } catch (e) {
+      warnings.push(`Could not fetch PRD (${e.message}); used empty catalog.`);
+      markdown = "";
+    }
   }
 
   const { items: parsed, themes } = parsePrd(markdown, prdUrl);
