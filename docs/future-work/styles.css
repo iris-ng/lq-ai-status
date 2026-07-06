@@ -7,34 +7,35 @@
   font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
 header{background:#202b3a;color:#fff;padding:22px 24px} h1{margin:0 0 4px;font-size:26px}
-header p{margin:0;color:#d8e1ee}
+header p{margin:0;color:#d8e1ee} #subtitle:empty{display:none}
 .banner{margin-top:10px;background:#7a2018;color:#fff;padding:8px 10px;border-radius:6px}
 main{max-width:1200px;margin:0 auto;padding:18px;display:grid;gap:16px}
 .search input{width:100%;min-height:46px;font-size:16px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
-.search-results{margin-top:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.hit{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--ink)}
-.hit-kind{color:var(--muted);font-size:12px;text-transform:uppercase}
-.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.metric{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}
-.metric strong{display:block;font-size:22px} .metric span{color:var(--muted)}
+.search{position:relative}
+.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:20;background:var(--panel);border:1px solid var(--line);border-radius:10px;max-height:min(60vh,420px);overflow-y:auto;box-shadow:0 14px 34px rgba(0,0,0,.24)}
+.hit-more{position:sticky;bottom:0;margin:0;padding:8px 14px;font-size:12px;color:var(--muted);background:var(--panel);border-top:1px solid var(--line)}
+.hit{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--ink)}
+.hit:hover{background:rgba(127,127,127,.07)}
+.hit-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hit .chip{flex:none}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .toolbar input,.toolbar select{min-height:38px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--ink)}
-.toolbar #q{flex:1;min-width:200px}
-.swimlane-toggle{display:flex;gap:10px;color:var(--muted)}
-.board.lanes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:start}
-.lane{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px}
-.lane h2,.swimgroup h2{font-size:14px;margin:2px 0 10px;display:flex;justify-content:space-between;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
-.swimrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:10px}
-.card h3{margin:0 0 6px;font-size:15px} .card p{margin:0 0 8px;color:var(--muted)}
+.board{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin:0 0 10px;font-size:16px}
+.card-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+.card p{margin:10px 0 0;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
 .chip{border:1px solid var(--line);border-radius:999px;padding:2px 8px;font-size:12px;color:var(--muted)}
 .status-available{color:var(--green);border-color:var(--green)}
 .status-claimed{color:var(--amber);border-color:var(--amber)}
 .status-in-pr{color:var(--blue);border-color:var(--blue)}
 .status-done{color:var(--muted)}
+.status-open{color:var(--muted);border-color:var(--line)}
 .owner{font-size:12px;color:var(--muted);font-weight:400}
-.button{display:inline-block;border:1px solid var(--blue);color:var(--blue);border-radius:6px;padding:4px 10px}
+.button{display:inline-block;border:1px solid var(--blue);color:var(--blue);border-radius:6px;padding:4px 10px;background:none;font:inherit;cursor:pointer}
+.button.ghost{border-color:var(--line);color:var(--muted)}
+.button.ghost:hover{color:var(--ink);border-color:var(--muted)}
+#reset{margin-left:auto}
 .related{margin:0 0 8px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .note,.empty{color:var(--muted)} .empty{padding:6px}
-@media (max-width:860px){ .metrics{grid-template-columns:repeat(2,1fr)} .board.lanes{grid-template-columns:1fr} }

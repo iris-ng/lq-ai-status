@@ -26,10 +26,10 @@ test("searchCorpus matches substrings", () => {
   assert.equal(searchCorpus(entries, "nothing").length, 0);
 });
 
-test("claimUrl embeds DE id and picking-up framing", () => {
+test("claimUrl embeds DE id and claiming framing", () => {
   const url = claimUrl(items[0], "LegalQuants/lq-ai");
   assert.match(url, /issues\/new/);
-  assert.match(decodeURIComponent(url), /I'm picking up: DE-296/);
+  assert.match(decodeURIComponent(url), /I'm claiming: DE-296/);
 });
 
 test("filterItems constrains by theme and treats 'all'/'' as no-constraint", () => {

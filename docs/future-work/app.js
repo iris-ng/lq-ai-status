@@ -1,7 +1,7 @@
-import { filterItems, groupByLane, searchCorpus, itemCardHtml, esc, LANES } from "./lib.mjs";
+import { filterItems, searchCorpus, itemCardHtml, esc } from "./lib.mjs";
 
 const REPO = "LegalQuants/lq-ai";
-const LANE_LABEL = { available: "Available", claimed: "Claimed", "in-pr": "In PR", done: "Done" };
+const LANE_LABEL = { available: "Available", claimed: "Claimed", "in-pr": "In PR", done: "Done", open: "Open" };
 let DATA = null;
 let INDEX = [];
 
@@ -19,49 +19,44 @@ function fillSelect(el, label, values) {
 }
 
 function currentFilters() {
-  return { q: $("q").value, theme: $("theme").value, track: $("track").value,
+  return { theme: $("theme").value, track: $("track").value,
     difficulty: $("difficulty").value, status: $("status").value };
 }
 
-function renderMetrics() {
-  const c = DATA.meta.counts;
-  $("metrics").innerHTML = [["total", "items"], ["available", "available"], ["claimed", "claimed"], ["in-pr", "in PR"], ["done", "done"]]
-    .map(([k, lbl]) => `<div class="metric"><strong>${c[k] ?? 0}</strong><span>${lbl}</span></div>`)
-    .join("");
-}
+// DE ids are assigned roughly in creation order, so the numeric id is our recency proxy.
+const deNum = (it) => parseInt(String(it.id).replace(/^\D+/, ""), 10) || 0;
 
 function renderBoard() {
   const items = filterItems(DATA.items, currentFilters());
-  const swim = document.querySelector('input[name="swim"]:checked').value;
-  const board = $("board");
-
-  if (swim === "none") {
-    const g = groupByLane(items);
-    board.className = "board lanes";
-    board.innerHTML = LANES.map((lane) => `
-      <div class="lane"><h2>${LANE_LABEL[lane]} <span>${g[lane].length}</span></h2>
-      ${g[lane].map((it) => itemCardHtml(it, REPO)).join("") || '<p class="empty">—</p>'}</div>`).join("");
-  } else {
-    const groups = {};
-    for (const it of items) (groups[it[swim]] ||= []).push(it);
-    board.className = "board swim";
-    board.innerHTML = Object.keys(groups).sort().map((key) => `
-      <div class="swimgroup"><h2>${esc(key)} <span>${groups[key].length}</span></h2>
-      <div class="swimrow">${groups[key].map((it) => itemCardHtml(it, REPO)).join("")}</div></div>`).join("")
-      || '<p class="empty">No items match.</p>';
-  }
+  const dir = $("sort").value === "oldest" ? 1 : -1;
+  items.sort((a, b) => (deNum(a) - deNum(b)) * dir);
+  $("board").innerHTML = items.length
+    ? items.map((it) => itemCardHtml(it, REPO)).join("")
+    : '<p class="empty">No items match these filters.</p>';
 }
 
 function renderSearch() {
   const q = $("corpusSearch").value;
   const box = $("searchResults");
   if (!q.trim()) { box.hidden = true; return; }
-  const hits = searchCorpus(INDEX, q).slice(0, 20);
+  const all = searchCorpus(INDEX, q);
+  const hits = all.slice(0, 50);
   box.hidden = false;
-  box.innerHTML = hits.length
-    ? hits.map((e) => `<a class="hit ${esc(e.kind)}" href="${esc(e.url || "#")}">
-        <b>${esc(e.title)}</b><span class="hit-kind">${esc(e.kind)}${e.status ? " · " + esc(e.status) : ""}</span></a>`).join("")
-    : '<p class="empty">Nothing found — looks new. You could be the first to file it.</p>';
+  if (!hits.length) {
+    box.innerHTML = '<p class="empty">Nothing found — looks new. You could be the first to file it.</p>';
+    return;
+  }
+  const rows = hits.map((e) => {
+    const st = e.status || "open";
+    return `<a class="hit" href="${esc(e.url || "#")}">
+      <span class="hit-title">${esc(e.title)}</span>
+      <span class="chip status-${esc(st)}">${esc(LANE_LABEL[st] || st)}</span>
+    </a>`;
+  }).join("");
+  const more = all.length > hits.length
+    ? `<p class="hit-more">Showing ${hits.length} of ${all.length} — refine your search to narrow.</p>`
+    : "";
+  box.innerHTML = rows + more;
 }
 
 // Client-side live overlay: refresh open issues/PRs so claims show up instantly.
@@ -81,27 +76,28 @@ async function liveOverlay() {
           owner: it.assignee?.login || it.user?.login });
       }
     }
-    const delta = { available: 0, claimed: 0, "in-pr": 0 };
+    let changed = 0;
     for (const item of DATA.items) {
       const live = openByDe.get(item.id);
       if (live && item.status === "available") {
         item.status = live.status;
         item.owner = live.owner;
-        delta.available -= 1;
-        delta[live.status] += 1;
+        changed += 1;
       }
     }
-    const changed = -delta.available;
     if (changed) {
-      const c = DATA.meta.counts;
-      c.available += delta.available;
-      c.claimed += delta.claimed;
-      c["in-pr"] += delta["in-pr"];
-      renderMetrics();
-      renderBoard();
+      renderBoard(); // lane counts recompute from item.status
       $("subtitle").textContent = `Live · ${changed} update(s) since last build.`;
     }
   } catch { /* offline: baseline stands */ }
+}
+
+function resetViews() {
+  ["theme", "track", "difficulty", "status"].forEach((id) => { $(id).value = "all"; });
+  $("sort").value = "latest";
+  $("corpusSearch").value = "";
+  renderSearch();
+  renderBoard();
 }
 
 async function main() {
@@ -120,7 +116,6 @@ async function main() {
   fillSelect($("difficulty"), "difficulty", DATA.items.map((i) => i.difficulty));
   fillSelect($("status"), "status", DATA.items.map((i) => i.status));
 
-  renderMetrics();
   renderBoard();
 
   const stale = $("stale");
@@ -128,9 +123,9 @@ async function main() {
   $("footNote").innerHTML = `Built ${new Date(DATA.meta.generatedAt).toLocaleString()} · ` +
     `<a href="${DATA.meta.issuesUrl}">issues</a> · <a href="${DATA.meta.pullsUrl}">PRs</a> · ${DATA.meta.botPrCount} bot PRs hidden`;
 
-  ["q", "theme", "track", "difficulty", "status"].forEach((id) => $(id).addEventListener("input", renderBoard));
-  document.querySelectorAll('input[name="swim"]').forEach((r) => r.addEventListener("change", renderBoard));
+  ["theme", "track", "difficulty", "status", "sort"].forEach((id) => $(id).addEventListener("input", renderBoard));
   $("corpusSearch").addEventListener("input", renderSearch);
+  $("reset").addEventListener("click", resetViews);
 
   liveOverlay(); // fire-and-forget
 }

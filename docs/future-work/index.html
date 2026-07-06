@@ -3,34 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LQ AI — Future Work Board</title>
+    <title>LQ-AI Work Pipeline</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <h1>LQ AI — Future Work Board</h1>
-      <p id="subtitle">Live backlog of deferred enhancements you can claim.</p>
+      <h1>LQ-AI Work Pipeline</h1>
+      <p id="subtitle"></p>
       <div id="stale" class="banner" hidden></div>
     </header>
     <main>
       <section class="search">
-        <input id="corpusSearch" type="search" placeholder="Has this been built or asked before? Search all DEs, issues & PRs…" />
+        <input id="corpusSearch" type="search" placeholder="What's up, LQ-AI? Ask anything — search every DE, issue & PR (open or closed)…" />
         <div id="searchResults" class="search-results" hidden></div>
       </section>
 
-      <section class="metrics" id="metrics"></section>
-
       <section class="toolbar">
-        <input id="q" type="search" placeholder="Filter the board…" />
         <select id="theme"></select>
         <select id="track"></select>
         <select id="difficulty"></select>
         <select id="status"></select>
-        <div class="swimlane-toggle">
-          <label><input type="radio" name="swim" value="none" checked /> Lanes</label>
-          <label><input type="radio" name="swim" value="theme" /> by Theme</label>
-          <label><input type="radio" name="swim" value="track" /> by Track</label>
-        </div>
+        <select id="sort">
+          <option value="latest">Latest first</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+        <button id="reset" class="button" type="button">Reset</button>
       </section>
 
       <section id="board" class="board"></section>

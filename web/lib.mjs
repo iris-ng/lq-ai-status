@@ -38,12 +38,12 @@ export function searchCorpus(entries, q) {
 }
 
 export function claimUrl(item, repo) {
-  const title = encodeURIComponent(`I'm picking up: ${item.id} ${item.title}`);
+  const title = encodeURIComponent(`I'm claiming: ${item.id} ${item.title}`);
   const body = encodeURIComponent(
-    `I'd like to pick up **${item.id}** — ${item.title}.\n\n` +
+    `I'd like to claim **${item.id}** — ${item.title}.\n\n` +
       `Source: ${item.prdAnchor || "PRD §9"}\n\n` +
       `My rough approach (weigh in if you'd do it differently):\n- \n\n` +
-      `_Filed from the Future Work Board._`
+      `_Filed from the LQ-AI Work Pipeline._`
   );
   return `https://github.com/${repo}/issues/new?title=${title}&body=${body}`;
 }
@@ -53,22 +53,24 @@ export function esc(s) {
 }
 
 export function itemCardHtml(item, repo) {
+  const owner = item.owner ? `<span class="owner">@${esc(item.owner)}</span>` : "";
+  // Row 2: availability, PRD, linked issues/PRs, and the claim CTA.
+  const statusChip = `<span class="chip status-${esc(item.status)}">${LANE_LABEL[item.status] || esc(item.status)}</span>`;
+  const prdLink = item.prdAnchor ? `<a class="button ghost" href="${esc(item.prdAnchor)}">PRD</a>` : "";
+  const refs = [...(item.links?.issues || []), ...(item.links?.prs || [])]
+    .map((r) => `<a class="button ghost" href="${esc(r.url)}">#${r.number}</a>`)
+    .join("");
+  const claim =
+    item.status === "available"
+      ? `<a class="button" href="${claimUrl(item, repo)}">I'm claiming this</a>`
+      : "";
+  // Row 3: indicator bubbles.
   const chips = [
-    `<span class="chip status-${esc(item.status)}">${LANE_LABEL[item.status] || esc(item.status)}</span>`,
     `<span class="chip">${esc(item.theme)}</span>`,
     `<span class="chip">${esc(item.track)}</span>`,
     `<span class="chip">${esc(item.difficulty)}</span>`,
     ...(item.skills || []).map((s) => `<span class="chip">${esc(s)}</span>`),
   ].join("");
-  const owner = item.owner ? `<span class="owner">@${esc(item.owner)}</span>` : "";
-  const prdLink = item.prdAnchor ? `<a href="${esc(item.prdAnchor)}">PRD</a>` : "";
-  const claim =
-    item.status === "available"
-      ? `<a class="button" href="${claimUrl(item, repo)}">I'm picking up this</a>`
-      : "";
-  const links = [...(item.links?.issues || []), ...(item.links?.prs || [])]
-    .map((r) => `<a href="${esc(r.url)}">#${r.number}</a>`)
-    .join(" ");
   // Semantic neighbours (requirement C): DE-ids scroll on the page; issues/PRs link out.
   const related = (item.related || []).length
     ? `<div class="related">Related: ${item.related
@@ -81,9 +83,9 @@ export function itemCardHtml(item, repo) {
     : "";
   return `<article class="card" id="${esc(item.id)}" data-id="${esc(item.id)}">
     <h3>${esc(item.id)}: ${esc(item.title)} ${owner}</h3>
-    <p>${esc(item.description)}</p>
+    <div class="card-actions">${statusChip}${prdLink}${refs}${claim}</div>
     <div class="chips">${chips}</div>
     ${related}
-    <div class="card-links">${prdLink} ${links} ${claim}</div>
+    <p>${esc(item.description)}</p>
   </article>`;
 }
