@@ -13,9 +13,28 @@ async function loadJson(path) {
   return res.json();
 }
 
-function fillSelect(el, label, values) {
-  const opts = ["all", ...[...new Set(values)].sort()];
-  el.innerHTML = opts.map((v) => `<option value="${esc(v)}">${v === "all" ? `All ${esc(label)}` : esc(v)}</option>`).join("");
+const FACET_LABEL = { theme: "themes", track: "tracks", difficulty: "difficulty", status: "status" };
+const FACET_VALUES = {}; // facet -> sorted unique values, computed once from DATA
+
+// Rebuild each facet dropdown with live counts: each option shows how many items match given
+// the OTHER active filters (so counts update as you filter), preserving the current selection.
+function refreshFacets() {
+  const filters = currentFilters();
+  for (const facet of Object.keys(FACET_LABEL)) {
+    const el = $(facet);
+    const current = el.value || "all";
+    const subset = filterItems(DATA.items, { ...filters, [facet]: "all" });
+    const counts = {};
+    for (const it of subset) counts[it[facet]] = (counts[it[facet]] || 0) + 1;
+    el.innerHTML = ["all", ...FACET_VALUES[facet]]
+      .map((v) => {
+        const n = v === "all" ? subset.length : counts[v] || 0;
+        const label = v === "all" ? `All ${FACET_LABEL[facet]}` : v;
+        return `<option value="${esc(v)}">${esc(label)} (${n})</option>`;
+      })
+      .join("");
+    el.value = current;
+  }
 }
 
 function currentFilters() {
@@ -27,6 +46,7 @@ function currentFilters() {
 const deNum = (it) => parseInt(String(it.id).replace(/^\D+/, ""), 10) || 0;
 
 function renderBoard() {
+  refreshFacets();
   const items = filterItems(DATA.items, currentFilters());
   const dir = $("sort").value === "oldest" ? 1 : -1;
   items.sort((a, b) => (deNum(a) - deNum(b)) * dir);
@@ -111,10 +131,9 @@ async function main() {
   }
   INDEX = (await loadJson("./search-index.json").catch(() => ({ entries: [] }))).entries;
 
-  fillSelect($("theme"), "themes", DATA.items.map((i) => i.theme));
-  fillSelect($("track"), "tracks", DATA.items.map((i) => i.track));
-  fillSelect($("difficulty"), "difficulty", DATA.items.map((i) => i.difficulty));
-  fillSelect($("status"), "status", DATA.items.map((i) => i.status));
+  for (const facet of Object.keys(FACET_LABEL)) {
+    FACET_VALUES[facet] = [...new Set(DATA.items.map((i) => i[facet]))].sort();
+  }
 
   renderBoard();
 
