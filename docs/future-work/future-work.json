@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T06:50:41.217Z",
+    "generatedAt": "2026-07-06T06:58:25.590Z",
     "repo": "LegalQuants/lq-ai",
     "prdUrl": "https://github.com/LegalQuants/lq-ai/blob/main/docs/PRD.md",
     "issuesUrl": "https://github.com/LegalQuants/lq-ai/issues",
@@ -26,7 +26,8 @@
       "Engineering discipline",
       "Uncategorised"
     ],
-    "warnings": []
+    "warnings": [],
+    "llmClassified": 0
   },
   "items": [
     {

@@ -5,6 +5,7 @@ import { tagItem } from "./tagger.mjs";
 import { fetchActivity } from "./github-fetch.mjs";
 import { link } from "./linker.mjs";
 import { enrich } from "./semantic.mjs";
+import { llmTag } from "./llm-tagger.mjs";
 
 const REPO = "LegalQuants/lq-ai";
 const PRD_URL = "https://raw.githubusercontent.com/LegalQuants/lq-ai/main/docs/PRD.md";
@@ -14,6 +15,7 @@ export async function build(opts = {}) {
   const {
     prdMarkdown, prdUrl = PRD_HTML, repo = REPO, token = process.env.GITHUB_TOKEN,
     embed, outDir, now = new Date().toISOString(), fetchImpl = fetch,
+    llmClient, llmCachePath,
   } = opts;
   const warnings = [];
 
@@ -31,6 +33,20 @@ export async function build(opts = {}) {
 
   const { items: parsed, themes } = parsePrd(markdown, prdUrl);
   let items = parsed.map(tagItem);
+
+  // Optional LLM tagging pass: overlays better track/area/skills/difficulty over the
+  // keyword heuristic, which stays as the fallback. Runs only when a client is provided.
+  let llmClassified = 0;
+  if (llmClient) {
+    try {
+      const res = await llmTag(items, { client: llmClient, cachePath: llmCachePath });
+      items = res.items;
+      llmClassified = res.classified;
+      if (res.failures) warnings.push(`LLM tagger left ${res.failures} item(s) on keyword tags (API errors).`);
+    } catch (e) {
+      warnings.push(`LLM tagging pass failed (${e.message}); using keyword tags.`);
+    }
+  }
 
   let activity = { issues: [], prs: [], botCount: 0 };
   try { activity = await fetchActivity({ repo, token, fetchImpl }); }
@@ -55,7 +71,7 @@ export async function build(opts = {}) {
       generatedAt: now, repo, prdUrl,
       issuesUrl: `https://github.com/${repo}/issues`,
       pullsUrl: `https://github.com/${repo}/pulls`,
-      botPrCount: activity.botCount, counts, themes, warnings,
+      botPrCount: activity.botCount, counts, themes, warnings, llmClassified,
     },
     items,
   };
@@ -71,6 +87,11 @@ export async function build(opts = {}) {
 if (import.meta.url === `file://${process.argv[1]}`) {
   const { makeEmbedder } = await import("./embed.mjs");
   const embed = await makeEmbedder();
-  const data = await build({ embed, outDir: "docs/future-work" });
-  console.log(`Built ${data.items.length} items; warnings: ${data.meta.warnings.length}`);
+  let llmClient;
+  if (process.env.ANTHROPIC_API_KEY) {
+    const { makeClient } = await import("./llm-tagger.mjs");
+    llmClient = await makeClient();
+  }
+  const data = await build({ embed, outDir: "docs/future-work", llmClient, llmCachePath: "llm-tag-cache.json" });
+  console.log(`Built ${data.items.length} items; LLM-classified ${data.meta.llmClassified}; warnings: ${data.meta.warnings.length}`);
 }

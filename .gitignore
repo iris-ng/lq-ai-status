@@ -3,3 +3,4 @@
 node_modules/
 .superpowers/
 scratchpad/
+llm-tag-cache.json

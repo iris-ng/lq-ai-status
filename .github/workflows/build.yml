@@ -24,10 +24,19 @@ jobs:
         with: { node-version: "20", cache: "npm" }
       - run: npm ci
       - run: npm test
+      - name: Restore LLM tag cache
+        uses: actions/cache@v4
+        with:
+          path: llm-tag-cache.json
+          key: llm-tags-${{ github.run_id }}
+          restore-keys: llm-tags-
       - name: Build data
         run: node src/build.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: set the ANTHROPIC_API_KEY repo secret to enable the LLM tagging
+          # pass. Without it, the build falls back to keyword tagging automatically.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Stage publish dir
         run: cp web/lib.mjs docs/future-work/lib.mjs
       - uses: actions/upload-pages-artifact@v3
