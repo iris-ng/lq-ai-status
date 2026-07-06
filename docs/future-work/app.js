@@ -135,6 +135,8 @@ async function main() {
     FACET_VALUES[facet] = [...new Set(DATA.items.map((i) => i[facet]))].sort();
   }
 
+  refreshFacets();                  // build the select option lists
+  $("status").value = "available";  // landing default: show claimable items first
   renderBoard();
 
   const stale = $("stale");

@@ -26,10 +26,14 @@ test("searchCorpus matches substrings", () => {
   assert.equal(searchCorpus(entries, "nothing").length, 0);
 });
 
-test("claimUrl embeds DE id and claiming framing", () => {
+test("claimUrl opens the house-style feature-request form referencing the DE", () => {
   const url = claimUrl(items[0], "LegalQuants/lq-ai");
-  assert.match(url, /issues\/new/);
-  assert.match(decodeURIComponent(url), /I'm claiming: DE-296/);
+  assert.match(url, /\/LegalQuants\/lq-ai\/issues\/new\?/);
+  assert.match(url, /template=feature-request\.yml/);
+  assert.match(url, /de-reference=DE-296/);
+  const decoded = decodeURIComponent(url.replace(/\+/g, " "));
+  assert.match(decoded, /title=\[Feature\] DE-296 — Tabular wizard/);
+  assert.match(decoded, /Claiming \*\*DE-296 — Tabular wizard\*\* from PRD §9/);
 });
 
 test("filterItems constrains by theme and treats 'all'/'' as no-constraint", () => {

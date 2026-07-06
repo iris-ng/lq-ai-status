@@ -37,15 +37,24 @@ export function searchCorpus(entries, q) {
     .map((x) => x.e);
 }
 
+// Opens lq-ai's own feature-request issue form (house style), pre-filling the
+// DE reference and scaffolding each section. Per CONTRIBUTING, claiming a DE means
+// filing an issue that references the PRD §9 DE-### entry before starting work.
 export function claimUrl(item, repo) {
-  const title = encodeURIComponent(`I'm claiming: ${item.id} ${item.title}`);
-  const body = encodeURIComponent(
-    `I'd like to claim **${item.id}** — ${item.title}.\n\n` +
-      `Source: ${item.prdAnchor || "PRD §9"}\n\n` +
-      `My rough approach (weigh in if you'd do it differently):\n- \n\n` +
-      `_Filed from the LQ-AI Work Pipeline._`
-  );
-  return `https://github.com/${repo}/issues/new?title=${title}&body=${body}`;
+  const de = item.id;
+  const params = new URLSearchParams({
+    template: "feature-request.yml",
+    title: `[Feature] ${de} — ${item.title}`,
+    "de-reference": de,
+    "use-case":
+      `Claiming **${de} — ${item.title}** from PRD §9.\n\n` +
+      `Context: ${item.description}\n\n` +
+      `(Describe the specific user problem this solves and who benefits.)`,
+    "current-state": "(How is this handled today, and why is that insufficient?)",
+    "proposed-approach": `(Your rough approach — maintainers confirm before you start. Refs ${de}.)\n- `,
+    "additional-context": "Filed from the LQ-AI Work Pipeline.",
+  });
+  return `https://github.com/${repo}/issues/new?${params.toString()}`;
 }
 
 export function esc(s) {
@@ -62,7 +71,7 @@ export function itemCardHtml(item, repo) {
     .join("");
   const claim =
     item.status === "available"
-      ? `<a class="button" href="${claimUrl(item, repo)}">I'm claiming this</a>`
+      ? `<a class="button" href="${esc(claimUrl(item, repo))}">I'm claiming this</a>`
       : "";
   // Row 3: indicator bubbles.
   const chips = [
